@@ -24,3 +24,62 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.my_border_gradient_primary,
+.my_border_gradient_white_dark,
+.my_border_gradient_orange {
+  position: relative;
+}
+
+.my_border_gradient_white_dark::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 1px; 
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.4) 5%,
+    rgba(255, 255, 255, 0.03) 100%
+  ) 1;
+  mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  mask-composite: exclude; 
+}
+
+.my_border_gradient_primary::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 1px; 
+  background: linear-gradient(
+    to bottom right,
+    #B72204 0%,
+    #FC6400 100%
+  ) 1;
+  mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  mask-composite: exclude; 
+}
+
+.my_border_gradient_orange::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 1px; 
+  background: linear-gradient(
+    to bottom right,
+    #FC6400 0%,
+    rgba(255, 148, 77, 0.4) 4%,
+    rgba(252, 100, 0, 0.03) 100%
+  ) 1;
+  mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  mask-composite: exclude; 
+}
