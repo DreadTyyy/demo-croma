@@ -22,11 +22,13 @@ export default function GlassBox({
 
     const radiusClasses: Record<string, string> = {
       '10': 'rounded-[10px]',
+      '14': 'rounded-[14px]',
       '20': 'rounded-[20px]',
       '9999': 'rounded-[9999px]',
     }
     const beforeRadiusClasses: Record<string, string> = {
       '10': 'before:rounded-[10px]',
+      '14': 'before:rounded-[14px]',
       '20': 'before:rounded-[20px]',
       '9999': 'before:rounded-[9999px]',
     }

@@ -43,6 +43,32 @@ const dataCrcToken = [{
   icon: 'rewards.svg'
 },]
 
+const supportTeams = [{
+  icon: 'apple.svg',
+  width: 130,
+  height: 48
+}, {
+  icon: 'nvidia.svg',
+  width: 218,
+  height: 48
+}, {
+  icon: 'google.svg',
+  width: 132,
+  height: 48
+}, {
+  icon: 'openai.svg',
+  width: 147,
+  height: 48
+}, {
+  icon: 'lenovo.svg',
+  width: 120,
+  height: 48
+}, {
+  icon: 'opensea.svg',
+  width: 154,
+  height: 48
+},]
+
 export default function Home() {
   return (
     <>
@@ -61,7 +87,7 @@ export default function Home() {
           fill
           className="-z-10 object-cover"
         />
-        {/* <Navbar active='home' /> */}
+        <Navbar active='home' />
         <div className='-z-[1] absolute -top-6 -left-[8%] 2xl:-left-[10%]'>
           <Image 
             src='/object_side_header.png'
@@ -76,7 +102,7 @@ export default function Home() {
         <div className='-z-[8] absolute -bottom-1/2 right-0 blur-[280px] size-[800px] bg-[#FC6400] rounded-full'></div>
       </div>
       <PoweredBy />
-      <section className='px-4 xl:px-[100] py-20 relative max-w-screen overflow-x-hidden'>
+      <section className='px-4 xl:px-[64px] 2xl:px-[100px] py-20 relative max-w-screen overflow-x-hidden xl:overflow-x-clip'>
         <div className="-z-10 absolute top-[8%] -left-[10%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#E34C01_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
         <div className="-z-10 absolute top-[2%] -left-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#F227AE_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
         <div className="-z-10 absolute bottom-[10%] xl:-bottom-[10%] -right-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#465BF3_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
@@ -234,7 +260,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section className='px-4 xl:px-[100] py-[60px] border-t border-b border-[#414141]'>
+      {/* <section className='px-4 xl:px-[100px] py-[60px] border-t border-b border-[#414141]'>
         <div className={`${poppins.className} flex flex-col text-center items-center gap-4`}>
           <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
             <span className='text-[#FC6400] text-base'>CROMA Artworks</span>
@@ -261,7 +287,8 @@ export default function Home() {
           See All Artwork
         </ButtonPrimary>
       </section> */}
-      <section className='px-4 xl:px-[100] py-[60px] border-t border-[#414141]'>
+      {/* CRM TOKEN */}
+      <section className='px-4 xl:px-[64px] 2xl:px-[100px] py-[60px] border-t border-[#414141]'>
         <div className={`${poppins.className} flex flex-col text-center items-center gap-4`}>
           <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
             <span className='text-[#FC6400] text-base'>CROMA Tokenomics</span>
@@ -292,7 +319,7 @@ export default function Home() {
               <h3 className='mt-4 xl:mt-6 text-2xl xl:text-4xl font-bold text-white'>$CRM Token</h3>
               <p className={`${poppins.className} mt-2 mb-4 xl:mb-6 text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>CromaArt Token</p>
               <GlassBox baseColor='white'>
-                <div className='xl:px-8 py-6 backdrop-blur[50]'>
+                <div className='xl:px-8 py-6 backdrop-blur-[50]'>
                   <p className='mb-2.5 text-[26px] xl:text-[40px] font-bold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                     950,000,000
                   </p>
@@ -375,7 +402,8 @@ export default function Home() {
           </GlassBox>
         </div>
       </section>
-      <section className={`${poppins.className} relative px-4 xl:px-[100] py-[60px] max-w-screen overflow-x-hidden`}>
+      {/* WALLET APP */}
+      <section className={`${poppins.className} relative px-4 xl:px-[64px] 2xl:px-[100px] py-[60px] max-w-screen overflow-x-hidden`}>
         <div className='-z-10 absolute top-1/2 left-1/2 -translate-1/2 size-[400px] bg-[#FC6400] rounded-full blur-[200px]'></div>
         <div className="-z-10 hidden xl:block absolute top-[40%] -translate-y-1/2 -right-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#F227AE_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
         <div className="-z-10 hidden xl:block absolute top-[65%] -translate-y-1/2 -right-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
@@ -435,7 +463,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='relative px-4 xl:px-[100] py-[60px]'>
+      {/* ROADMAP */}
+      <section className='relative px-4 xl:px-[64px] 2xl:px-[100px] py-[60px]'>
         <div className="-z-10 absolute -top-[350px] -left-[350px] size-[700px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
         <div className={`${poppins.className} flex flex-col text-center items-center gap-4`}>
           <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
@@ -653,7 +682,8 @@ export default function Home() {
           </GlassBox>
         </div>
       </section>
-      <section className='py-[40px] mx-4 xl:mx-[100px]'>
+      {/* HOW TO CLAIM */}
+      <section className='py-[40px] mx-4 xl:mx-[64px] 2xl:mx-[100px]'>
         <div className={`my_border_gradient_orange before:rounded-[20px] rounded-[20px] h-full`}>
           <div className='relative h-full overflow-hidden rounded-[20px] bg-[rgba(252,100,0,0.1)]'>
             <div className='px-4 py-8 xl:p-10 text-center'>
@@ -669,8 +699,43 @@ export default function Home() {
                   alt='Claim coin'
                   width={678}
                   height={692}
+                  className='xl:max-w-1/2'
                 />
                 <div className={`${poppins.className} flex flex-col gap-4`}>
+                  <GlassBox baseColor='orange'>
+                    <div className='relative px-4 xl:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.png")] bg-center'>
+                      <div className='mb-4 xl:mb-6 flex items-center gap-4'>
+                        <GlassBox baseColor='white' rounded='9999'>
+                          <p className='flex justify-center items-center size-[36] xl:size-[54px] text-white text-xl xl:text-2xl font-semibold'>
+                            1
+                          </p>
+                        </GlassBox>
+                        <p className='font-semibold text-xl xl:text-2xl text-white'>
+                          Connect Wallet
+                        </p>
+                      </div>
+                      <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-60'>
+                        Connect your TrixWallet or any Web3 wallet (MetaMask, Trust Wallet, etc.) to get started with the CROMA airdrop.
+                      </p>
+                    </div>
+                  </GlassBox>
+                  <GlassBox baseColor='orange'>
+                    <div className='relative px-4 xl:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.png")] bg-center'>
+                      <div className='mb-4 xl:mb-6 flex items-center gap-4'>
+                        <GlassBox baseColor='white' rounded='9999'>
+                          <p className='flex justify-center items-center size-[36] xl:size-[54px] text-white text-xl xl:text-2xl font-semibold'>
+                            1
+                          </p>
+                        </GlassBox>
+                        <p className='font-semibold text-xl xl:text-2xl text-white'>
+                          Connect Wallet
+                        </p>
+                      </div>
+                      <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-60'>
+                        Connect your TrixWallet or any Web3 wallet (MetaMask, Trust Wallet, etc.) to get started with the CROMA airdrop.
+                      </p>
+                    </div>
+                  </GlassBox>
                   <GlassBox baseColor='orange'>
                     <div className='relative px-4 xl:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.png")] bg-center'>
                       <div className='mb-4 xl:mb-6 flex items-center gap-4'>
@@ -702,7 +767,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='py-[40px] xl:py-[80px] px-4 xl:px-[100]'>
+      {/* NO TAX NO TRICKS */}
+      <section className='py-[40px] xl:py-[80px] px-4 xl:px-[64px] 2xl:px-[100px]'>
         <div className={`${poppins.className} grid grid-cols-1 xl:grid-cols-2 gap-4 xl:gap-6`}>
           <div className='flex flex-col justify-center items-center text-center w-full'>
             <h2 className='text-2xl xl:text-4xl font-semibold tracking-[-0.04%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
@@ -777,7 +843,8 @@ export default function Home() {
           </GlassBox>
         </div>
       </section>
-      <section className='relative py-[40px] mx-4 xl:mx-[100px]'>
+      {/* COMMUNITY */}
+      <section className='relative py-[40px] mx-4 xl:mx-[64px] 2xl:mx-[100px]'>
         <div className={`my_border_gradient_white_dark before:rounded-[15px] rounded-[15px] h-full`}>
           <div className='relative h-full overflow-hidden rounded-[15px]'>
             <div className="-z-10 absolute -top-[200px] xl:-top-[450px] left-1/2 -translate-x-1/2 size-[400px] xl:size-[900px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
@@ -811,8 +878,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* TRIXNEWS */}
       <section>
-        <div className={`${poppins.className} mx-4 xl:mx-[100px] flex flex-col text-center items-center gap-4`}>
+        <div className={`${poppins.className} mx-4 xl:mx-[64px] 2xl:mx-[100px] flex flex-col text-center items-center gap-4`}>
           <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
             <span className='text-[#FC6400] text-base'>Trixnews</span>
           </div>
@@ -822,6 +890,326 @@ export default function Home() {
           </p>
         </div>
       </section>
+      {/* NFT GALLERY */}
+      <section className='relative my-[60px] py-[60px] px-4 xl:px-[64px] 2xl:px-[100px]'>
+        <div className='-z-10 absolute top-0 left-0 w-full h-full bg-linear-to-r from-0% from-[#CE2CD3] via-50% via-[#0083FB] to-[96%] to-[#FC6400] blur-[40px]'>
+        </div>
+        <div className='px-4 xl:px-[64px] py-8 xl:py-0 flex flex-col xl:flex-row justify-between items-center gap-y-4 bg-linear-to-r from-0% from-[#CE2CD3] via-50% via-[#0083FB] to-[96%] to-[#FC6400]'>
+          <div className='flex flex-col gap-4'>
+            <div className={`${poppins.className} flex flex-col text-left gap-4`}>
+              <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
+                <span className='text-[#FC6400] text-base'>NFT Gallery</span>
+              </div>
+              <h2 className='text-2xl xl:text-4xl font-semibold text-white tracking-[-0.04%]'>
+                CROMA Meme & Art Gallery
+              </h2>
+              <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-[680px]'>
+                From the community, for the community. Show your creativity through NFT & meme art. lets Submit Your Art
+              </p>
+            </div>
+            <div className='w-fit'>
+              <ButtonPrimary>
+                Explore on OpenSea
+              </ButtonPrimary>
+            </div>
+          </div>
+          <div className="flex max-w-[600px] gap-2">
+            <div>
+              <div className="h-[320px] rounded-2xl overflow-hidden">
+                <Image src="/ape-hat.png" alt="NFT" width={280} height={320} className="w-full h-full object-cover" />
+              </div>
+              <div className="mt-2 h-[190px] rounded-2xl overflow-hidden">
+                <Image src="/ape-suit.png" alt="NFT" width={280} height={190} className="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div>
+              <div className="h-[130px] rounded-2xl overflow-hidden">
+                <Image src="/ape-coin.png" alt="NFT" width={280} height={130} className="w-full h-full object-cover" />
+              </div>
+              <div className="mt-2 h-[380px] rounded-2xl overflow-hidden">
+                <Image src="/ape-warrior.png" alt="NFT" width={280} height={380} className="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* MERCH */}
+      <section className='relative overflow-hidden'>
+        <Image
+          src='/merch.png'
+          alt='Merch icon'
+          width={410}
+          height={460}
+          className='absolute -top-[80px] -left-[100px] opacity-30 xl:opacity-100'
+        />
+        <Image
+          src='/king_hold_coin.png'
+          alt='King hold coin'
+          width={450}
+          height={450}
+          className='hidden xl:block absolute -right-[150px] -bottom-[150px]'
+        />
+        <div className='p-8 xl:p-[60px] bg-gradient-to-r from-[#B72204] to-[#FC6400]'>
+          <div className={`${poppins.className} mx-4 xl:mx-[64px] 2xl:mx-[100px] flex flex-col jusitfy-center text-center items-center gap-4`}>
+            <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
+              <span className='text-[#FC6400] text-base'>COMING SOON</span>
+            </div>
+            <h2 className='text-2xl xl:text-4xl font-semibold tracking-[-0.04%] text-white'>Croma March</h2>
+            <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-fit xl:max-w-[500px]'>
+              A limited collection designed for those who lead, not follow.
+            </p>
+            <div className='flex flex-wrap justify-center items-center gap-1 xl:gap-2'>
+              {['Hoodies', 'Tees', 'NFT Prints', 'Tshirts', 'and more']
+              .map((text, i) => (
+                <div key={i} className={`my_border_gradient_white_dark p-[1px] before:rounded-[20px] rounded-[20px] h-full`}>
+                  <div className={`relative px-2 xl:px-6 py-3 h-full overflow-hidden rounded-[20px] bg-[rgba(0,0,0,0.1)]`}>
+                    <span className='text-sm xl:text-xl font-medium text-[#E9E9E9] opacity-80'>
+                      {text}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* PARTNERSHIP */}
+      <section className='py-[40px] xl:py-[80px] px-4 xl:px-[64px] 2xl:px-[100px]'>
+        <div className={`${poppins.className} mb-5 xl:mb-10 flex flex-col jusitfy-center text-center items-center gap-4`}>
+          <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
+            <span className='text-[#FC6400] text-base'>Partnership</span>
+          </div>
+          <h2 className='text-2xl xl:text-4xl font-semibold tracking-[-0.04%] text-white'>Our Ecosystem Partners</h2>
+          <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-fit xl:max-w-[500px]'>
+            Collaborating with industry leaders to bring you the finest art experience on the blockchain
+          </p>
+        </div>
+        <GlassBox baseColor='orange'>
+          <div className='px-4 xl:px-[40px] py-8 xl:py-[80px] flex justify-center items-center backdrop-blur-[50] blur-[10px]'>
+            <div className='max-w-full xl:max-w-[780px] flex flex-wrap items-center justify-center gap-[70px]'>
+              {supportTeams.map(({icon, width, height}) => (
+                <Image
+                  key={icon}
+                  src={`/support_logo/${icon}`}
+                  alt='Logo'
+                  width={width}
+                  height={height}
+                  sizes="(max-height: 768px) 24px, (max-height: 1024px) 48px, 48px"
+                  className="max-w-fit xl:w-1/3 h-[24px] md:h-[48px] 2xl:h-[48px]"
+                />
+              ))}
+            </div>
+          </div>
+        </GlassBox>
+        <div className='mt-5 xl:mt-10 flex flex-col xl:flex-row text-center xl:text-left jusitfy-between items-center gap-2.5'>
+          <p className={`${poppins.className} text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>
+            Are you interested in partnering with Croma Art? We're always looking for strategic collaborations that can enhance our ecosystem and provide value to our community.
+          </p>
+          <div className='text-nowrap'>
+            <ButtonPrimary>
+              Become a Partner
+            </ButtonPrimary>
+          </div>
+        </div>
+      </section>
+      {/* STORY OF CRM */}
+      <section className='relative py-[60px] mx-4 xl:mx-[100px] 2xl:mx-[160px]'>
+        <div className={`my_border_gradient_white_dark before:rounded-[15px] rounded-[15px] h-full`}>
+          <div className='relative h-full overflow-hidden rounded-[15px]'>
+            <div className="-z-10 absolute -top-[200px] xl:-top-[450px] left-1/2 -translate-x-1/2 size-[400px] xl:size-[900px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
+            <div className='px-4 py-8 w-full min-h-[360px] xl:min-h-[500px] flex flex-col justify-center items-center text-center gap-6 bg-[url("/header_stars.png")] bg-cover bg-center'>
+              <Image 
+                src='/crc_token_logo.png'
+                alt='CRC token logo'
+                width={126}
+                height={126}
+              />
+              <div>
+                <h2 className='text-2xl xl:text-4xl font-semibold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
+                  The Story of CROMA
+                </h2>
+                <div className={`${poppins.className} my-4`}>
+                  <p className='mb-4 text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-[780px]'>
+                    CROMA was born from an oil canvas. From brushstrokes came a new movement: art + blockchain. From canvas to crypto revolution.
+                  </p>
+                  <div className='flex flex-col xl:flex-row items-center gap-2 xl:gap-4 text-left'>
+                    <GlassBox baseColor='primary'>
+                      <div className='p-4 xl:p-6 flex items-start gap-2.5 backdrop-blur-[20] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
+                        <Image 
+                          src='gas_fees.svg'
+                          alt='Icon'
+                          width={42}
+                          height={42}
+                        />
+                        <div>
+                          <p className='mb-1 xl:mb-2.5 font-semibold text-base xl:text-xl text-[#E9E9E9]'>Lorem ipsum</p>
+                          <p className='text-[#E9E9E9] opacity-60 text-sm xl:text-base'>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                      </div>
+                    </GlassBox>
+                    <GlassBox baseColor='primary'>
+                      <div className='p-4 xl:p-6 flex items-start gap-2.5 backdrop-blur-[20] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
+                        <Image 
+                          src='gas_fees.svg'
+                          alt='Icon'
+                          width={42}
+                          height={42}
+                        />
+                        <div>
+                          <p className='mb-1 xl:mb-2.5 font-semibold text-base xl:text-xl text-[#E9E9E9]'>Lorem ipsum</p>
+                          <p className='text-[#E9E9E9] opacity-60 text-sm xl:text-base'>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                      </div>
+                    </GlassBox>
+                  </div>
+                </div>
+                <ButtonPrimary>
+                  Join the Story
+                </ButtonPrimary>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* HOW TO BUY */}
+      <section className='max-w-screen overflow-x-hidden xl:overflow-x-clip'>
+        <div className='relative pb-[80px] pt-[60px] xl:pt-[100px] mx-4 xl:mx-[64px] 2xl:mx-[100px]'>
+          <div className='px-4 py-8 xl:p-[60px] bg-gradient-to-r from-[#B72204] to-[#FC6400] rounded-[20px]'>
+            <Image
+              src='/coin_cromaart_2.png'
+              alt='Coin'
+              width={590}
+              height={460}
+              className='relative xl:absolute top-0 xl:-bottom-[60px] -right-[40px]'
+            />
+            <div className='xl:max-w-1/2'>
+              <h2 className='text-2xl xl:text-4xl font-semibold leading-[120%] text-white'>
+                How to Buy $CRM & $CMC
+              </h2>
+              <div className={`${poppins.className} my-4`}>
+                <p className='mb-4 text-base xl:text-2xl font-medium text-[#E9E9E9] opacity-80 max-w-[780px]'>
+                  Step-by-step guide will be available when presale begins. Stay tuned & join our community for
+                </p>
+                <div className='flex flex-col xl:flex-row items-center gap-4'>
+                  <div className='w-full xl:w-1/2'>
+                    <label htmlFor='name'
+                      className='mb-1 text-sm font-medium text-white'
+                    >Name</label>
+                    <GlassBox baseColor='white' rounded='14'>
+                      <input 
+                        type='text' 
+                        id='name'
+                        placeholder='Your Name'
+                        className='p-4 backdrop-blur-[20] text-sm font-medium text-white placeholder:text-[#A8A8A8] w-full focus:ring-none focus:outline-none' 
+                      />
+                    </GlassBox>
+                  </div>
+                  <div className='w-full xl:w-1/2'>
+                    <label htmlFor='name'
+                      className='mb-1 text-sm font-medium text-white'
+                    >Email</label>
+                    <GlassBox baseColor='white' rounded='14'>
+                      <input 
+                        type='email' 
+                        id='email'
+                        placeholder='Your Email'
+                        className='p-4 backdrop-blur-[20] text-sm font-medium text-white placeholder:text-[#A8A8A8] w-full focus:ring-none focus:outline-none' 
+                      />
+                    </GlassBox>
+                  </div>
+                </div>
+              </div>
+              <button className='w-full px-8 py-3 xl:py-4 text-[#B72204] font-bold text-base xl:text-lg rounded-[10px] bg-[#FFFBFB] shadow-[0_2px_20px_0_rgba((252,100,0,0.6)]'>
+                GET UPDATES
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer className='px-4 xl:px-[64px] 2xl:px-[100px] py-[40px] xl:py-[80px] bg-[#141414] shadow-[0_-27px_40px_-9px_rgba(252,100,0,0.28)] rounded-t-[40px]'>
+        <div className={`${poppins.className}`}>
+          <div className='flex flex-col xl:flex-row w-full items-end justify-between gap-x-20 gap-y-4'>
+            <div className='flex flex-col gap-4'>
+              <Link href='/'>
+                <div className='flex gap-2 items-center'>
+                  <Image 
+                      src='/logo_croma_art.png' 
+                      alt='Logo of Croma-Art'
+                      width={80}
+                      height={80}
+                      sizes="(max-width: 768px) 56, (max-width: 1024px) 80, 80"
+                      className="w-[56px] md:w-[80] 2xl:w-[80]"
+                  />
+                  <span className='text-2xl 2xl:text-[32px] uppercase bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
+                    <span>CROMA</span>
+                    <span className='font-bold'>ART</span>
+                  </span>
+                </div>
+              </Link>
+              <p className='text-base xl:text-xl text-[#E9E9E9] opacity-60'>
+                The world's most advanced Layer 2 solution combining AI-powered development, quantum-resistant security, and lightning-fast performance.
+              </p>
+              <div className='flex items-center gap-5'>
+                <div className='bg-[rgba(255,255,255,0.1)] size-8 rounded-full'></div>
+                <div className='bg-[rgba(255,255,255,0.1)] size-8 rounded-full'></div>
+                <div className='bg-[rgba(255,255,255,0.1)] size-8 rounded-full'></div>
+                <div className='bg-[rgba(255,255,255,0.1)] size-8 rounded-full'></div>
+              </div>
+            </div>
+            <div className='flex flex-col items-start xl:items-end w-full text-[#E9E9E9]'>
+              <div className='flex flex-wrap gap-5 xl:gap-10'>
+                <Link 
+                  href='/'
+                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
+                >
+                  Home
+                </Link>
+                <Link 
+                  href='#'
+                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
+                >
+                  Leaderboard
+                </Link>
+                <Link 
+                  href='#'
+                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
+                >
+                  Airdrop
+                </Link>
+                <Link 
+                  href='#'
+                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
+                >
+                  Refferal
+                </Link>
+              </div>
+              <div className='mt-8 flex flex-wrap gap-5 xl:gap-10'>
+                <Link 
+                  href='#'
+                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
+                >
+                  Terms
+                </Link>
+                <Link 
+                  href='#'
+                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
+                >
+                  Privacy
+                </Link>
+                <Link 
+                  href='#'
+                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
+                >
+                  Find Us
+                </Link>
+              </div>
+              <p className='mt-[60px] text-center xl:text-right text-base xl:text-xl opacity-50'>
+                © 2025 CromaChain Foundation. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
