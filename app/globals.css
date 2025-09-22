@@ -27,7 +27,9 @@ body {
 
 .my_border_gradient_primary,
 .my_border_gradient_white_dark,
-.my_border_gradient_orange {
+.my_border_gradient_orange,
+.my_border_gradient_blue,
+.my_border_gradient_blue {
   position: relative;
 }
 
@@ -82,4 +84,44 @@ body {
     linear-gradient(#000 0 0) content-box, 
     linear-gradient(#000 0 0);
   mask-composite: exclude; 
+}
+
+.my_border_gradient_green::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 1px; 
+  background: linear-gradient(
+    to bottom right,
+    #0F9972 0%,
+    rgba(22, 162, 73, 0.4) 4%,
+    rgba(22, 162, 73, 0.03) 100%,
+  ) 1;
+  mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  mask-composite: exclude; 
+}
+
+.my_border_gradient_blue::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  padding: 1px; 
+  background: linear-gradient(
+    to bottom right,
+    rgb(0, 183, 255) 0%,
+    rgba(0, 183, 255, 0.4) 4%,
+    rgba(0, 183, 255, 0.03) 100%,
+  ) 1;
+  mask: 
+    linear-gradient(#000 0 0) content-box, 
+    linear-gradient(#000 0 0);
+  mask-composite: exclude; 
+}
+
+.my_border_6px::before {
+  padding: 6px !important;
 }
