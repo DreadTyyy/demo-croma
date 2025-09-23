@@ -16,26 +16,32 @@ import Link from "next/link";
 
 const dataNews = [{
     id: 1,
+    url: '#',
     cover: 'news_1.png',
     title: 'Layer-2 Expansion: Ethereum Scaling and CromaChain’s Role in Web3 Adoption'
 },{
     id: 2,
+    url: '#',
     cover: 'news_2.png',
     title: 'NFT Market Rebounds: From Collectibles to CromaArt’s Curated Blockchain Art'
 },{
     id: 3,
+    url: '#',
     cover: 'news_3.png',
     title: 'Web3 Industry Expands: From Tokenized Assets to Enterprise Adoption'
 },{
     id: 4,
+    url: '#',
     cover: 'news_1.png',
     title: 'Layer-2 Expansion: Ethereum Scaling and CromaChain’s Role in Web3 Adoption'
 },{
     id: 5,
+    url: '#',
     cover: 'news_2.png',
     title: 'NFT Market Rebounds: From Collectibles to CromaArt’s Curated Blockchain Art'
 },{
     id: 6,
+    url: '#',
     cover: 'news_3.png',
     title: 'Web3 Industry Expands: From Tokenized Assets to Enterprise Adoption'
 }]
@@ -87,6 +93,7 @@ const Trixnews = () => {
                 key={p.id}
                 className='max-w-[600px] mx-8'
             >
+              <Link href={p.url}>
                 <GlassBox baseColor='orange'>
                     <div className='py-8 px-4 xl:px-6 w-full backdrop-blur-[50px]'>
                     <div className='relative w-full h-[270px] bg-red-500 rounded-[20px] overflow-hidden'>
@@ -102,6 +109,7 @@ const Trixnews = () => {
                     </h2>
                     </div>
                 </GlassBox>
+              </Link>
             </SwiperSlide>
             ))}
             <div className="custom-pagination"></div>

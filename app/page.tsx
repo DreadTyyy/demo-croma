@@ -8,9 +8,8 @@ import PoweredBy from '@/components/PoweredBy';
 import GlassBox from '@/components/GlassBox';
 import Trixnews from '@/components/Trixnews';
 
-import { FaDiscord,FaTelegramPlane } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import Community from '@/components/Community';
+import Footer from '@/components/Footer';
 
 const dataCrmToken = [{
   title: 'Presale',
@@ -408,10 +407,10 @@ export default function Home() {
         </div>
       </section>
       {/* WALLET APP */}
-      <section className={`${poppins.className} relative px-4 xl:px-[64px] 2xl:px-[100px] py-[60px] max-w-screen overflow-x-hidden`}>
-        <div className='-z-10 absolute top-1/2 left-1/2 -translate-1/2 size-[400px] bg-[#FC6400] rounded-full blur-[200px]'></div>
+      <section className={`${poppins.className} relative px-4 xl:px-[64px] 2xl:px-[100px] py-[60px] max-w-screen overflow-x-hidden xl:overflow-x-clip`}>
+        <div className='-z-10 absolute top-1/2 left-1/2 -translate-1/2 size-[400px] xl:size-[800px] bg-[#FC6400] rounded-full blur-[200px]'></div>
         <div className="-z-10 hidden xl:block absolute top-[40%] -translate-y-1/2 -right-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#F227AE_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
-        <div className="-z-10 hidden xl:block absolute top-[65%] -translate-y-1/2 -right-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
+        <div className="-z-10 hidden xl:block absolute top-[50%] -translate-y-1/2 -right-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
         <div className='flex flex-col text-center items-center gap-4'>
           <div className='px-3.5 py-2 w-fit rounded-full bg-[#A24101] border border-[#FC6400]'>
             <span className='text-white text-base'>Wallet Applications</span>
@@ -688,7 +687,9 @@ export default function Home() {
         </div>
       </section>
       {/* HOW TO CLAIM */}
-      <section className='py-[40px] mx-4 xl:mx-[64px] 2xl:mx-[100px]'>
+      <section className='relative py-[40px] px-4 xl:px-[64px] 2xl:px-[100px] max-w-screen overflow-x-hidden xl:overflow-x-clip'>
+        <div className="-z-10 absolute top-0 -right-[400px] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#19A9EA_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
+        <div className="-z-10 absolute top-[15%] -right-[650px] size-[700px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
         <div className={`my_border_gradient_orange before:rounded-[20px] rounded-[20px] h-full`}>
           <div className='relative h-full overflow-hidden rounded-[20px] bg-[rgba(252,100,0,0.1)]'>
             <div className='px-4 py-8 xl:p-10 text-center'>
@@ -773,7 +774,8 @@ export default function Home() {
         </div>
       </section>
       {/* NO TAX NO TRICKS */}
-      <section className='py-[40px] xl:py-[80px] px-4 xl:px-[64px] 2xl:px-[100px]'>
+      <section className='relative py-[40px] xl:py-[80px] px-4 xl:px-[64px] 2xl:px-[100px]'>
+        <div className="-z-10 absolute -bottom-[40px] -left-[350px] size-[700px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
         <div className={`${poppins.className} grid grid-cols-1 xl:grid-cols-2 gap-4 xl:gap-6`}>
           <div className='flex flex-col justify-center items-center text-center w-full'>
             <h2 className='text-2xl xl:text-4xl font-semibold tracking-[-0.04%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
@@ -1081,97 +1083,15 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <button className='w-full px-8 py-3 xl:py-4 text-[#B72204] font-bold text-base xl:text-lg rounded-[10px] bg-[#FFFBFB] shadow-[0_2px_20px_0_rgba((252,100,0,0.6)]'>
+              <button className='w-full px-8 py-3 xl:py-4 text-[#B72204] font-bold text-base xl:text-lg rounded-[10px] bg-[#FFFBFB] shadow-[0_2px_20px_0_rgba((252,100,0,0.6)] cursor-pointer'>
                 GET UPDATES
               </button>
             </div>
           </div>
         </div>
       </section>
-      <footer className='px-4 xl:px-[64px] 2xl:px-[100px] py-[40px] xl:py-[80px] bg-[#141414] shadow-[0_-27px_40px_-9px_rgba(252,100,0,0.28)] rounded-t-[40px]'>
-        <div className={`${poppins.className}`}>
-          <div className='flex flex-col xl:flex-row w-full items-end justify-between gap-x-20 gap-y-4'>
-            <div className='flex flex-col gap-4'>
-              <Link href='/'>
-                <div className='flex gap-2 items-center'>
-                  <Image 
-                      src='/logo_croma_art.png' 
-                      alt='Logo of Croma-Art'
-                      width={80}
-                      height={80}
-                      sizes="(max-width: 768px) 56, (max-width: 1024px) 80, 80"
-                      className="w-[56px] md:w-[80] 2xl:w-[80]"
-                  />
-                  <span className='text-2xl 2xl:text-[32px] uppercase bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
-                    <span>CROMA</span>
-                    <span className='font-bold'>ART</span>
-                  </span>
-                </div>
-              </Link>
-              <p className='text-base xl:text-xl text-[#E9E9E9] opacity-60'>
-                The world's most advanced Layer 2 solution combining AI-powered development, quantum-resistant security, and lightning-fast performance.
-              </p>
-              <div className='flex items-center gap-5'>
-                <div className='bg-[rgba(255,255,255,0.1)] size-8 rounded-full'></div>
-                <div className='bg-[rgba(255,255,255,0.1)] size-8 rounded-full'></div>
-                <div className='bg-[rgba(255,255,255,0.1)] size-8 rounded-full'></div>
-                <div className='bg-[rgba(255,255,255,0.1)] size-8 rounded-full'></div>
-              </div>
-            </div>
-            <div className='flex flex-col items-start xl:items-end w-full text-[#E9E9E9]'>
-              <div className='flex flex-wrap gap-5 xl:gap-10'>
-                <Link 
-                  href='/'
-                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
-                >
-                  Home
-                </Link>
-                <Link 
-                  href='#'
-                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
-                >
-                  Leaderboard
-                </Link>
-                <Link 
-                  href='#'
-                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
-                >
-                  Airdrop
-                </Link>
-                <Link 
-                  href='#'
-                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
-                >
-                  Refferal
-                </Link>
-              </div>
-              <div className='mt-8 flex flex-wrap gap-5 xl:gap-10'>
-                <Link 
-                  href='#'
-                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
-                >
-                  Terms
-                </Link>
-                <Link 
-                  href='#'
-                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
-                >
-                  Privacy
-                </Link>
-                <Link 
-                  href='#'
-                  className='font-medium text-base xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
-                >
-                  Find Us
-                </Link>
-              </div>
-              <p className='mt-[60px] text-center xl:text-right text-base xl:text-xl opacity-50'>
-                © 2025 CromaChain Foundation. All rights reserved.
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      {/* FOOTER */}
+      <Footer />
     </>
   );
 }
