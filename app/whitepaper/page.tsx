@@ -17,6 +17,7 @@ const Whitepaper = () => {
   
   return (
     <>
+    <div className="-z-10 absolute -top-[350px] -left-[350px] size-[600px] xl:size-[900px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
     <Navbar active='whitepaper' />
     <header className='relative pt-[160px] h-full mx-4 md:mx-[100px] flex flex-col gap-4 items-center justify-between text-center'>
       <h1 className='font-black text-3xl xl:text-[80px] uppercase'>
@@ -33,7 +34,7 @@ const Whitepaper = () => {
     </header>
     <section className="px-4 xl:px-15 2xl:px-[100px] pt-14">
       <GlassBox baseColor='orange'>
-        <div className='p-4 xl:p-10 flex flex-col items-center justify-center'>
+        <div className='p-4 xl:p-10 flex flex-col items-center justify-center backdrop-blur-[50px]'>
           <h2 className='text-2xl xl:text-[32px] font-semibold leading-[120%] text-white'>
             Table of Contents
           </h2>
@@ -83,7 +84,7 @@ const Whitepaper = () => {
           </Paragraph>
         </div>
         <GlassBox baseColor="orange">
-          <div className='px-4 py-8 xl:px-[60px] xl:py-10'>
+          <div className='px-4 py-8 xl:px-[60px] xl:py-10 backdrop-blur-[50px]'>
             <SubHeading>Dual-Token Ecosystem</SubHeading>
             <div className="mt-6 flex flex-col xl:flex-row w-full justify-between gap-8">
               <div className='w-full xl:max-w-1/2 space-y-2 xl:space-y-10'>
@@ -103,7 +104,7 @@ const Whitepaper = () => {
         </GlassBox>
       </article>
       <article id="vision-mission" className='scroll-mt-[140px] pt-[60px]'>
-        <Heading>3. Vision & Mission</Heading>
+        <Heading>3. Vision and Mission</Heading>
         <div className='mt-8 flex flex-col xl:flex-row gap-8'>  
           <div className="w-full xl:w-1/2 space-y-2">
             <SubHeading>Vision</SubHeading>
@@ -112,7 +113,7 @@ const Whitepaper = () => {
             </Paragraph>
             <div className="h-fit mt-2">
               <GlassBox baseColor="orange">
-                <div className="p-6">
+                <div className="p-6 backdrop-blur-[50px]">
                   <p className="text-sm xl:text-xl font-medium leading-[120%] italic">
                     "The future of Web3 is not defined by code — it is shaped by accessibility, trust, and transparency."
                   </p>
@@ -141,7 +142,7 @@ const Whitepaper = () => {
         <div className="mt-8 grid grid-cols-1 xl:grid-cols-2 gap-4">
           {features.map(({title, content}) => (
             <GlassBox baseColor="orange" key={title}>
-              <div className="px-4 py-8 xl:p-10 flex flex-col gap-3 xl:gap-6">
+              <div className="px-4 py-8 xl:p-10 flex flex-col gap-3 xl:gap-6 backdrop-blur-[50px]">
                 <SubSubHeading>{title}</SubSubHeading>
                 <Paragraph opacity={60}>{content}</Paragraph>
               </div>
@@ -153,7 +154,7 @@ const Whitepaper = () => {
         <Heading>5. Tokenomics</Heading>
         <div className="mt-8">
           <GlassBox baseColor="orange">
-            <div className="px-4 py-8 xl:px-[60px] xl:py-10 space-y-5 xl:space-y-10">
+            <div className="px-4 py-8 xl:px-[60px] xl:py-10 space-y-5 xl:space-y-10 backdrop-blur-[50px]">
               <div className="flex flex-col xl:flex-row">
                 <div className='w-full xl:max-w-1/2 space-y-3 xl:space-y-6'>
                   <SubSubHeading>CRM Token Supply</SubSubHeading>
@@ -213,7 +214,7 @@ const Whitepaper = () => {
                 </div>
               </div>
               <GlassBox baseColor='orange'>
-                <div className="px-4 py-8 xl:p-10">
+                <div className="px-4 py-8 xl:p-10 backdrop-blur-[50px]">
                   <SubSubHeading>Note on Team Allocation</SubSubHeading>
                   <div className="mt-6 space-y-8">
                     <Paragraph opacity={60}>
@@ -233,7 +234,7 @@ const Whitepaper = () => {
         <Heading>6. CromaChain Ecosystem</Heading>
         <div className="my-8">
           <GlassBox baseColor="orange">
-            <div className='px-4 py-8 xl:p-10 flex flex-col justify-center items-center gap-6'>
+            <div className='px-4 py-8 xl:p-10 flex flex-col justify-center items-center gap-6 backdrop-blur-[50px]'>
               <SubSubHeading>
                 Infrastructure for the Future of Web3
               </SubSubHeading>
@@ -257,7 +258,7 @@ const Whitepaper = () => {
         <div className='mt-6 mb-8 grid grid-cols-1 xl:grid-cols-3 gap-4'>
           {coreTechnologies.map(({title, desc, listTexts}) => (
             <GlassBox baseColor='orange' key={title}>
-              <div className="px-4 py-8 xl:p-10 space-y-4 xl:space-y-8">
+              <div className="px-4 py-8 xl:p-10 space-y-4 xl:space-y-8 backdrop-blur-[50px]">
                 <SubSubHeading>
                   {title}
                 </SubSubHeading>
@@ -306,7 +307,7 @@ const Whitepaper = () => {
         <SubHeading>CMC Token Utility & Economics</SubHeading>
         <div className='mt-6 mb-8 grid grid-cols-1 xl:grid-cols-2 gap-4'>
           <GlassBox baseColor="orange">
-            <div className='px-4 py-8 xl:p-10 space-y-6'>
+            <div className='px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]'>
               <SubSubHeading>Token Supply</SubSubHeading>
               <ul className="ml-4 xl:ml-8">
                 {['Total Supply: 9.5B CMC', 'TGE: 900M CMC (unlocked post-CRM phase)', 'Distribution: Fully distributed by 2030','Team Vesting: Until 2035 (max 25%/year)']
@@ -319,7 +320,7 @@ const Whitepaper = () => {
             </div>
           </GlassBox>
           <GlassBox baseColor="orange">
-            <div className='px-4 py-8 xl:p-10 space-y-6'>
+            <div className='px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]'>
               <SubSubHeading>Utility Functions</SubSubHeading>
               <ul className="ml-4 xl:ml-8">
                 {['Gas fees and transaction costs', 'Validator staking and rewards', 'Governance and protocol decisions','Network security and consensus', 'Cross-chain bridge operations']
@@ -333,7 +334,7 @@ const Whitepaper = () => {
           </GlassBox>
           <div className='xl:col-span-2'>
             <GlassBox baseColor='orange'>
-              <div className='px-4 py-8 xl:p-10 text-center xl:text-left'>
+              <div className='px-4 py-8 xl:p-10 text-center xl:text-left backdrop-blur-[50px]'>
                 <SubSubHeading>Performance Benchmarks</SubSubHeading>
                 <div className={`${orbitron.className} mt-6 grid grid-cols-2 xl:grid-cols-4 gap-4`}>
                   {performanceBenchmark.map(({title, desc}) => (
@@ -358,7 +359,7 @@ const Whitepaper = () => {
             </Paragraph>
           </div>
           <GlassBox baseColor="orange">
-            <div className='px-4 py-8 xl:px-[60px] xl:py-10'>
+            <div className='px-4 py-8 xl:px-[60px] xl:py-10 backdrop-blur-[50px]'>
               <SubHeading>
                 How It Works
               </SubHeading>
@@ -369,7 +370,7 @@ const Whitepaper = () => {
                   </Paragraph>
                   <div className="mt-4 h-fit">
                     <GlassBox baseColor="orange">
-                      <div className="px-4 py-6 xl:p-6">
+                      <div className="px-4 py-6 xl:p-6 backdrop-blur-[50px]">
                         <span className='text-sm xl:text-xl italic text-white'>
                           "Create a token with 1M supply, 2% burn, 30-day presale, and a website."
                         </span>
@@ -396,7 +397,7 @@ const Whitepaper = () => {
               </SubHeading>
               <div className='mt-6 mb-8 grid grid-cols-1 xl:grid-cols-2 gap-x-4 gap-y-6'>
                 <GlassBox baseColor='orange'>
-                  <div className='px-4 py-8 xl:p-10 space-y-6'>
+                  <div className='px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]'>
                     <SubSubHeading>Revenue Collection</SubSubHeading>
                     <ul className='ml-4 xl:ml-8'>
                       {['All fees collected in #CRM tokens', 'Token launch services', 'Website deployment','Presale gateway access','AI audit service']
@@ -409,7 +410,7 @@ const Whitepaper = () => {
                   </div>
                 </GlassBox>
                 <GlassBox baseColor='orange'>
-                  <div className='px-4 py-8 xl:p-10 space-y-6'>
+                  <div className='px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]'>
                     <SubSubHeading>Token Burn Mechanism</SubSubHeading>
                     <ul className='ml-4 xl:ml-8'>
                       {['50% of revenue permanently burned', '50% allocated to marketing wallet', 'Deflationary token economics','Automatic burn execution','Transparent burn tracking']
@@ -423,7 +424,7 @@ const Whitepaper = () => {
                 </GlassBox>
                 <div className='xl:col-span-2'>
                   <GlassBox baseColor='orange'>
-                    <div className='px-4 py-8 xl:p-10 space-y-6'>
+                    <div className='px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]'>
                       <SubSubHeading>Transition Rute</SubSubHeading>
                       <Paragraph opacity={60}>
                         CRM will be used for all AI Builder services until the supply reaches 100M tokens. After this threshold, #CMC will replace CRM for utility funcitons, ensuring a smooth transition to the CromaChain mainnet ecosystem.
@@ -452,7 +453,7 @@ const Whitepaper = () => {
       </article>
       <article id="launch-timeline" className='scroll-mt-[140px] pt-[60px]'>
         <div className='space-y-8'>
-          <Heading>8. Launch Timeline</Heading>
+          <Heading>8. Launch Timeline and Strategy</Heading>
           <div>
             <h4 className='text-[22px] xl:text-2xl font-medium text-white tracking-[-0.04%]'>
               CRM Token Launch
@@ -460,7 +461,7 @@ const Whitepaper = () => {
             <div className='mt-6 space-y-4'>
               {timeline['launch'].map(({phase, desc}, index) => (
                 <GlassBox key={index} baseColor='orange'>
-                  <div className='px-4 py-8 xl:p-10 space-y-6'>
+                  <div className='px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]'>
                     <SubSubHeading>Phase {index+1}: {phase}</SubSubHeading>
                     <Paragraph opacity={60}>{desc}</Paragraph>
                   </div>
@@ -475,7 +476,7 @@ const Whitepaper = () => {
             <div className='mt-6 grid grid-cols-1 xl:grid-cols-2 gap-4'>
               {timeline['development'].map(({title, listTexts}, index) => (
                 <GlassBox key={index} baseColor='orange'>
-                  <div className='px-4 py-8 xl:p-10 space-y-6'>
+                  <div className='px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]'>
                     <SubSubHeading>{title}</SubSubHeading>
                     <ul className="ml-4 xl:ml-8">
                       {listTexts.map((text,i) => (
@@ -504,7 +505,7 @@ const Whitepaper = () => {
           </div>
           <div className='grid grid-cols-1 xl:grid-cols-2 gap-4'>
             <GlassBox baseColor="orange">
-              <div className='px-4 py-8 xl:p-10'>
+              <div className='px-4 py-8 xl:p-10 backdrop-blur-[50px]'>
                 <SubSubHeading>Transaction in CRM Only</SubSubHeading>
                 <Paragraph opacity={60}>
                   Artwork purchases will be conducted exclusively using CRM tokens, creating utility and demand for the community token while supporting the art ecosystem.
@@ -512,7 +513,7 @@ const Whitepaper = () => {
               </div>
             </GlassBox>
             <GlassBox baseColor="orange">
-              <div className='px-4 py-8 xl:p-10'>
+              <div className='px-4 py-8 xl:p-10 backdrop-blur-[50px]'>
                 <SubSubHeading>Revenue Distribution</SubSubHeading>
                 <ul className='ml-4 xl:ml-8'>
                   <li className='list-disc'>
@@ -543,7 +544,7 @@ const Whitepaper = () => {
             </Paragraph>
           </div>
           <GlassBox baseColor='orange'>
-            <div className='px-4 py-8 xl:px-[60px] xl:py-10 space-y-6'>
+            <div className='px-4 py-8 xl:px-[60px] xl:py-10 space-y-6 backdrop-blur-[50px]'>
               <div className='space-y-4'>
                 <SubSubHeading>Presale Reward Program</SubSubHeading>
                 <Paragraph opacity={80}>
@@ -551,7 +552,7 @@ const Whitepaper = () => {
                 </Paragraph>
               </div>
               <GlassBox baseColor="orange">
-                <div className='px-4 py-6 xl:p-6'>
+                <div className='px-4 py-6 xl:p-6 backdrop-blur-[50px]'>
                   <p className='text-base xl:text-2xl text-white mb-4'>Example Calculation:</p>
                   <p className='text-base xl:text-2xl text-white'>
                     If a participant purchases $100 worth of CRM tokens, their balance would grow to $110 after the first week, $121 after the second week, and so forth.
@@ -570,7 +571,7 @@ const Whitepaper = () => {
           <Heading>11. Security and Transparency </Heading>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
             <GlassBox baseColor="orange">
-              <div className="px-4 py-8 xl:p-10 space-y-6">
+              <div className="px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]">
                 <SubSubHeading>Smart Contract Audit</SubSubHeading>
                 <Paragraph opacity={60}>
                   The smart contract will be fully audited before the presale concludes to ensure maximum security and reliability.
@@ -578,7 +579,7 @@ const Whitepaper = () => {
               </div>
             </GlassBox>
             <GlassBox baseColor="orange">
-              <div className="px-4 py-8 xl:p-10 space-y-6">
+              <div className="px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]">
                 <SubSubHeading>Wallet Transparency</SubSubHeading>
                 <Paragraph opacity={60}>
                   All project wallets are publicly visible and will only be accessed according to the project's actual needs.
@@ -592,7 +593,7 @@ const Whitepaper = () => {
             </h4>
             <div className="grid grid-cols-1 xl:grid-cols-3 gap-4">
               <GlassBox baseColor="orange">
-                <div className="px-4 py-8 xl:p-10 space-y-6">
+                <div className="px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]">
                   <SubSubHeading>Formal Verification</SubSubHeading>
                   <Paragraph opacity={60}>
                     Mathematical proof of smart contract correctness using Z3/Boolector verification tools.
@@ -600,7 +601,7 @@ const Whitepaper = () => {
                 </div>
               </GlassBox>
               <GlassBox baseColor="orange">
-                <div className="px-4 py-8 xl:p-10 space-y-6">
+                <div className="px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]">
                   <SubSubHeading>AI-Based Auditing</SubSubHeading>
                   <Paragraph opacity={60}>
                     Static analysis combined with AI-powered audit engine for comprehensive security assessment.
@@ -608,7 +609,7 @@ const Whitepaper = () => {
                 </div>
               </GlassBox>
               <GlassBox baseColor="orange">
-                <div className="px-4 py-8 xl:p-10 space-y-6">
+                <div className="px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]">
                   <SubSubHeading>External Audits</SubSubHeading>
                   <Paragraph opacity={60}>
                     Professional audits by CertiK & Halborn with public audit logs before mainnet launch.
@@ -623,7 +624,7 @@ const Whitepaper = () => {
         <Heading>12. Exchange Listing</Heading>
         <div className="mt-8 space-y-4">
           <GlassBox baseColor='orange'>
-            <div className="px-4 py-8 xl:p-10 space-y-6">
+            <div className="px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]">
               <SubSubHeading>CRM Token Listings</SubSubHeading>
               <Paragraph opacity={60}>
                 After the presale and initial launch phase, Croma plans to list on 5 centralized exchanges (CEX) ranging from Tier 1 to Tier 10, to ensure maximum liquidity and broader exposure.
@@ -634,7 +635,7 @@ const Whitepaper = () => {
             </div>
           </GlassBox>
           <GlassBox baseColor='orange'>
-            <div className="px-4 py-8 xl:p-10 space-y-6">
+            <div className="px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]">
               <SubSubHeading>CRC Token Strategy</SubSubHeading>
               <Paragraph opacity={60}>
                 CMC tokens will be listed on Ethereum DEX/CEX platforms with zkBridge-enabled migration capabilities. SDKs will be provided for third-party listing integrators to ensure seamless adoption.
@@ -648,7 +649,7 @@ const Whitepaper = () => {
       </article>
       <article id="risks-disclaimer" className='scroll-mt-[140px] pt-[60px]'>
         <Heading>13. Risks & Disclaimer</Heading>
-        <div className={`mt-8 relative px-4 py-8 xl:p-10 h-full overflow-hidden rounded-[20px] border border-[#FF2020] bg-[linear-gradient(rgba(201,103,103,0.2),rgba(201,103,103,0.2)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))] space-y-4`}>
+        <div className={`mt-8 relative px-4 py-8 xl:p-10 h-full overflow-hidden rounded-[20px] border border-[#FF2020] bg-[linear-gradient(rgba(201,103,103,0.2),rgba(201,103,103,0.2)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))] space-y-4 backdrop-blur-[50px]`}>
           <Paragraph opacity={60}>
             Participation in cryptocurrency projects such as Croma involves inherent risks. Token values are subject to high market volatility, adoption challenges, regulatory developments, and technical factors.
           </Paragraph>
@@ -670,10 +671,10 @@ const Whitepaper = () => {
         </div>
       </article>
       <article className='my-[60px]'>
-        <Heading>Conclussion</Heading>
+        <Heading>Conclusion</Heading>
         <div className="mt-8 text-center">
           <GlassBox baseColor="orange">
-            <div className='px-4 py-8 xl:p-10 space-y-6'>
+            <div className='px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]'>
               <Paragraph opacity={60}>
                 Croma is more than just a token — it is a movement rooted in creativity, community, and authenticity, pioneering the future of Web3 infrastructure through CromaChain.
               </Paragraph>

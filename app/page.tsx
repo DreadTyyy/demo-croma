@@ -122,7 +122,7 @@ export default function Home() {
             </p>
           </div>
           <GlassBox baseColor='orange'>
-            <div className='px-4 py-8 xl:p-10 backdrop-blur-[50]'>
+            <div className='px-4 py-8 xl:p-10 backdrop-blur-[50px]'>
               <h2 className='text-white text-2xl xl:text-[32px] font-semibold leading-[120%] max-w-3/4'>
                 All connected in one vision: building a global art + crypto movement
               </h2>
@@ -298,7 +298,7 @@ export default function Home() {
               <h3 className='mt-4 xl:mt-6 text-2xl xl:text-4xl font-bold text-white'>$CRM Token</h3>
               <p className={`${poppins.className} mt-2 mb-4 xl:mb-6 text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>CromaArt Token</p>
               <GlassBox baseColor='white'>
-                <div className='xl:px-8 py-6 backdrop-blur-[50]'>
+                <div className='xl:px-8 py-6 backdrop-blur-[50px]'>
                   <p className='mb-2.5 text-[26px] xl:text-[40px] font-bold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                     950,000,000
                   </p>
@@ -361,7 +361,7 @@ export default function Home() {
                 <div className='grid grid-cols-1 xl:grid-cols-2 gap-2 xl:gap-4 text-left'>
                   {dataCrcToken.map(({title, desc, icon}) => (
                     <GlassBox baseColor='primary' key={title}>
-                      <div className='p-4 xl:p-6 flex items-start gap-2.5 backdrop-blur-[20] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
+                      <div className='p-4 xl:p-6 flex items-start gap-2.5 backdrop-blur-[20px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
                         <Image 
                           src={icon}
                           alt={`Icon ${title}`}
@@ -459,7 +459,7 @@ export default function Home() {
         </div>
         <div className={`${poppins.className} mt-5 xl:mt-10 grid grid-cols-1 xl:grid-cols-[1fr_auto_1fr] gap-y-4 xl:gap-y-6`}>
           <GlassBox baseColor='green'>
-            <div className='flex flex-col gap-4 xl:gap-6 px-4 xl:px-6 py-8 backdrop-blur-[50]'>
+            <div className='flex flex-col gap-4 xl:gap-6 px-4 xl:px-6 py-8 backdrop-blur-[50px]'>
               <div className='flex items-center justify-between w-full'>
                 <div className="flex items-center gap-4">
                   <GlassBox baseColor='white' rounded='9999'>
@@ -468,7 +468,7 @@ export default function Home() {
                       alt='Phase 1'
                       width={54}
                       height={54}
-                      className='p-2.5 backdrop-blur-[20]'
+                      className='p-2.5 backdrop-blur-[20px]'
                     />
                   </GlassBox>
                   <div className='text-[#E9E9E9]'>
@@ -511,7 +511,7 @@ export default function Home() {
           </div>
           <div className={`my_border_gradient_primary my_border_6px before:rounded-[20px] rounded-[20px] h-full`}>
             <div className='relative h-full overflow-hidden rounded-[20px] bg-[linear-gradient(rgba(255,255,255,0.11),rgba(255,255,255,0.11)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
-              <div className='flex flex-col gap-4 xl:gap-6 px-4 py-8 backdrop-blur-[50]'>
+              <div className='flex flex-col gap-4 xl:gap-6 px-4 py-8 backdrop-blur-[50px]'>
                 <div className='flex items-center justify-between w-full'>
                   <div className="flex items-center gap-4">
                     <GlassBox baseColor='white' rounded='9999'>
@@ -520,7 +520,7 @@ export default function Home() {
                         alt='Phase 2'
                         width={54}
                         height={54}
-                        className='p-2.5 backdrop-blur-[20]'
+                        className='p-2.5 backdrop-blur-[20px]'
                       />
                     </GlassBox>
                     <div className='text-[#E9E9E9]'>
@@ -529,7 +529,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className={`my_border_gradient_primary p-[1px] before:rounded-full rounded-full h-full`}>
-                    <div className='px-2 xl:px-4 py-1 xl:py-3 w-fit rounded-full bg-[rgba(255,255,255,0.07)] backdrop-blur-[20]'>
+                    <div className='px-2 xl:px-4 py-1 xl:py-3 w-fit rounded-full bg-[rgba(255,255,255,0.07)] backdrop-blur-[20px]'>
                       <span className=' bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent font-semibold text-sm xl:text-base'>
                         In Progress
                       </span>
@@ -567,7 +567,7 @@ export default function Home() {
             />
           </div>
           <GlassBox baseColor='blue'>
-            <div className='flex flex-col gap-4 xl:gap-6 px-4 xl:px-6 py-8 backdrop-blur-[50]'>
+            <div className='flex flex-col gap-4 xl:gap-6 px-4 xl:px-6 py-8 backdrop-blur-[50px]'>
               <div className='flex items-center justify-between w-full'>
                 <div className="flex items-center gap-4">
                   <GlassBox baseColor='white' rounded='9999'>
@@ -576,7 +576,7 @@ export default function Home() {
                       alt='Phase 3'
                       width={54}
                       height={54}
-                      className='p-2.5 backdrop-blur-[20]'
+                      className='p-2.5 backdrop-blur-[20px]'
                     />
                   </GlassBox>
                   <div className='text-[#E9E9E9]'>
@@ -618,7 +618,7 @@ export default function Home() {
             />
           </div>
           <GlassBox baseColor='blue'>
-            <div className='flex flex-col gap-4 xl:gap-6 px-4 xl:px-6 py-8 backdrop-blur-[50]'>
+            <div className='flex flex-col gap-4 xl:gap-6 px-4 xl:px-6 py-8 backdrop-blur-[50px]'>
               <div className='flex items-center justify-between w-full'>
                 <div className="flex items-center gap-4">
                   <GlassBox baseColor='white' rounded='9999'>
@@ -627,7 +627,7 @@ export default function Home() {
                       alt='Phase 4'
                       width={54}
                       height={54}
-                      className='p-2.5 backdrop-blur-[20]'
+                      className='p-2.5 backdrop-blur-[20px]'
                     />
                   </GlassBox>
                   <div className='text-[#E9E9E9]'>
@@ -761,7 +761,7 @@ export default function Home() {
             </p>
           </div>
           <GlassBox baseColor='orange'>
-            <div className='px-4 xl:px-6 py-8 backdrop-blur-[50] bg-[url("/wave_pattern.png")] bg-center bg-cover'>
+            <div className='px-4 xl:px-6 py-8 backdrop-blur-[50px] bg-[url("/wave_pattern.png")] bg-center bg-cover'>
               <div className='w-fit'>
                 <GlassBox baseColor='white' rounded='9999'>
                   <Image
@@ -782,7 +782,7 @@ export default function Home() {
             </div>
           </GlassBox>
           <GlassBox baseColor='orange'>
-            <div className='px-4 xl:px-6 py-8 backdrop-blur-[50] bg-[url("/wave_pattern.png")] bg-center bg-cover'>
+            <div className='px-4 xl:px-6 py-8 backdrop-blur-[50px] bg-[url("/wave_pattern.png")] bg-center bg-cover'>
               <div className='w-fit'>
                 <GlassBox baseColor='white' rounded='9999'>
                   <Image
@@ -803,7 +803,7 @@ export default function Home() {
             </div>
           </GlassBox>
           <GlassBox baseColor='orange'>
-            <div className='px-4 xl:px-6 py-8 backdrop-blur-[50] bg-[url("/wave_pattern.png")] bg-center bg-cover'>
+            <div className='px-4 xl:px-6 py-8 backdrop-blur-[50px] bg-[url("/wave_pattern.png")] bg-center bg-cover'>
               <div className='w-fit'>
                 <GlassBox baseColor='white' rounded='9999'>
                   <Image
@@ -924,7 +924,7 @@ export default function Home() {
           </p>
         </div>
         <GlassBox baseColor='orange'>
-          <div className='px-4 xl:px-[40px] py-8 xl:py-[80px] flex justify-center items-center backdrop-blur-[50] blur-[10px]'>
+          <div className='px-4 xl:px-[40px] py-8 xl:py-[80px] flex justify-center items-center backdrop-blur-[50px] blur-[10px]'>
             <div className='max-w-full xl:max-w-[780px] flex flex-wrap items-center justify-center gap-[70px]'>
               {supportTeams.map(({icon, width, height}) => (
                 <Image
@@ -973,7 +973,7 @@ export default function Home() {
                   </p>
                   <div className='flex flex-col xl:flex-row items-center gap-2 xl:gap-4 text-left'>
                     <GlassBox baseColor='primary'>
-                      <div className='p-4 xl:p-6 flex items-start gap-2.5 backdrop-blur-[20] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
+                      <div className='p-4 xl:p-6 flex items-start gap-2.5 backdrop-blur-[20px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
                         <Image 
                           src='contract.svg'
                           alt='Icon'
@@ -987,7 +987,7 @@ export default function Home() {
                       </div>
                     </GlassBox>
                     <GlassBox baseColor='primary'>
-                      <div className='p-4 xl:p-6 flex items-start gap-2.5 backdrop-blur-[20] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
+                      <div className='p-4 xl:p-6 flex items-start gap-2.5 backdrop-blur-[20px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
                         <Image 
                           src='wallet.svg'
                           alt='Icon'
@@ -1039,7 +1039,7 @@ export default function Home() {
                         type='text' 
                         id='name'
                         placeholder='Your Name'
-                        className='p-4 backdrop-blur-[20] text-sm font-medium text-white placeholder:text-[#A8A8A8] w-full focus:ring-none focus:outline-none' 
+                        className='p-4 backdrop-blur-[20px] text-sm font-medium text-white placeholder:text-[#A8A8A8] w-full focus:ring-none focus:outline-none' 
                       />
                     </GlassBox>
                   </div>
@@ -1052,7 +1052,7 @@ export default function Home() {
                         type='email' 
                         id='email'
                         placeholder='Your Email'
-                        className='p-4 backdrop-blur-[20] text-sm font-medium text-white placeholder:text-[#A8A8A8] w-full focus:ring-none focus:outline-none' 
+                        className='p-4 backdrop-blur-[20px] text-sm font-medium text-white placeholder:text-[#A8A8A8] w-full focus:ring-none focus:outline-none' 
                       />
                     </GlassBox>
                   </div>
