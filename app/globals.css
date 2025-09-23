@@ -25,6 +25,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .my_border_gradient_primary,
 .my_border_gradient_white_dark,
 .my_border_gradient_orange,
