@@ -292,7 +292,7 @@ const Whitepaper = () => {
             {modularArchitecture.map(({title, desc}, index) => {
               const bgStyle = index % 2 === 0 ? 'bg-[#2C2C2C]' : 'bg-transparent'
               return (
-              <tr className={`${bgStyle} border border-[#818181]`} key={index}>
+              <tr key={index} className={`${bgStyle} border border-[#818181]`}>
                 <td className='px-2 xl:px-6 py-1 xl:py-3 text-base xl:text-[22px] 2xl:text-2xl tracking-[-0.04%] leading-[38px]'>
                   {title}
                 </td>
@@ -383,8 +383,8 @@ const Whitepaper = () => {
                   </Paragraph>
                   <ul className='ml-4 xl:ml-8'>
                     {['ERC-20 smart contract','Landing page with countdown','Real-time audit integration','Automated backend deployment','CRM auto-burn + CMC rewards']
-                    .map((text) => (
-                      <li className="list-disc"><Paragraph>
+                    .map((text, i) => (
+                      <li key={i} className="list-disc"><Paragraph>
                         {text}  
                       </Paragraph></li>
                     ))}
