@@ -6,6 +6,11 @@ import ButtonPrimary from '@/components/ButtonPrimary';
 import HeaderHomepage from '@/components/HeaderHomepage';
 import PoweredBy from '@/components/PoweredBy';
 import GlassBox from '@/components/GlassBox';
+import Trixnews from '@/components/Trixnews';
+
+import { FaDiscord,FaTelegramPlane } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import Community from '@/components/Community';
 
 const dataCrmToken = [{
   title: 'Presale',
@@ -724,15 +729,15 @@ export default function Home() {
                       <div className='mb-4 xl:mb-6 flex items-center gap-4'>
                         <GlassBox baseColor='white' rounded='9999'>
                           <p className='flex justify-center items-center size-[36] xl:size-[54px] text-white text-xl xl:text-2xl font-semibold'>
-                            1
+                            2
                           </p>
                         </GlassBox>
                         <p className='font-semibold text-xl xl:text-2xl text-white'>
-                          Connect Wallet
+                          Complete Tasks
                         </p>
                       </div>
                       <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-60'>
-                        Connect your TrixWallet or any Web3 wallet (MetaMask, Trust Wallet, etc.) to get started with the CROMA airdrop.
+                        Follow our social media accounts, join Telegram/Discord, and complete simple verification tasks to qualify.
                       </p>
                     </div>
                   </GlassBox>
@@ -741,15 +746,15 @@ export default function Home() {
                       <div className='mb-4 xl:mb-6 flex items-center gap-4'>
                         <GlassBox baseColor='white' rounded='9999'>
                           <p className='flex justify-center items-center size-[36] xl:size-[54px] text-white text-xl xl:text-2xl font-semibold'>
-                            1
+                            3
                           </p>
                         </GlassBox>
                         <p className='font-semibold text-xl xl:text-2xl text-white'>
-                          Connect Wallet
+                          Claim Tokens
                         </p>
                       </div>
                       <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-60'>
-                        Connect your TrixWallet or any Web3 wallet (MetaMask, Trust Wallet, etc.) to get started with the CROMA airdrop.
+                        Once verified succes, claim your free $CRM + $CMC tokens directly to your wallet. No tricks, no taxes.
                       </p>
                     </div>
                   </GlassBox>
@@ -783,7 +788,7 @@ export default function Home() {
               <div className='w-fit'>
                 <GlassBox baseColor='white' rounded='9999'>
                   <Image
-                    src='/icon_phase1.svg'
+                    src='/fire.svg'
                     alt='Icon'
                     width={54}
                     height={54}
@@ -804,7 +809,7 @@ export default function Home() {
               <div className='w-fit'>
                 <GlassBox baseColor='white' rounded='9999'>
                   <Image
-                    src='/icon_phase1.svg'
+                    src='/ownership.svg'
                     alt='Icon'
                     width={54}
                     height={54}
@@ -813,10 +818,10 @@ export default function Home() {
                 </GlassBox>
               </div>
               <h3 className='mt-4 xl:mt-6 text-xl xl:text-2xl font-semibold text-white'>
-                LP Tokens Burned
+                Ownership Renounced
               </h3>
               <p className='mt-4 xl:mt-6 text-base xl:text-xl font-medium text-[#E9E9E9] opacity-60'>
-                LP tokens burned like old canvases. What's gone, stays gone. Permanent liquidity lock.
+                Even Picasso couldn't take it back. Contract ownership fully renounced for true decentralization.
               </p>
             </div>
           </GlassBox>
@@ -825,7 +830,7 @@ export default function Home() {
               <div className='w-fit'>
                 <GlassBox baseColor='white' rounded='9999'>
                   <Image
-                    src='/icon_phase1.svg'
+                    src='/community.svg'
                     alt='Icon'
                     width={54}
                     height={54}
@@ -834,62 +839,19 @@ export default function Home() {
                 </GlassBox>
               </div>
               <h3 className='mt-4 xl:mt-6 text-xl xl:text-2xl font-semibold text-white'>
-                LP Tokens Burned
+                Community Driven
               </h3>
               <p className='mt-4 xl:mt-6 text-base xl:text-xl font-medium text-[#E9E9E9] opacity-60'>
-                LP tokens burned like old canvases. What's gone, stays gone. Permanent liquidity lock.
+                This is our gallery, together. Decentralized. Ungoverned. Unstoppable.
               </p>
             </div>
           </GlassBox>
         </div>
       </section>
       {/* COMMUNITY */}
-      <section className='relative py-[40px] mx-4 xl:mx-[64px] 2xl:mx-[100px]'>
-        <div className={`my_border_gradient_white_dark before:rounded-[15px] rounded-[15px] h-full`}>
-          <div className='relative h-full overflow-hidden rounded-[15px]'>
-            <div className="-z-10 absolute -top-[200px] xl:-top-[450px] left-1/2 -translate-x-1/2 size-[400px] xl:size-[900px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
-            <div className='px-4 py-8 w-full min-h-[360px] xl:min-h-[500px] flex flex-col justify-center items-center text-center gap-6 bg-[url("/header_stars.png")] bg-cover bg-center'>
-              <Image 
-                src='/crm_token_logo.png'
-                alt='CRM token logo'
-                width={126}
-                height={126}
-              />
-              <div>
-                <h2 className='text-2xl xl:text-4xl font-semibold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
-                  Join the CROMA Movement
-                </h2>
-                <p className={`${poppins.className} mt-4 text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>
-                  Simple 3-step process to get your free tokens
-                </p>
-              </div>
-              <div className={`${poppins.className} flex flex-wrap items-center justify-center gap-4 xl:gap-6`}>
-                <Link href='#'>
-                  <div className={`my_border_gradient_white_dark before:rounded-[15px] rounded-[15px] h-full`}>
-                    <div className='relative h-full overflow-hidden rounded-[15px] bg-[rgba(255,255,255,0.1)]'>
-                      <div className='px-6 py-3 flex items-center gap-3'>
-                        <p className='text-xl font-medium text-[#E9E9E9] opacity-80'>Join Discord</p>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Community />
       {/* TRIXNEWS */}
-      <section>
-        <div className={`${poppins.className} mx-4 xl:mx-[64px] 2xl:mx-[100px] flex flex-col text-center items-center gap-4`}>
-          <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
-            <span className='text-[#FC6400] text-base'>Trixnews</span>
-          </div>
-          <h2 className='text-2xl xl:text-4xl font-semibold tracking-[-0.04%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>Latest Update</h2>
-          <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-fit xl:max-w-[500px]'>
-            Hand-drawn masterpieces immortalized as NFTs
-          </p>
-        </div>
-      </section>
+      <Trixnews />
       {/* NFT GALLERY */}
       <section className='relative my-[60px] py-[60px] px-4 xl:px-[64px] 2xl:px-[100px]'>
         <div className='-z-10 absolute top-0 left-0 w-full h-full bg-linear-to-r from-0% from-[#CE2CD3] via-50% via-[#0083FB] to-[96%] to-[#FC6400] blur-[40px]'>
@@ -1028,7 +990,7 @@ export default function Home() {
                 <h2 className='text-2xl xl:text-4xl font-semibold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                   The Story of CROMA
                 </h2>
-                <div className={`${poppins.className} my-4`}>
+                <div className={`${poppins.className} my-4 flex flex-col items-center`}>
                   <p className='mb-4 text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-[780px]'>
                     CROMA was born from an oil canvas. From brushstrokes came a new movement: art + blockchain. From canvas to crypto revolution.
                   </p>
@@ -1036,28 +998,28 @@ export default function Home() {
                     <GlassBox baseColor='primary'>
                       <div className='p-4 xl:p-6 flex items-start gap-2.5 backdrop-blur-[20] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
                         <Image 
-                          src='gas_fees.svg'
+                          src='contract.svg'
                           alt='Icon'
                           width={42}
                           height={42}
                         />
                         <div>
-                          <p className='mb-1 xl:mb-2.5 font-semibold text-base xl:text-xl text-[#E9E9E9]'>Lorem ipsum</p>
-                          <p className='text-[#E9E9E9] opacity-60 text-sm xl:text-base'>Lorem ipsum dolor sit amet consectetur.</p>
+                          <p className='mb-1 xl:mb-2.5 font-semibold text-base xl:text-xl text-[#E9E9E9]'>Contract</p>
+                          <p className='text-[#E9E9E9] opacity-60 text-sm xl:text-base break-all'>0x3Fdf5aab678dF0e34F3bA2255823c5340550711D</p>
                         </div>
                       </div>
                     </GlassBox>
                     <GlassBox baseColor='primary'>
                       <div className='p-4 xl:p-6 flex items-start gap-2.5 backdrop-blur-[20] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
                         <Image 
-                          src='gas_fees.svg'
+                          src='wallet.svg'
                           alt='Icon'
                           width={42}
                           height={42}
                         />
                         <div>
-                          <p className='mb-1 xl:mb-2.5 font-semibold text-base xl:text-xl text-[#E9E9E9]'>Lorem ipsum</p>
-                          <p className='text-[#E9E9E9] opacity-60 text-sm xl:text-base'>Lorem ipsum dolor sit amet consectetur.</p>
+                          <p className='mb-1 xl:mb-2.5 font-semibold text-base xl:text-xl text-[#E9E9E9]'>Dev Wallet</p>
+                          <p className='text-[#E9E9E9] opacity-60 text-sm xl:text-base break-all'>0x84b55D4d60cFff14b3eF40E7B5D1c6FA59023f31</p>
                         </div>
                       </div>
                     </GlassBox>

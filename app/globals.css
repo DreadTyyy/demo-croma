@@ -125,3 +125,52 @@ body {
 .my_border_6px::before {
   padding: 6px !important;
 }
+
+/* SWIPER CSS */
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.custom-pagination {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  transform: translateX(0) !important;
+}
+
+:is(.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-horizontal.swiper-pagination-bullets).swiper-pagination-bullets-dynamic {
+  transform: translateX(0) !important;
+}
+
+.custom-bullet {
+  display: none;
+  width: 8px;
+  height: 8px;
+  background: #C5C5C5;
+  border-radius: 9999px;
+  margin: 16 8px;
+  transition: all 0.3s ease;
+}
+
+.custom-active-bullet-prev,
+.custom-active-bullet-prev-prev,
+.custom-active-bullet-next,
+.custom-active-bullet-next-next,
+.custom-active-bullet {
+  display: inline-block;
+}
+
+.custom-active-bullet.custom-active-bullet-main {
+  width: 34px;
+  background: linear-gradient(
+    to right,
+    #B72204 0%,
+    #FC6400 100%
+  ) 1; 
+}
+
+@media (max-width: 1280px) {
+}

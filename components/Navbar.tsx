@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import BorderBox from './BorderBox';
 import { useState } from 'react';
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
 
 export default function Navbar({active}: {active: string}) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -37,7 +39,7 @@ export default function Navbar({active}: {active: string}) {
                 className='self-end block xl:hidden'
                 onClick={() => setIsOpen(false)}
               >
-                Close
+                <IoClose size={32}/>
               </button>
               <Link href='/' 
                 style={{ 
@@ -67,24 +69,27 @@ export default function Navbar({active}: {active: string}) {
                 className='pb-4 xl:pb-0 border-b xl:border-none border-white w-full xl:w-fit font-normal bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text transition-all duration-300 hover:text-transparent'>
                 Airdrop
               </Link>
-              <Link href='#' 
-                className='block xl:hidden px-8 py-3.5 text-base 2xl:text-lg bg-gradient-to-r from-[#B72204] to-[#FC6400] text-white rounded-lg shadow-[0_2px_20px_rgb(252,100,0,0.5)]'>
-                Dashboard
-              </Link>
+              <DashboardLink className='block xl:hidden'/>
             </div>
-            <Link href='#' 
-              className='hidden xl:block px-8 py-3.5 text-base 2xl:text-lg bg-gradient-to-r from-[#B72204] to-[#FC6400] text-white rounded-lg shadow-[0_2px_20px_rgb(252,100,0,0.5)]'>
-              Dashboard
-            </Link>
+            <DashboardLink className='hidden xl:block'/>
             <button
               className='block xl:hidden'
               onClick={() => setIsOpen(true)}
             >
-              Hmburger
+              <RxHamburgerMenu size={32} />
             </button>
           </div>
         </BorderBox>
       </div>
     </nav>
   );
+}
+
+const DashboardLink = ({className}: {className: string}) => {
+  return (
+    <Link href='#' 
+      className={`${className} px-8 py-3.5 text-base 2xl:text-lg bg-gradient-to-r from-[#B72204] to-[#FC6400] text-white rounded-lg shadow-[0_2px_20px_rgb(252,100,0,0.5)]`}>
+        Dashboard
+    </Link>
+  )
 }
