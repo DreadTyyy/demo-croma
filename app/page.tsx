@@ -10,6 +10,7 @@ import Trixnews from '@/components/Trixnews';
 
 import Community from '@/components/Community';
 import Footer from '@/components/Footer';
+import FeaturedArtworks from '@/components/FeaturedAtworks';
 
 const dataCrmToken = [{
   title: 'Presale',
@@ -264,33 +265,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section className='px-4 xl:px-[100px] py-[60px] border-t border-b border-[#414141]'>
-        <div className={`${poppins.className} flex flex-col text-center items-center gap-4`}>
-          <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
-            <span className='text-[#FC6400] text-base'>CROMA Artworks</span>
-          </div>
-          <h2 className='text-2xl xl:text-4xlfont-semibold text-white tracking-[-0.04%]'>FEATURED ARTWORKS</h2>
-          <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80'>
-            Hand-drawn masterpieces immortalized as NFTs
-          </p>
-        </div>
-        <div className='mt-6'>
-          <div className={`${poppins.className} w-full flex justify-center`}>
-            <div className='p-2 relative flex gap-6 items-center rounded-full h-16 w-fit inset-ring-[#979797] bg-linear-to-tl from-[rgba(255,255,255,0.83)] to-[rgba(255,255,255,0.44)] inset-shadow-[1px_3px_6px_0_rgba(0,0,0,0,0.25)]'>
-              <div className='z-0 absolute top-[2px] left-[4px] w-[212px] h-[60px] bg-gradient-to-r from-[#B72204] to-[#FC6400] rounded-full'></div>
-              <div className='flex text-center items-center w-[220px] h-full z-10 cursor-pointer'>
-                <p className='text-white font-semibold text-2xl w-full'>All atworks</p>
-              </div>
-              <div className='flex text-center items-center w-[220px] h-full z-10 cursor-pointer'>
-                <p className='text-white font-medium text-2xl w-full'>Feature</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <ButtonPrimary>
-          See All Artwork
-        </ButtonPrimary>
-      </section> */}
+      <FeaturedArtworks />
       {/* CRM TOKEN */}
       <section className='px-4 xl:px-[64px] 2xl:px-[100px] py-[60px] border-t border-[#414141]'>
         <div className={`${poppins.className} flex flex-col text-center items-center gap-4`}>

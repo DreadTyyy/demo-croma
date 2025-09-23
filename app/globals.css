@@ -176,5 +176,11 @@ body {
   ) 1; 
 }
 
+.my_artworks_gallery .swiper-wrapper {
+  display: flex !important;
+  align-items: center;
+  /* gap: 24px; */
+}
+
 @media (max-width: 1280px) {
 }
