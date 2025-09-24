@@ -18,7 +18,7 @@ export default function Navbar({active}: {active: string}) {
             <Link href='/'>
               <div className='flex gap-2 items-center'>
                 <Image 
-                    src='/logo_croma_art.png' 
+                    src='/logo_croma_art.svg' 
                     alt='Logo of Croma-Art'
                     width={44}
                     height={44}

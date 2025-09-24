@@ -150,7 +150,7 @@ const CromaUniverse = () => {
       
         <div className="xl:col-span-2">
           <GlassBox baseColor='orange'>
-          <div className='px-4 py-8 xl:p-10 flex flex-col xl:flex-row items-center justify-between backdrop-blur[50] w-full gap-y-4'>
+          <div className='px-4 py-8 xl:p-10 flex flex-col xl:flex-row items-center justify-between backdrop-blur[50] w-full gap-4'>
             <Image
               src='/king_read_book.png'
               alt='King read book image'
