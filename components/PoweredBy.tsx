@@ -49,7 +49,7 @@ const PoweredBy = () => {
         </p>
         {/* Scroll on desktop */}
         <div className='max-w-screen overflow-x-hidden'>
-          <motion.div style={{ x }} className='hidden xl:flex mt-4 md:mt-8 xl:mt-10 w-full justify-center'>
+          <motion.div style={{ x }} className='hidden xl:flex mt-4 xl:mt-6 2xl:mt-10 w-full justify-center'>
             <SliderComponent />
           </motion.div>
         </div>
@@ -87,8 +87,8 @@ const SliderComponent = () => {
                     alt='Logo apple'
                     width={width}
                     height={height}
-                    sizes="(max-width: 768px) 24px, (max-width: 1024px) 48px, 48px"
-                    className="w-[150px] h-[24px] md:h-[48px]"
+                    sizes="(max-width: 768px) 24px, (max-width: 1024px) 40px, 48px"
+                    className="w-[150px] h-[24px] md:h-[40px] 2xl:h-[48px]"
                   />
                 </div>
               </SwiperSlide>

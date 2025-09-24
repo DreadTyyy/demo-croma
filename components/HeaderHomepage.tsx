@@ -26,9 +26,9 @@ const timer = [{
 
 export default function HeaderHomepage() {
   return (
-    <header className='relative h-full mt-0 xl:mt-8 mx-4 md:mx-[100px] flex flex-col xl:flex-row gap-y-8 items-center justify-between'>
-          <div>
-            <div>
+    <header className='relative h-full mt-0 xl:mt-8 mx-4 md:mx-[100px] flex flex-col xl:flex-row gap-y-4 items-center justify-between'>
+          <div className='flex flex-col'>
+            <div className='order-1'>
               <div className='font-black text-3xl lg:text-[68px] 2xl:text-[80px] uppercase'>
                 <div className='h-fit overflow-hidden'>
                   <motion.h1
@@ -63,7 +63,7 @@ export default function HeaderHomepage() {
                 </motion.p>
               </div>
             </div>
-            <motion.div className='mt-4 md:mt-8 w-fit'
+            <motion.div className='mt-4 md:mt-8 w-fit order-3 xl:order-2'
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.8, duration: 1, ease: 'easeIn' }}
@@ -102,7 +102,7 @@ export default function HeaderHomepage() {
                 </div>
               </div>
             </motion.div>
-            <div className='mt-6 md:mt-8 flex justify-center xl:justify-start gap-2 md:gap-4 xl:gap-6'>
+            <div className='mt-6 md:mt-8 flex justify-center xl:justify-start gap-2 md:gap-4 xl:gap-6 order-2 xl:order-3'>
               <motion.div
                 initial={{ y: 100, opacity: 0, width: 60 }}
                 animate={{  y: 0, opacity: 1, width: 'auto' }}

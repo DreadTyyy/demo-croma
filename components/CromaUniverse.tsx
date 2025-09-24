@@ -23,7 +23,7 @@ const CromaUniverse = () => {
           <motion.div
             initial={{ opacity: 0, filter: 'blur(20px)' }}
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.3 }} 
           >
             <p className='mt-4 font-semibold text-2xl xl:text-4xl text-white '>

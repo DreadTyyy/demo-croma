@@ -47,7 +47,7 @@ const FeaturedArtworks = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10 px-4">
+      <div className="mt-10 px-4 hidden md:block">
         <Swiper
         slidesPerView="auto"
         spaceBetween={24}
@@ -130,6 +130,66 @@ const FeaturedArtworks = () => {
             ))}
             <div className="custom-pagination"></div>
       </Swiper>
+      </div>
+      <div className="my-5 px-4 block md:hidden">
+        <div className="flex w-full gap-2">
+          <div className="flex flex-col gap-y-2 max-w-1/2">
+            <div className="h-[320px] rounded-2xl overflow-hidden"
+              style={{ 
+                height: `320px`
+               }}
+            >
+              <Image 
+                src={`/artworks/${dataImages[0].covers!.image}`} 
+                alt={`Image by ${dataImages[0]}`}
+                width={280} 
+                height={320} 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            <div className="h-[320px] rounded-2xl overflow-hidden"
+              style={{ 
+                height: `180px`
+               }}
+            >
+              <Image 
+                src={`/artworks/${dataImages[1].list![0].covers!.image}`} 
+                alt={`Image by ${dataImages[1].list![0].artist}`}
+                width={280} 
+                height={180} 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-y-2 max-w-1/2">
+            <div className="h-[320px] rounded-2xl overflow-hidden"
+              style={{ 
+                height: `130px`
+               }}
+            >
+              <Image 
+                src={`/artworks/${dataImages[1].list![1].covers!.image}`} 
+                alt={`Image by ${dataImages[1].list![1].artist}`}
+                width={280} 
+                height={130} 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            <div className="h-[320px] rounded-2xl overflow-hidden"
+              style={{ 
+                height: `380px`
+               }}
+            >
+              <Image 
+                src={`/artworks/${dataImages[2].covers!.image}`} 
+                alt={`Image by ${dataImages[2]}`}
+                width={280} 
+                height={380} 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <div className={`${padding} flex justify-center`}>
         <ButtonPrimary>
