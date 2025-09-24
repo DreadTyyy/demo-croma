@@ -14,7 +14,7 @@ export default function Navbar({active}: {active: string}) {
     <nav className='z-[999] w-full fixed top-4 xl:top-10'>
       <div className='mx-2 xl:mx-24'>
         <BorderBox>
-          <div className='px-5 2xl:px-6 py-3 2xl:py-5 flex flex-nowrap items-center justify-between bg-[linear-gradient(rgba(255,255,255,0.07),rgba(255,255,255,0.07)),linear-gradient(rgba(0,0,0,0.28),rgba(0,0,0,0.28)),linear-gradient(rgba(25,5,7,0.54),rgba(25,5,7,0.54))] shadow-[0_20px_25px_rgba(0,0,0,0.1)] backdrop-blur-[5px]'>
+          <div className='px-5 2xl:px-6 py-3 2xl:py-5 flex flex-nowrap items-center justify-between bg-[linear-gradient(rgba(255,255,255,0.07),rgba(255,255,255,0.07)),linear-gradient(rgba(0,0,0,0.28),rgba(0,0,0,0.28)),linear-gradient(rgba(25,5,7,0.54),rgba(25,5,7,0.54))] shadow-[0_20px_25px_rgba(0,0,0,0.1)] backdrop-blur-[5px] rounded-[16px] md:rounded-[20px]'>
             <Link href='/'>
               <div className='flex gap-2 items-center'>
                 <Image 

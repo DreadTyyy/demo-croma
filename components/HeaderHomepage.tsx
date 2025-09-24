@@ -26,15 +26,15 @@ const timer = [{
 
 export default function HeaderHomepage() {
   return (
-    <header className='relative h-full mt-8 mx-4 md:mx-[100px] flex flex-col xl:flex-row gap-y-8 items-center justify-between'>
-          <div className='mt-0'>
+    <header className='relative h-full mt-0 xl:mt-8 mx-4 md:mx-[100px] flex flex-col xl:flex-row gap-y-8 items-center justify-between'>
+          <div>
             <div>
               <div className='font-black text-3xl lg:text-[68px] 2xl:text-[80px] uppercase'>
                 <div className='h-fit overflow-hidden'>
                   <motion.h1
                     initial={{ y: 200 }}
                     animate={{ y: 0 }}
-                    transition={{ delay: 2, duration: 1, ease: 'easeInOut' }}
+                    transition={{ delay: 2.5, duration: 1, ease: 'easeInOut' }}
                   >
                     <span className='block leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent text-nowrap'>
                       CROMA AIRDROP
@@ -45,7 +45,7 @@ export default function HeaderHomepage() {
                   <motion.h1
                     initial={{ y: 200 }}
                     animate={{ y: 0 }}
-                    transition={{ delay: 2.1, duration: 1, ease: 'easeInOut' }}
+                    transition={{ delay: 2.7, duration: 1, ease: 'easeInOut' }}
                   >
                     <span className='block leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                       IS LIVE
@@ -57,7 +57,7 @@ export default function HeaderHomepage() {
                 <motion.p
                   initial={{ y: 100 }}
                   animate={{ y: 0 }}
-                  transition={{ delay: 1, duration: 1, ease: 'easeInOut' }}
+                  transition={{ delay: 1.8, duration: 1, ease: 'easeInOut' }}
                 >
                   Claim free $CRM + $CMC tokens and join the future of art, memes & blockchain.
                 </motion.p>
@@ -66,7 +66,7 @@ export default function HeaderHomepage() {
             <motion.div className='mt-4 md:mt-8 w-fit'
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: 'easeIn' }}
+              transition={{ delay: 1.8, duration: 1, ease: 'easeIn' }}
             >
               <div className='border border-[rgba(255,255,255,0.4)] rounded-[8px] overflow-hidden bg-[linear-gradient(rgba(255,255,255,0.11),rgba(255,255,255,0.11)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))] backdrop-blur-[4px]'>
                 <div className={` relative px-4 xl:px-8 py-3 flex flex-col gap-y-1 md:gap-y-2 items-center justify-between`}>
@@ -107,24 +107,26 @@ export default function HeaderHomepage() {
                 initial={{ y: 100, opacity: 0, width: 60 }}
                 animate={{  y: 0, opacity: 1, width: 'auto' }}
                 transition={{ 
-                  y: { duration: 1, ease: 'easeOut' },
-                  opacity: { duration: 1, ease: 'easeOut' },
-                  width: { delay: 1.6, duration: 0.8, ease: 'easeOut' },
+                  y: { duration: 0.5, ease: 'easeOut' },
+                  opacity: { duration: 0.5, ease: 'easeOut' },
+                  width: { delay: 0.6, duration: 0.8, ease: 'easeOut' },
                  }}
-                className='inline-block'
+                className='inline-block min-w-[60px]'
               >
-                <Link href='#'>
+                <Link href='#' className='block'>
                   <ButtonPrimary>
-                    <motion.div
-                      initial={{ width: 0 }}
-                      animate={{ width: 'auto' }}
-                      transition={{ delay: 1.6, duration: 0.7, ease: 'easeOut' }}
-                      className='overflow-hidden'
-                    >
-                      <span className='line-clamp-2 xl:whitespace-nowrap'>
-                        Claim Airdrop Now
-                      </span>
-                    </motion.div>
+                    <div className='min-w-[30px] xl:min-w-fit'>
+                      <motion.div
+                        initial={{ width: 0 }}
+                        animate={{ width: 'auto' }}
+                        transition={{ delay: 0.6, duration: 0.7, ease: 'easeOut' }}
+                        className='overflow-hidden'
+                      >
+                        <span className='line-clamp-2 xl:whitespace-nowrap'>
+                          Claim Airdrop Now
+                        </span>
+                      </motion.div>
+                    </div>
                   </ButtonPrimary>
                 </Link>
               </motion.div>
@@ -132,9 +134,9 @@ export default function HeaderHomepage() {
                 initial={{ y: 100, opacity: 0, width: 60 }}
                 animate={{  y: 0, opacity: 1, width: 'auto' }}
                 transition={{ 
-                  y: { delay: 0.5, duration: 1, ease: 'easeOut' },
-                  opacity: { delay: 0.5, duration: 1, ease: 'easeOut' },
-                  width: { delay: 1.6, duration: 0.8, ease: 'easeOut' },
+                  y: { delay: 0.2, duration: 0.5, ease: 'easeOut' },
+                  opacity: { delay: 0.2, duration: 0.5, ease: 'easeOut' },
+                  width: { delay: 0.7, duration: 0.8, ease: 'easeOut' },
                  }}
                 className='inline-block'
               >
@@ -144,7 +146,7 @@ export default function HeaderHomepage() {
                     <motion.div
                       initial={{ width: 0 }}
                       animate={{ width: 'auto' }}
-                      transition={{ delay: 1.6, duration: 0.7, ease: 'easeOut' }}
+                      transition={{ delay: 0.7, duration: 0.7, ease: 'easeOut' }}
                       className='overflow-hidden relative z-10'
                     >
                       <span className='line-clamp-2 xl:whitespace-nowrap'>
@@ -160,7 +162,7 @@ export default function HeaderHomepage() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ 
               delay: 0.5,
-              duration: 2,
+              duration: 1,
               ease: 'easeInOut'
              }}
              className='h-full 2xl:min-w-[500px]'
