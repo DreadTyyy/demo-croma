@@ -88,7 +88,7 @@ export default function Navbar({active}: {active: string}) {
 const DashboardLink = ({className}: {className: string}) => {
   return (
     <Link href='#' 
-      className={`${className} px-8 py-3.5 text-base 2xl:text-lg bg-gradient-to-r from-[#B72204] to-[#FC6400] text-white rounded-lg shadow-[0_2px_20px_rgb(252,100,0,0.5)]`}>
+      className={`${className} px-8 py-3.5 text-base 2xl:text-lg bg-gradient-to-r from-[#B72204] to-[#FC6400] text-white rounded-lg shadow-[0_2px_20px_rgb(252,100,0,0.5)] transition-all duration-300 hover:shadow-[0_2px_40px_rgba(252,100,0,0.7)]`}>
         Dashboard
     </Link>
   )

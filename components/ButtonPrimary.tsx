@@ -7,7 +7,7 @@ export default function ButtonPrimary({handleClick, children}
   }) {
   return (
     <button onClick={handleClick}
-      className='px-4 xl:px-8 py-3 xl:py-5 bg-gradient-to-r from-[#B72204] to-[#FC6400] rounded-[10px] shadow-[0_2px_20px_rgba(252,100,0,0.5)] cursor-pointer text-sm xl:text-base'>
+      className='px-4 xl:px-8 py-3 xl:py-5 bg-gradient-to-r from-[#B72204] to-[#FC6400] rounded-[10px] shadow-[0_2px_20px_rgba(252,100,0,0.5)] cursor-pointer text-sm xl:text-base transition-all duration-300 hover:shadow-[0_2px_40px_rgba(252,100,0,0.7)]'>
         {children}
     </button>
   );
