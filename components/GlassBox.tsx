@@ -7,17 +7,17 @@ export default function GlassBox({
     rounded?: string; 
     children: React.ReactNode
   }) {
-    let borderGradient;
+    let borderColor;
     if (baseColor == 'orange') {
-        borderGradient = 'my_border_gradient_orange';
+        borderColor = 'border-[#FC6400]';
     } else if (baseColor == 'white') {
-        borderGradient = 'my_border_gradient_white_dark';
+        borderColor = 'border-[rgba(255, 255, 255, 1)]';
     } else if (baseColor == 'primary') {
-        borderGradient = 'my_border_gradient_primary';
+        borderColor = 'border-[#FC6400]';
     } else if (baseColor == 'green') {
-        borderGradient = 'my_border_gradient_green';
+        borderColor = 'border-[#16BA00]';
     } else if (baseColor == 'blue') {
-        borderGradient = 'my_border_gradient_blue';
+        borderColor = 'border-[#00B7FF]';
     }
 
     const radiusClasses: Record<string, string> = {
@@ -34,12 +34,8 @@ export default function GlassBox({
     }
 
     return (
-        <div 
-          className={`${borderGradient} p-[1px] ${beforeRadiusClasses[rounded] ?? 'before:rounded-[20px]'} ${radiusClasses[rounded] ?? 'rounded-[20px]'} h-full`}
-        >
-          <div className={`relative h-full overflow-hidden ${radiusClasses[rounded] ?? 'rounded-[20px]'} bg-[linear-gradient(rgba(255,255,255,0.11),rgba(255,255,255,0.11)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]`}>
-            {children}        
-          </div>
-        </div>
+      <div className={`border ${borderColor} relative h-full overflow-hidden ${radiusClasses[rounded] ?? 'rounded-[20px]'} bg-[linear-gradient(rgba(255,255,255,0.11),rgba(255,255,255,0.11)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]`}>
+        {children}        
+      </div>
     )
 }

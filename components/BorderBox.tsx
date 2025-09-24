@@ -4,7 +4,7 @@ export default function BorderBox({
   children: React.ReactNode;
 }>) {
   return (
-    <div className='p-[1px] my_border_gradient_white_dark before:rounded-[20px]'>
+    <div className='border border-[rgba(255,255,255,0.4)] rounded-[16px] md:rounded-[20px] overflow-hidden'>
       {children}
     </div>
   )

@@ -108,8 +108,8 @@ export default function Home() {
         <div className='-z-[8] absolute -bottom-1/2 right-0 blur-[280px] size-[800px] bg-[#FC6400] rounded-full'></div>
       </div>
       <PoweredBy />
-      <FeaturedArtworks />
       <CromaUniverse />
+      <FeaturedArtworks />
       {/* CRM TOKEN */}
       <section className='px-4 xl:px-[64px] 2xl:px-[100px] py-[60px] border-t border-[#414141]'>
         <div className={`${poppins.className} flex flex-col text-center items-center gap-4`}>
@@ -130,7 +130,7 @@ export default function Home() {
               height={264}
               className='-z-10 absolute -right-12 top-0 blur-xs'
             />
-            <div className='mb-6 px-4 py-8 xl:p-10 backdrop-blur[50] text-center'>
+            <div className='mb-6 px-4 py-8 xl:p-10 text-center'>
               <div className='flex w-full justify-center'>
                 <Image 
                   src='/crm_token_logo.png'
@@ -142,7 +142,7 @@ export default function Home() {
               <h3 className='mt-4 xl:mt-6 text-2xl xl:text-4xl font-bold text-white'>$CRM Token</h3>
               <p className={`${poppins.className} mt-2 mb-4 xl:mb-6 text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>CromaArt Token</p>
               <GlassBox baseColor='white'>
-                <div className='xl:px-8 py-6 backdrop-blur-[50px]'>
+                <div className='xl:px-8 py-6 backdrop-blur-[50px] rounded-[20px]'>
                   <p className='mb-2.5 text-[26px] xl:text-[40px] font-bold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                     950,000,000
                   </p>
@@ -182,7 +182,7 @@ export default function Home() {
               height={264}
               className='-z-10 absolute -right-12 top-0 blur-xs'
             />
-            <div className='mb-6 px-4 py-8 xl:p-10 backdrop-blur[50] text-center'>
+            <div className='mb-6 px-4 py-8 xl:p-10 text-center'>
               <div className='flex w-full justify-center'>
                 <Image 
                   src='/crc_token_logo.png'
@@ -193,8 +193,8 @@ export default function Home() {
               </div>
               <h3 className='mt-4 xl:mt-6 text-2xl xl:text-4xl font-bold text-white'>$CRC Token</h3>
               <p className={`${poppins.className} mt-2 mb-4 xl:mb-6 text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>CromaChain Token</p>
-              <GlassBox baseColor='white'>
-                <div className='xl:px-8 py-6 backdrop-blur[50]'>
+              <GlassBox baseColor='white'> 
+                <div className='xl:px-8 py-6 backdrop-blur-[50px] rounded-[20px]'>
                   <p className='mb-2.5 text-[26px] xl:text-[40px] font-bold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                     2,000,000,000
                   </p>
@@ -257,7 +257,7 @@ export default function Home() {
           <div className='flex flex-wrap justify-center gap-1 xl:gap-2 max-w-[800px]'>
             {['Post-Quantum Cryptography', 'Multi-chain Support', 'DeFi Integration', 'Zero-Knowledge Proofs', 'ZK Risk Scanner', 'and more']
             .map((text, i) => (
-              <div key={i} className={`my_border_gradient_white_dark p-[1px] before:rounded-[20px] rounded-[20px] h-full`}>
+              <div key={i} className={`border border-[#FFFFFF] rounded-[20px] h-full`}>
                 <div className={`relative px-2 xl:px-6 py-3 h-full overflow-hidden rounded-[20px] bg-[rgba(0,0,0,0.1)]`}>
                   <span className='text-sm xl:text-xl font-medium text-[#E9E9E9] opacity-80'>
                     {text}
@@ -333,7 +333,7 @@ export default function Home() {
               <div className='flex flex-wrap items-center gap-2'>
                 {['25,321+ wallets joined','Community started', 'Airdrop smart contract deployed','Social media campaigns launched']
                 .map((text, i) => (
-                  <div key={i} className={`my_border_gradient_white_dark p-[1px] before:rounded-[20px] rounded-[20px] h-full`}>
+                  <div key={i} className={`border border-[#FFFFFF] rounded-[20px] h-full`}>
                     <div className={`relative px-4 py-2 h-full overflow-hidden rounded-[20px] bg-[rgba(0,0,0,0.1)]`}>
                       <span className='text-xs xl:text-sm font-medium text-[#E9E9E9] opacity-80'>
                         {text}
@@ -353,7 +353,7 @@ export default function Home() {
               className=''
             />
           </div>
-          <div className={`my_border_gradient_primary my_border_6px before:rounded-[20px] rounded-[20px] h-full`}>
+          <div className={`border-[6px] border-[#FC6400] rounded-[20px] h-full`}>
             <div className='relative h-full overflow-hidden rounded-[20px] bg-[linear-gradient(rgba(255,255,255,0.11),rgba(255,255,255,0.11)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
               <div className='flex flex-col gap-4 xl:gap-6 px-4 py-8 backdrop-blur-[50px]'>
                 <div className='flex items-center justify-between w-full'>
@@ -372,7 +372,7 @@ export default function Home() {
                       <p className='text-sm xl:text-base opacity-50'>Soon - Q1 2025</p>
                     </div>
                   </div>
-                  <div className={`my_border_gradient_primary p-[1px] before:rounded-full rounded-full h-full`}>
+                  <div className={`border border-[#FC6400] rounded-full h-full`}>
                     <div className='px-2 xl:px-4 py-1 xl:py-3 w-fit rounded-full bg-[rgba(255,255,255,0.07)] backdrop-blur-[20px]'>
                       <span className=' bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent font-semibold text-sm xl:text-base'>
                         In Progress
@@ -389,7 +389,7 @@ export default function Home() {
                 <div className='flex flex-wrap items-center gap-2'>
                   {['Presale smart contract audit','Early bird pricing tiers', 'KYC & whitelist process','Marketing campaign rollout']
                   .map((text, i) => (
-                    <div key={i} className={`my_border_gradient_white_dark p-[1px] before:rounded-[20px] rounded-[20px] h-full`}>
+                    <div key={i} className={`border border-[#FFFFFF] rounded-[20px] h-full`}>
                       <div className={`relative px-4 py-2 h-full overflow-hidden rounded-[20px] bg-[rgba(0,0,0,0.1)]`}>
                         <span className='text-xs xl:text-sm font-medium text-[#E9E9E9] opacity-80'>
                           {text}
@@ -441,7 +441,7 @@ export default function Home() {
               <div className='flex flex-wrap items-center gap-2'>
                 {['DEX listings (Uniswap, PancakeSwap)','CEX partnerships secured', 'Market making agreements','Trading pairs established']
                 .map((text, i) => (
-                  <div key={i} className={`my_border_gradient_white_dark p-[1px] before:rounded-[20px] rounded-[20px] h-full`}>
+                  <div key={i} className={`border border-[#FFFFFF] rounded-[20px] h-full`}>
                     <div className={`relative px-4 py-2 h-full overflow-hidden rounded-[20px] bg-[rgba(0,0,0,0.1)]`}>
                       <span className='text-xs xl:text-sm font-medium text-[#E9E9E9] opacity-80'>
                         {text}
@@ -492,7 +492,7 @@ export default function Home() {
               <div className='flex flex-wrap items-center gap-2'>
                 {['CromaArt.io NFT marketplace','CromaChain L2 mainnet', 'TrixWallet beta release','TrixNews portal launch']
                 .map((text, i) => (
-                  <div key={i} className={`my_border_gradient_white_dark p-[1px] before:rounded-[20px] rounded-[20px] h-full`}>
+                  <div key={i} className={`border border-[#FFFFFF] rounded-[20px] h-full`}>
                     <div className={`relative px-4 py-2 h-full overflow-hidden rounded-[20px] bg-[rgba(0,0,0,0.1)]`}>
                       <span className='text-xs xl:text-sm font-medium text-[#E9E9E9] opacity-80'>
                         {text}
@@ -509,7 +509,7 @@ export default function Home() {
       <section className='relative py-[40px] px-4 xl:px-[64px] 2xl:px-[100px] max-w-screen overflow-x-hidden xl:overflow-x-clip'>
         <div className="-z-10 absolute top-0 -right-[400px] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#19A9EA_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
         <div className="-z-10 absolute top-[15%] -right-[650px] size-[700px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
-        <div className={`my_border_gradient_orange before:rounded-[20px] rounded-[20px] h-full`}>
+        <div className={`border border-[#FC6400] rounded-[20px] h-full`}>
           <div className='relative h-full overflow-hidden rounded-[20px] bg-[rgba(252,100,0,0.1)]'>
             <div className='px-4 py-8 xl:p-10 text-center'>
               <h2 className='text-2xl xl:text-4xl font-semibold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
@@ -744,7 +744,7 @@ export default function Home() {
             <div className='flex flex-wrap justify-center items-center gap-1 xl:gap-2'>
               {['Hoodies', 'Tees', 'NFT Prints', 'Tshirts', 'and more']
               .map((text, i) => (
-                <div key={i} className={`my_border_gradient_white_dark p-[1px] before:rounded-[20px] rounded-[20px] h-full`}>
+                <div key={i} className={`border border-[#FFFFFF] rounded-[20px] h-full`}>
                   <div className={`relative px-2 xl:px-6 py-3 h-full overflow-hidden rounded-[20px] bg-[rgba(0,0,0,0.1)]`}>
                     <span className='text-sm xl:text-xl font-medium text-[#E9E9E9] opacity-80'>
                       {text}
@@ -797,7 +797,7 @@ export default function Home() {
       </section>
       {/* STORY OF CRM */}
       <section className='relative py-[60px] mx-4 xl:mx-[100px] 2xl:mx-[160px]'>
-        <div className={`my_border_gradient_white_dark before:rounded-[15px] rounded-[15px] h-full`}>
+        <div className={`border border-[#FFFFFF] rounded-[15px] h-full`}>
           <div className='relative h-full overflow-hidden rounded-[15px]'>
             <div className="-z-10 absolute -top-[200px] xl:-top-[450px] left-1/2 -translate-x-1/2 size-[400px] xl:size-[900px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
             <div className='px-4 py-8 w-full min-h-[360px] xl:min-h-[500px] flex flex-col justify-center items-center text-center gap-6 bg-[url("/header_stars.png")] bg-cover bg-center'>

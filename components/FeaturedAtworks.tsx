@@ -16,7 +16,7 @@ const FeaturedArtworks = () => {
   const padding = 'px-4 xl:px-[100px]'
   return (
     <section className='relative py-[60px] border-t border-b border-[#414141]'>
-      <div className="-z-10 absolute -bottom-[200px] -left-[350px] size-[700px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
+      <div className="-z-10 absolute -bottom-[200px] -left-[350px] size-[700px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-50 xl:opacity-80"></div>
       <div className={`${poppins.className} ${padding} flex flex-col text-center items-center gap-4`}>
         <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
           <span className='text-[#FC6400] text-base'>CROMA Artworks</span>

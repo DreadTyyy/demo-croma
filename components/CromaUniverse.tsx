@@ -1,8 +1,12 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { poppins } from '@/app/font';
 import ButtonPrimary from '@/components/ButtonPrimary';
 import GlassBox from '@/components/GlassBox';
+
+import { motion } from 'framer-motion';
 
 const CromaUniverse = () => {
   return (
@@ -16,9 +20,16 @@ const CromaUniverse = () => {
           <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
             <span className='text-[#FC6400] text-base'>The CROMA Universe</span>
           </div>
-          <p className='mt-4 font-semibold text-2xl xl:text-4xl text-white '>
-            CROMA is not just a taken. It's a complete ecosystem:
-          </p>
+          <motion.div
+            initial={{ opacity: 0, filter: 'blur(20px)' }}
+            whileInView={{ opacity: 1, filter: "blur(0px)" }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }} 
+          >
+            <p className='mt-4 font-semibold text-2xl xl:text-4xl text-white '>
+              CROMA is not just a taken. It's a complete ecosystem:
+            </p>
+          </motion.div>
         </div>
         <GlassBox baseColor='orange'>
           <div className='px-4 py-8 xl:p-10 backdrop-blur-[50px]'>

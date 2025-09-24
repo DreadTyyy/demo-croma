@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import ReactLenis from 'lenis/react';
 
 import { orbitron } from './font';
 
@@ -15,12 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body
-        className={`${orbitron.className} antialiased overflow-x-hidden`}
-      >
-        {/* <Navbar active='home' /> */}
-        {children}
-      </body>
+      <ReactLenis root>
+        <body
+          className={`${orbitron.className} antialiased overflow-x-hidden`}
+        >
+          {/* <Navbar active='home' /> */}
+          {children}
+        </body>
+      </ReactLenis>
     </html>
   );
 }
