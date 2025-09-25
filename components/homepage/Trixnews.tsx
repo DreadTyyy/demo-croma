@@ -12,6 +12,7 @@ import '@/app/globals.css';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
+import { motion } from 'framer-motion';
 
 const dataNews = [{
     id: 1,
@@ -52,10 +53,26 @@ const Trixnews = () => {
         <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
           <span className='text-[#FC6400] text-base'>Trixnews</span>
         </div>
-        <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold tracking-[-0.04%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>Latest Update</h2>
-        <p className='text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-fit xl:max-w-[500px]'>
-          Hand-drawn masterpieces immortalized as NFTs
-        </p>
+        <motion.div
+          initial={{ opacity: 0, filter: 'blur(20px)' }}
+          whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.3 }} 
+        >
+          <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold tracking-[-0.04%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
+            Latest Update
+          </h2>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, filter: 'blur(20px)' }}
+          whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.3 }} 
+        >
+          <p className='text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-fit xl:max-w-[500px]'>
+            Hand-drawn masterpieces immortalized as NFTs
+          </p>
+        </motion.div>
       </div>
       <div className={`${poppins.className} mx-4 xl:mx-0`}>
         <Swiper

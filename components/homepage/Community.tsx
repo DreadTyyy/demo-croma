@@ -3,17 +3,30 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { poppins } from '@/app/font';
+import { motion } from 'framer-motion';
 import { FaDiscord,FaTelegramPlane } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 const Community = () => {
   return (
-    <section className='relative py-[40px] mx-4 lg:mx-[64px] 2xl:mx-[100px]'>
+    <section className='relative py-[40px] mx-4 lg:mx-[64px] 2xl:mx-[100px] min-h-[500px]'>
       <div className='-z-10 absolute -top-[100px] -left-[500px] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#19A9EA_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80'></div>
-        <div className={`border border-[#FFFFFF] rounded-[15px] h-full`}>
-          <div className='relative h-full overflow-hidden rounded-[15px]'>
-            <div className='-z-10 absolute -top-[200px] lg:-top-[450px] left-1/2 -translate-x-1/2 size-[400px] lg:size-[900px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80'></div>
-            <div className='px-4 py-8 w-full min-h-[360px] lg:min-h-[500px] flex flex-col justify-center items-center text-center gap-6 bg-[url("/header_stars.png")] bg-cover bg-center'>
+      <motion.div
+        initial={{ height: 0 }}
+        whileInView={{ height: 'auto' }}
+        transition={{ duration: 0.7, ease: 'easeIn' }}
+        viewport={{ once: true, amount: 0.4 }}
+      >
+      <div className={`border border-[#FFFFFF] rounded-[15px] h-full`}>
+        <motion.div
+          initial={{ opacity: 0, filter: 'blur(8px)' }}
+          whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+          transition={{ delay: 0.8, duration: 1, ease: 'easeIn' }}
+          viewport={{ once: true, amount: 0.4 }}
+        >
+        <div className='relative h-full overflow-hidden rounded-[15px]'>
+          <div className='-z-10 absolute -top-[200px] lg:-top-[450px] left-1/2 -translate-x-1/2 size-[400px] lg:size-[900px] rounded-full bg[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80'></div>
+          <div className='px-4 py-8 w-full min-h-[360px] lg:min-h-[500px] flex flex-col justify-center items-center text-center gap-6 bg-[ur("/header_stars.png")] bg-cover bg-center'>
               <Image 
                 src='/crm_token_logo.png'
                 alt='CRM token logo'
@@ -66,10 +79,12 @@ const Community = () => {
                   </div>
                 </Link>
               </div>
-            </div>
           </div>
         </div>
-      </section>
+        </motion.div>
+      </div>
+      </motion.div>
+    </section>
   )
 };
 

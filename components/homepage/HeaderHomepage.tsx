@@ -36,7 +36,7 @@ export default function HeaderHomepage() {
                     transition={{ delay: 2.5, duration: 1, ease: 'easeInOut' }}
                   >
                     <span className='block leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent text-nowrap'>
-                      CROMA AIRDROP
+                      CROMA PRESALE
                     </span>
                   </motion.h1>
                 </div>
@@ -173,7 +173,7 @@ export default function HeaderHomepage() {
                     Presale $CRM
                   </p>
                   <p className={`${poppins.className} text-base xl:text-lg font-medium text-white`}>
-                    1 OPZ = $0.04511
+                    1 CRM = $0.04511
                   </p>
                 </div>
                 <div className={`${poppins.className} mt-4 space-y-2`}>
@@ -193,7 +193,7 @@ export default function HeaderHomepage() {
                           Total Raised
                         </p>
                         <p className='bg-clip-text text-right bg-gradient-to-r from-[#B72204] to-[#FC6400] text-transparent text-sm lg:text-lg font-bold'>
-                          27,047,287 OPZ = $894,723.98
+                          27,047,287 CRM = $894,723.98
                         </p>
                       </div>
                 </div>

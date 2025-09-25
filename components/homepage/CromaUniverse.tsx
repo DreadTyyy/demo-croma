@@ -23,7 +23,7 @@ const CromaUniverse = () => {
           <motion.div
             initial={{ opacity: 0, filter: 'blur(20px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-            transition={{ duration: 0.7, ease: 'easeOut' }}
+            transition={{ duration: 1, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.3 }} 
           >
             <p className='mt-4 font-semibold text-2xl lg:text-3xl 2xl:text-4xl text-white '>
@@ -34,7 +34,7 @@ const CromaUniverse = () => {
         <motion.div
           initial={{ y: 20, x: -20, opacity: 0 }}
           whileInView={{ y: 0, x: 0, opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.5, ease: 'easeIn' }}
+          transition={{ delay: 0.4, duration: 1, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.3 }} 
           className='w-full'
         >
@@ -64,10 +64,10 @@ const CromaUniverse = () => {
       </div>
       <div className='mt-4 2xl:mt-6 grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] lg:grid-rows-[auto_auto] gap-4 2xl:gap-6'>
         <motion.div
-          initial={{ y: 30, opacity: 0 }}
+          initial={{ y: 60, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: 'easeIn' }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           <GlassBox baseColor='orange'>
             <div className='px-4 py-8 lg:p-8 2xl:p-10 backdrop-blur[50] lg:h-[740px] w-full'>
@@ -93,10 +93,10 @@ const CromaUniverse = () => {
           </GlassBox>
         </motion.div>
         <motion.div
-          initial={{ y: 30, opacity: 0 }}
+          initial={{ y: 60, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.1, duration: 0.5, ease: 'easeIn' }}
-          viewport={{ once: true, amount: 0.3 }}
+          transition={{ delay: 0.2, duration: 0.5, ease: 'easeIn' }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           <GlassBox baseColor='orange'>
             <div className='px-4 py-8 lg:p-8 2xl:p-10 backdrop-blur[50] lg:h-[740px] w-full lg:w-[420px]'>
@@ -127,10 +127,10 @@ const CromaUniverse = () => {
         </motion.div>
         
         <motion.div
-          initial={{ y: 30, opacity: 0 }}
+          initial={{ y: 60, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.5, ease: 'easeIn' }}
-          viewport={{ once: true, amount: 0.3 }}
+          transition={{ delay: 0.4, duration: 0.5, ease: 'easeIn' }}
+          viewport={{ once: true, amount: 0.1 }}
           className='h-full lg:row-start-1 lg:row-end-3 lg:col-start-3'
         >
           <div className='h-full'>
@@ -180,7 +180,7 @@ const CromaUniverse = () => {
         </motion.div>
 
         <motion.div
-          initial={{ y: 30, opacity: 0 }}
+          initial={{ y: 60, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.3 }}

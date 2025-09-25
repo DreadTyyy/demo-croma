@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const CromaTokenomics = () => {
   return (
-    <section className='px-4 lg:px-[64px] 2xl:px-[100px] py-12 lg:py-20 border-t border-[#414141]'>
+    <section id='tokenomics' className='scroll-mt-[100px] px-4 lg:px-[64px] 2xl:px-[100px] py-12 lg:py-20 border-t border-[#414141]'>
       <div className={`${poppins.className} flex flex-col text-center items-center gap-4`}>
         <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
           <span className='text-[#FC6400] text-sm md:text-base'>CROMA Tokenomics</span>
@@ -15,7 +15,7 @@ const CromaTokenomics = () => {
         <motion.div
           initial={{ opacity: 0, filter: 'blur(20px)' }}
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-          transition={{ duration: 0.7, ease: 'easeOut' }}
+          transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
         >
           <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold text-white tracking-[-0.04%]'>Two Tokens, One Ecosystem</h2>
@@ -33,10 +33,10 @@ const CromaTokenomics = () => {
       </div>
       <div className='mt-10 2xl:mt-[60px] grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-x-4 2xl:gap-x-6'>
         <motion.div
-          initial={{ y: 20, opacity: 0 }}
+          initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5, ease: 'easeIn' }}
-          viewport={{ once: true, amount: 0.3 }} 
+          viewport={{ once: true, amount: 0.1 }} 
           className='w-full'
         >
           <GlassBox baseColor='orange'>
@@ -92,10 +92,10 @@ const CromaTokenomics = () => {
           </GlassBox>
         </motion.div>
         <motion.div
-          initial={{ y: 20, opacity: 0 }}
+          initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.5, ease: 'easeIn' }}
-          viewport={{ once: true, amount: 0.3 }} 
+          transition={{ delay: 0.5, duration: 0.5, ease: 'easeIn' }}
+          viewport={{ once: true, amount: 0.1 }} 
           className='w-full'
         >
           <GlassBox baseColor='orange'>
