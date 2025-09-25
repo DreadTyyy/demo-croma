@@ -52,8 +52,8 @@ const Trixnews = () => {
         <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
           <span className='text-[#FC6400] text-base'>Trixnews</span>
         </div>
-        <h2 className='text-2xl xl:text-4xl font-semibold tracking-[-0.04%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>Latest Update</h2>
-        <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-fit xl:max-w-[500px]'>
+        <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold tracking-[-0.04%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>Latest Update</h2>
+        <p className='text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-fit xl:max-w-[500px]'>
           Hand-drawn masterpieces immortalized as NFTs
         </p>
       </div>
@@ -94,7 +94,7 @@ const Trixnews = () => {
             >
               <Link href={p.url}>
                 <GlassBox baseColor='orange'>
-                    <div className='py-8 px-4 xl:px-6 w-full backdrop-blur-[50px]'>
+                    <div className='py-8 px-4 2xl:px-6 w-full backdrop-blur-[50px]'>
                     <div className='relative w-full h-[270px] bg-red-500 rounded-[20px] overflow-hidden'>
                         <Image
                         src={`/news_cover/${p.cover}`}
@@ -103,7 +103,7 @@ const Trixnews = () => {
                         className='object-cover object-center w-full h-full'
                         />
                     </div>
-                    <h2 className='mt-6 text-base xl:text-2xl font-semibold text-white'>
+                    <h2 className='mt-6 text-base lg:text-xl 2xl:text-2xl font-semibold text-white'>
                         {p.title}
                     </h2>
                     </div>

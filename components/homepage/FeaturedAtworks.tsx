@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { poppins } from "@/app/font";
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
 import ButtonPrimary from "@/components/ButtonPrimary";
@@ -14,36 +15,50 @@ import 'swiper/css/pagination';
 const FeaturedArtworks = () => {
   const [tab, setTab] = useState<number>(0);
   
-  const padding = 'px-4 xl:px-[100px]'
+  const padding = 'px-4 lg:px-[100px]'
   return (
     <section className='relative py-[60px] border-t border-b border-[#414141]'>
       <div className='-z-10 absolute -bottom-[200px] -left-[350px] size-[700px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-50 xl:opacity-80'></div>
-      <div className={`${poppins.className} ${padding} flex flex-col text-center items-center gap-4`}>
+      <div className={`${poppins.className} ${padding} flex flex-col text-center items-center gap-2 2xl:gap-4`}>
         <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
-          <span className='text-[#FC6400] text-base'>CROMA Artworks</span>
+          <span className='text-[#FC6400] text-sm md:text-base'>CROMA Artworks</span>
         </div>
-        <h2 className='text-2xl xl:text-4xlfont-semibold text-white tracking-[-0.04%]'>FEATURED ARTWORKS</h2>
-        <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80'>
-          Hand-drawn masterpieces immortalized as NFTs
-        </p>
+        <motion.div
+          initial={{ opacity: 0, filter: 'blur(20px)' }}
+          whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.3 }} 
+        >
+          <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold text-white tracking-[-0.04%]'>FEATURED ARTWORKS</h2>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, filter: 'blur(20px)' }}
+          whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          viewport={{ once: true, amount: 0.1 }} 
+        >
+          <p className='text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80'>
+            Hand-drawn masterpieces immortalized as NFTs
+          </p>
+        </motion.div>
       </div>
       <div className={`${padding} mt-6`}>
         <div className={`${poppins.className} w-full flex justify-center`}>
           <div className='p-2 relative flex items-center rounded-full h-12 2xl:h-16 w-fit inset-ring-[#979797] bg-linear-to-tl from-[rgba(255,255,255,0.83)] to-[rgba(255,255,255,0.44)] inset-shadow-[1px_3px_6px_0_rgba(0,0,0,0,0.25)]'>
-            <div className='z-0 absolute top-[2px] w-[120px] xl:w-[150px] 2xl:w-[220px] h-[44px] 2xl:h-[60px] bg-gradient-to-r from-[#B72204] to-[#FC6400] rounded-full transition-all duration-300'
+            <div className='z-0 absolute top-[2px] w-[120px] lg:w-[150px] 2xl:w-[220px] h-[44px] 2xl:h-[60px] bg-gradient-to-r from-[#B72204] to-[#FC6400] rounded-full transition-all duration-300'
               style={{
                 transform: tab === 0 ? 'translateX(0)' : 'translateX(100%)'
               }}
             ></div>
-            <div className='flex text-center items-center w-[120px] xl:w-[150px] 2xl:w-[220px] h-full z-10 cursor-pointer'
+            <div className='flex text-center items-center w-[120px] lg:w-[150px] 2xl:w-[220px] h-full z-10 cursor-pointer'
                 onClick={() => setTab(0)}
             >
-              <p className='text-white font-semibold xl:text-lg 2xl:text-2xl w-full'>All atworks</p>
+              <p className='text-white font-semibold lg:text-lg 2xl:text-2xl w-full'>All atworks</p>
             </div>
-            <div className='flex text-center items-center  w-[120px] xl:w-[150px] 2xl:w-[220px] h-full z-10 cursor-pointer'
+            <div className='flex text-center items-center w-[120px] lg:w-[150px] 2xl:w-[220px] h-full z-10 cursor-pointer'
                 onClick={() => setTab(1)}
             >
-              <p className='text-white font-medium xl:text-lg 2xl:text-2xl w-full'>Feature</p>
+              <p className='text-white font-medium lg:text-lg 2xl:text-2xl w-full'>Feature</p>
             </div>
           </div>
         </div>
@@ -66,7 +81,7 @@ const FeaturedArtworks = () => {
         {dataImages.map((item, i) => (
             item.isList === false ? (
                 <SwiperSlide key={`single-${i}`} 
-                  className='group relative overflow-hidden'
+                  className='group relative overflow-hidden border-[#FC6400] hover:border-[2px]'
                   style={{ 
                     width: `${item.covers!.width}px`,
                     height: `${item.covers!.height}px`
@@ -100,7 +115,7 @@ const FeaturedArtworks = () => {
                 >
                     {item.list!.map((t, j) => (
                     <div key={`list-${i}-${j}`}
-                      className='group relative overflow-hidden'
+                      className='group relative overflow-hidden border-[#FC6400] hover:border-[2px]'
                       style={{ 
                         width: `${t.covers!.width}px`,
                         height: `${t.covers!.height}px`
