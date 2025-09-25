@@ -1,7 +1,7 @@
 'use client';
 
 import { poppins } from "@/app/font";
-import ButtonPrimary from "./ButtonPrimary";
+import ButtonPrimary from "@/components/ButtonPrimary";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";

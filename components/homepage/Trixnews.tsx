@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import { poppins } from "@/app/font";
-import GlassBox from "./GlassBox";
-// import { useBreakpointValue } from '@chakra-ui/react';
+import GlassBox from "@/components/GlassBox";
 import '@/app/globals.css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,7 +10,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
-import ButtonPrimary from "./ButtonPrimary";
+import ButtonPrimary from "@/components/ButtonPrimary";
 import Link from "next/link";
 
 const dataNews = [{

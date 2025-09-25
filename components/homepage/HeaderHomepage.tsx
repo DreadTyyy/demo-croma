@@ -4,9 +4,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { poppins } from '@/app/font';
 import ButtonPrimary from '@/components/ButtonPrimary';
+import GlassBox from '@/components/GlassBox';
 
 import { motion } from 'framer-motion';
-import GlassBox from './GlassBox';
 import { FaChevronDown } from 'react-icons/fa';
 
 const timer = [{
