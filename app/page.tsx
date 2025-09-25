@@ -3,15 +3,15 @@ import Image from 'next/image';
 import { poppins } from './font';
 import Navbar from '@/components/Navbar';
 import ButtonPrimary from '@/components/ButtonPrimary';
-import HeaderHomepage from '@/components/HeaderHomepage';
-import PoweredBy from '@/components/PoweredBy';
 import GlassBox from '@/components/GlassBox';
-import Trixnews from '@/components/Trixnews';
-
-import Community from '@/components/Community';
 import Footer from '@/components/Footer';
-import FeaturedArtworks from '@/components/FeaturedAtworks';
-import CromaUniverse from '@/components/CromaUniverse';
+
+import HeaderHomepage from '@/components/homepage/HeaderHomepage';
+import PoweredBy from '@/components/homepage/PoweredBy';
+import Trixnews from '@/components/homepage/Trixnews';
+import Community from '@/components/homepage/Community';
+import FeaturedArtworks from '@/components/homepage/FeaturedAtworks';
+import CromaUniverse from '@/components/homepage/CromaUniverse';
 
 const dataCrmToken = [{
   title: 'Presale',

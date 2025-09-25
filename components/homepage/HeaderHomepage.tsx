@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { poppins } from '@/app/font';
-import BorderBox from '@/components/BorderBox';
 import ButtonPrimary from '@/components/ButtonPrimary';
 
 import { motion } from 'framer-motion';
@@ -237,7 +236,7 @@ export default function HeaderHomepage() {
                           <div className='px-3 2xl:px-5 py-2 cursor-pointer hover:bg-[rgba(0,0,0,0.3)]'>
                             <div className='flex gap-2 items-center'>
                               <Image
-                                src='/wallets/croma.png'
+                                src='/CRM Logo Koin.png'
                                 alt='Croma icon'
                                 width={28}
                                 height={28}
