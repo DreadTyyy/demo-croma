@@ -1,0 +1,98 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import { poppins } from '@/app/font';
+import ButtonPrimary from '@/components/ButtonPrimary';
+import GlassBox from '@/components/GlassBox';
+
+const ClaimToken = () => {
+  return (
+    <section className='relative py-[40px] px-4 xl:px-[64px] 2xl:px-[100px] max-w-screen overflow-x-hidden xl:overflow-x-clip'>
+      <div className='-z-10 absolute top-0 -right-[400px] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#19A9EA_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80'></div>
+      <div className='-z-10 absolute top-[15%] -right-[650px] size-[700px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80'></div>
+      <div className={`border border-[#FC6400] rounded-[20px] h-full`}>
+        <div className='relative h-full overflow-hidden rounded-[20px] bg-[rgba(252,100,0,0.1)]'>
+          <div className='px-4 py-8 xl:p-10 text-center'>
+            <h2 className='text-2xl xl:text-4xl font-semibold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
+              How to Claim
+            </h2>
+            <p className={`${poppins.className} mt-4 text-base xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>
+              Simple 3-step process to get your free tokens
+            </p>
+            <div className='flex flex-col xl:flex-row mt-[26px] gap-y-4 justify-between items-center'>
+              <Image
+                src='/claim_coin.png'
+                alt='Claim coin'
+                width={678}
+                height={692}
+                className='xl:max-w-1/2'
+              />
+              <div className={`${poppins.className} flex flex-col gap-4`}>
+                <GlassBox baseColor='orange'>
+                  <div className='relative px-4 xl:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.png")] bg-center'>
+                    <div className='mb-4 xl:mb-6 flex items-center gap-4'>
+                      <GlassBox baseColor='white' rounded='9999'>
+                        <p className='flex justify-center items-center size-[36] xl:size-[54px] text-white text-xl xl:text-2xl font-semibold'>
+                          1
+                        </p>
+                      </GlassBox>
+                      <p className='font-semibold text-xl xl:text-2xl text-white'>
+                        Connect Wallet
+                      </p>
+                    </div>
+                    <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-60'>
+                      Connect your TrixWallet or any Web3 wallet (MetaMask, Trust Wallet, etc.) to get started with the CROMA airdrop.
+                    </p>
+                  </div>
+                </GlassBox>
+                <GlassBox baseColor='orange'>
+                  <div className='relative px-4 xl:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.png")] bg-center'>
+                    <div className='mb-4 xl:mb-6 flex items-center gap-4'>
+                      <GlassBox baseColor='white' rounded='9999'>
+                        <p className='flex justify-center items-center size-[36] xl:size-[54px] text-white text-xl xl:text-2xl font-semibold'>
+                          2
+                        </p>
+                      </GlassBox>
+                      <p className='font-semibold text-xl xl:text-2xl text-white'>
+                        Complete Tasks
+                      </p>
+                    </div>
+                    <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-60'>
+                      Follow our social media accounts, join Telegram/Discord, and complete simple verification tasks to qualify.
+                    </p>
+                  </div>
+                </GlassBox>
+                <GlassBox baseColor='orange'>
+                  <div className='relative px-4 xl:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.png")] bg-center'>
+                    <div className='mb-4 xl:mb-6 flex items-center gap-4'>
+                      <GlassBox baseColor='white' rounded='9999'>
+                        <p className='flex justify-center items-center size-[36] xl:size-[54px] text-white text-xl xl:text-2xl font-semibold'>
+                          3
+                        </p>
+                      </GlassBox>
+                      <p className='font-semibold text-xl xl:text-2xl text-white'>
+                        Claim Tokens
+                      </p>
+                    </div>
+                    <p className='text-base xl:text-xl font-medium text-[#E9E9E9] opacity-60'>
+                      Once verified succes, claim your free $CRM + $CMC tokens directly to your wallet. No tricks, no taxes.
+                    </p>
+                  </div>
+                </GlassBox>
+              </div>
+            </div>
+            <div className='mt-[26px] flex flex-col gap-2'>
+              <Link href=''>
+                <ButtonPrimary>
+                  Claim Airdrop Now
+                </ButtonPrimary>
+              </Link>
+              <span className={`${poppins.className} text-xs text-white`}>🔥 Already 25,321 wallets joined! Don't miss out!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default ClaimToken;

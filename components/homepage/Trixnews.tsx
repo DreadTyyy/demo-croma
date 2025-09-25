@@ -1,17 +1,17 @@
 'use client';
 
-import Image from "next/image";
-import { poppins } from "@/app/font";
-import GlassBox from "@/components/GlassBox";
-import '@/app/globals.css';
-
+import Link from 'next/link';
+import Image from 'next/image';
+import { poppins } from '@/app/font';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+import GlassBox from '@/components/GlassBox';
+import ButtonPrimary from '@/components/ButtonPrimary';
+
+import '@/app/globals.css';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
-import ButtonPrimary from "@/components/ButtonPrimary";
-import Link from "next/link";
 
 const dataNews = [{
     id: 1,
@@ -85,7 +85,7 @@ const Trixnews = () => {
           });
           }}
           modules={[EffectCoverflow, Pagination]}
-          className="mySwiper"
+          className='mySwiper'
         >
             {dataNews.map((p) => (
             <SwiperSlide
@@ -111,7 +111,7 @@ const Trixnews = () => {
               </Link>
             </SwiperSlide>
             ))}
-            <div className="custom-pagination"></div>
+            <div className='custom-pagination'></div>
         </Swiper>
       </div>
       <div className='w-full flex flex-col justify-center items-center'>

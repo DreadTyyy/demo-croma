@@ -11,10 +11,10 @@ import { motion } from 'framer-motion';
 const CromaUniverse = () => {
   return (
     <section className='px-4 xl:px-[64px] 2xl:px-[100px] py-20 relative max-w-screen overflow-x-hidden xl:overflow-x-clip'>
-      <div className="-z-10 absolute top-[8%] -left-[10%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#E34C01_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
-      <div className="-z-10 absolute top-[2%] -left-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#F227AE_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
-      <div className="-z-10 absolute bottom-[10%] xl:-bottom-[10%] -right-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#465BF3_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
-      <div className="-z-10 absolute bottom-0 xl:-bottom-[20%] -right-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#F227AE_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80"></div>
+      <div className='-z-10 absolute top-[8%] -left-[10%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#E34C01_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80'></div>
+      <div className='-z-10 absolute top-[2%] -left-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#F227AE_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80'></div>
+      <div className='-z-10 absolute bottom-[10%] xl:-bottom-[10%] -right-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#465BF3_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80'></div>
+      <div className='-z-10 absolute bottom-0 xl:-bottom-[20%] -right-[20%] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#F227AE_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80'></div>
       <div className='flex flex-col xl:flex-row items-center justify-between gap-9'>
         <div className={`${poppins.className} xl:max-w-[30%]`}>
           <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
@@ -22,8 +22,8 @@ const CromaUniverse = () => {
           </div>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(20px)' }}
-            whileInView={{ opacity: 1, filter: "blur(0px)" }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
+            whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+            transition={{ duration: 0.7, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.3 }} 
           >
             <p className='mt-4 font-semibold text-2xl xl:text-4xl text-white '>
@@ -54,7 +54,7 @@ const CromaUniverse = () => {
           </div>
         </GlassBox>
       </div>
-      <div className="mt-4 xl:mt-6 grid grid-cols-1 xl:grid-cols-[1fr_auto_1fr] xl:grid-rows-[auto_auto] gap-4 xl:gap-6">
+      <div className='mt-4 xl:mt-6 grid grid-cols-1 xl:grid-cols-[1fr_auto_1fr] xl:grid-rows-[auto_auto] gap-4 xl:gap-6'>
         <GlassBox baseColor='orange'>
           <div className='px-4 py-8 xl:p-10 backdrop-blur[50] xl:h-[740px] w-full'>
             <h2 className='text-white text-2xl xl:text-[32px] font-semibold leading-[120%]'>
@@ -85,8 +85,8 @@ const CromaUniverse = () => {
                 alt='Coin CromaArt'
                 width={290}
                 height={310}
-                sizes="(max-width: 768px) 150px, (max-width: 1024px) 310, 310px"
-                className="w-[150px] md:w-[310] 2xl:w-[310px]"
+                sizes='(max-width: 768px) 150px, (max-width: 1024px) 310, 310px'
+                className='w-[150px] md:w-[310] 2xl:w-[310px]'
               />
             </div>
             <h2 className='text-white text-2xl xl:text-[32px] font-semibold leading-[120%]'>
@@ -103,7 +103,7 @@ const CromaUniverse = () => {
           </div>
         </GlassBox>
       
-        <div className="h-full xl:row-start-1 xl:row-end-3 xl:col-start-3">
+        <div className='h-full xl:row-start-1 xl:row-end-3 xl:col-start-3'>
           <GlassBox baseColor='orange'>
             <div className='px-4 py-8 xl:p-10 backdrop-blur[50] w-full h-full'>
               <div className='mb-10 flex flex-col justify-center items-center w-full gap-5 xl:gap-10'>
@@ -112,8 +112,8 @@ const CromaUniverse = () => {
                   alt='Trix Wallet Logo'
                   width={163}
                   height={143}
-                  sizes="(max-width: 768px) 100px, (max-width: 1024px) 143, 143px"
-                  className="w-[100px] md:w-[143] 2xl:w-[143px]"
+                  sizes='(max-width: 768px) 100px, (max-width: 1024px) 143, 143px'
+                  className='w-[100px] md:w-[143] 2xl:w-[143px]'
                 />
                 <div className='flex flex-wrap justify-center items-center gap-2'>
                   {['Post-Quantum Cryptography', 'Multi-chain Support', 'DeFi Integration', 'Zero-Knowledge Proofs', 'ZK Risk Scanner']
@@ -148,7 +148,7 @@ const CromaUniverse = () => {
           
         </div>
       
-        <div className="xl:col-span-2">
+        <div className='xl:col-span-2'>
           <GlassBox baseColor='orange'>
           <div className='px-4 py-8 xl:p-10 flex flex-col xl:flex-row items-center justify-between backdrop-blur[50] w-full gap-4'>
             <Image

@@ -1,14 +1,15 @@
 'use client';
 
-import { poppins } from "@/app/font";
-import ButtonPrimary from "@/components/ButtonPrimary";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { poppins } from "@/app/font";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
+import ButtonPrimary from "@/components/ButtonPrimary";
+
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { useState } from "react";
 
 const FeaturedArtworks = () => {
   const [tab, setTab] = useState<number>(0);
@@ -16,7 +17,7 @@ const FeaturedArtworks = () => {
   const padding = 'px-4 xl:px-[100px]'
   return (
     <section className='relative py-[60px] border-t border-b border-[#414141]'>
-      <div className="-z-10 absolute -bottom-[200px] -left-[350px] size-[700px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-50 xl:opacity-80"></div>
+      <div className='-z-10 absolute -bottom-[200px] -left-[350px] size-[700px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-50 xl:opacity-80'></div>
       <div className={`${poppins.className} ${padding} flex flex-col text-center items-center gap-4`}>
         <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
           <span className='text-[#FC6400] text-base'>CROMA Artworks</span>
@@ -47,9 +48,9 @@ const FeaturedArtworks = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10 px-4 hidden md:block">
+      <div className='mt-10 px-4 hidden md:block'>
         <Swiper
-        slidesPerView="auto"
+        slidesPerView='auto'
         spaceBetween={24}
         freeMode={true}
         pagination={{
@@ -60,7 +61,7 @@ const FeaturedArtworks = () => {
           bulletActiveClass: 'custom-active-bullet',
         }}
         modules={[FreeMode, Pagination]}
-        className="mySwiper my_artworks_gallery"
+        className='mySwiper my_artworks_gallery'
       >
         {dataImages.map((item, i) => (
             item.isList === false ? (
@@ -128,13 +129,13 @@ const FeaturedArtworks = () => {
                 </SwiperSlide>
             )
             ))}
-            <div className="custom-pagination"></div>
+            <div className='custom-pagination'></div>
       </Swiper>
       </div>
-      <div className="my-5 px-4 block md:hidden">
-        <div className="flex w-full gap-2">
-          <div className="flex flex-col gap-y-2 max-w-1/2">
-            <div className="h-[320px] rounded-2xl overflow-hidden"
+      <div className='my-5 px-4 block md:hidden'>
+        <div className='flex w-full gap-2'>
+          <div className='flex flex-col gap-y-2 max-w-1/2'>
+            <div className='h-[320px] rounded-2xl overflow-hidden'
               style={{ 
                 height: `320px`
                }}
@@ -144,10 +145,10 @@ const FeaturedArtworks = () => {
                 alt={`Image by ${dataImages[0]}`}
                 width={280} 
                 height={320} 
-                className="w-full h-full object-cover" 
+                className='w-full h-full object-cover' 
               />
             </div>
-            <div className="h-[320px] rounded-2xl overflow-hidden"
+            <div className='h-[320px] rounded-2xl overflow-hidden'
               style={{ 
                 height: `180px`
                }}
@@ -157,12 +158,12 @@ const FeaturedArtworks = () => {
                 alt={`Image by ${dataImages[1].list![0].artist}`}
                 width={280} 
                 height={180} 
-                className="w-full h-full object-cover" 
+                className='w-full h-full object-cover' 
               />
             </div>
           </div>
-          <div className="flex flex-col gap-y-2 max-w-1/2">
-            <div className="h-[320px] rounded-2xl overflow-hidden"
+          <div className='flex flex-col gap-y-2 max-w-1/2'>
+            <div className='h-[320px] rounded-2xl overflow-hidden'
               style={{ 
                 height: `130px`
                }}
@@ -172,10 +173,10 @@ const FeaturedArtworks = () => {
                 alt={`Image by ${dataImages[1].list![1].artist}`}
                 width={280} 
                 height={130} 
-                className="w-full h-full object-cover" 
+                className='w-full h-full object-cover' 
               />
             </div>
-            <div className="h-[320px] rounded-2xl overflow-hidden"
+            <div className='h-[320px] rounded-2xl overflow-hidden'
               style={{ 
                 height: `380px`
                }}
@@ -185,7 +186,7 @@ const FeaturedArtworks = () => {
                 alt={`Image by ${dataImages[2]}`}
                 width={280} 
                 height={380} 
-                className="w-full h-full object-cover" 
+                className='w-full h-full object-cover' 
               />
             </div>
           </div>
@@ -379,14 +380,3 @@ const dataImages = [{
     text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
     url: '#',
 },]
-
-{/* <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
-      ></Swiper> */}

@@ -2,8 +2,9 @@
 
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import "swiper/css";
 import { Autoplay } from 'swiper/modules';
+
+import 'swiper/css';
 
 const PoweredBy = () => {
   return (
@@ -32,7 +33,7 @@ const SliderComponent = () => {
       breakpoints={{
         640: {
           slidesPerView: 7,
-          spaceBetween: 16,
+          spaceBetween: 24,
         },
       }}
     >
@@ -44,7 +45,7 @@ const SliderComponent = () => {
               alt='Logo support'
               width={width}
               height={height}
-              className="w-auto h-full object-contain"
+              className='w-auto h-full object-contain'
             />
           </div>
         </SwiperSlide>
@@ -53,40 +54,46 @@ const SliderComponent = () => {
   )
 };
 
-const supportTeams = [{
-  icon: 'apple.svg',
-  width: 130,
-  height: 48
-}, {
-  icon: 'nvidia.svg',
-  width: 218,
-  height: 48
-}, {
-  icon: 'google.svg',
-  width: 132,
-  height: 48
-}, {
-  icon: 'openai.svg',
-  width: 147,
-  height: 48
-}, {
-  icon: 'lenovo.svg',
-  width: 120,
-  height: 48
-}, {
-  icon: 'opensea.svg',
-  width: 154,
-  height: 48
-}, {
-  icon: 'trixwallet.svg',
-  width: 186,
-  height: 48
-}, {
-  icon: 'cromachain.svg',
-  width: 256,
-  height: 48
-}, {
-  icon: 'trixnews.svg',
-  width: 164,
-  height: 48
-}];
+const supportTeams = [
+  {
+    icon: 'ethereum.svg',
+    width: 180,
+    height: 48
+  }, {
+    icon: 'apple.svg',
+    width: 130,
+    height: 48
+  }, {
+    icon: 'nvidia.svg',
+    width: 218,
+    height: 48
+  }, {
+    icon: 'google.svg',
+    width: 132,
+    height: 48
+  }, {
+    icon: 'openai.svg',
+    width: 147,
+    height: 48
+  }, {
+    icon: 'lenovo.svg',
+    width: 120,
+    height: 48
+  }, {
+    icon: 'trixwallet.svg',
+    width: 186,
+    height: 48
+  }, {
+    icon: 'opensea.svg',
+    width: 154,
+    height: 48
+  }, {
+    icon: 'cromachain.svg',
+    width: 256,
+    height: 48
+  }, {
+    icon: 'trixnews.svg',
+    width: 164,
+    height: 48
+  }
+];
