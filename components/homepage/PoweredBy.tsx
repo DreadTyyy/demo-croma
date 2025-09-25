@@ -5,6 +5,54 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import { Autoplay } from 'swiper/modules';
 
+const PoweredBy = () => {
+  return (
+    <section className='py-5 xl:py-10 bg-gradient-to-r from-[#B72204] to-[#FC6400]'>
+        <p className='px-0 md:px-4 xl:px-[120px] font-semibold text-xl xl:text-2xl text-white text-center'>
+          Powered By
+        </p>
+        <div className='flex mt-4 md:mt-8 xl:mt-10 w-full justify-center'>
+          <SliderComponent />
+        </div>
+      </section>
+  )
+}
+
+export default PoweredBy;
+
+const SliderComponent = () => {
+  return (
+    <Swiper
+      spaceBetween={16}
+      slidesPerView={3}
+      loop={true}
+      autoplay={{ delay: 0, disableOnInteraction: false }}
+      speed={6000}
+      modules={[Autoplay]}
+      breakpoints={{
+        640: {
+          slidesPerView: 7,
+          spaceBetween: 16,
+        },
+      }}
+    >
+      {supportTeams.map(({icon, width, height}: {icon: string; width: number; height: number}) => (
+        <SwiperSlide key={icon}>
+          <div className='w-full h-[24px] xl:h-[48px] flex justify-center'>
+            <Image
+              src={`/support_logo/${icon}`}
+              alt='Logo support'
+              width={width}
+              height={height}
+              className="w-auto h-full object-contain"
+            />
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  )
+};
+
 const supportTeams = [{
   icon: 'apple.svg',
   width: 130,
@@ -41,53 +89,4 @@ const supportTeams = [{
   icon: 'trixnews.svg',
   width: 164,
   height: 48
-},]
-
-const PoweredBy = () => {
-  return (
-    <section className='py-5 xl:py-10 bg-gradient-to-r from-[#B72204] to-[#FC6400]'>
-        <p className='px-0 md:px-4 xl:px-[120px] font-semibold text-xl xl:text-2xl text-white text-center'>
-          Powered By
-        </p>
-        <div className='flex mt-4 md:mt-8 xl:mt-10 w-full justify-center'>
-          <SliderComponent />
-        </div>
-      </section>
-  )
-}
-
-export default PoweredBy;
-
-const SliderComponent = () => {
-  return (
-    <Swiper
-      // spaceBetween={10}
-      slidesPerView={3}
-      loop={true}
-      autoplay={{ delay: 0, disableOnInteraction: false }}
-      speed={6000}
-      modules={[Autoplay]}
-      breakpoints={{
-        640: {
-          slidesPerView: 7,
-          spaceBetween: 16,
-        },
-      }}
-    >
-      {supportTeams.map(({icon, width, height}: {icon: string; width: number; height: number}) => (
-        <SwiperSlide key={icon}>
-          <div className='w-full flex justify-center'>
-            <Image
-              src={`/support_logo/${icon}`}
-              alt='Logo apple'
-              width={width}
-              height={height}
-              sizes="(max-width: 768px) 24px, (max-width: 1024px) 48px, 48px"
-              className="w-[150px] h-[24px] md:h-[48px] 2xl:h-[48px]"
-            />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  )
-};
+}];
