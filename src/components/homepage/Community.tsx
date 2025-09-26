@@ -3,17 +3,18 @@
 import { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { poppins } from '@/app/font';
 import { motion, useInView } from 'framer-motion';
 import { FaDiscord,FaTelegramPlane } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import { poppins } from '@/app/font';
+import { URLS } from '@/constant/urls';
 
 const Community = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { amount: 0.5, once: true});
 
   return (
-    <section ref={ref} className='relative py-[40px] mx-4 lg:mx-[64px] 2xl:mx-[100px] min-h-[500px]'>
+    <section ref={ref} id='community' className='scroll-mt-[100px] relative py-[40px] mx-4 lg:mx-[64px] 2xl:mx-[100px] min-h-[500px]'>
       <div className='-z-10 absolute -top-[100px] -left-[500px] size-[600] rounded-full bg-[radial-gradient(circle_at_center,#19A9EA_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80'></div>
       <motion.div
         initial={{ height: 0 }}
@@ -46,7 +47,7 @@ const Community = () => {
                 </p>
               </div>
               <div className={`${poppins.className} flex flex-wrap items-center justify-center gap-4 lg:gap-6`}>
-                <Link href='#'>
+                <Link href={URLS.discrod} target='_blank'>
                   <div className={`border border-[#FFFFFF] rounded-[15px] h-full`}>
                     <div className='relative h-full overflow-hidden rounded-[15px] bg-[rgba(255,255,255,0.1)] hover:bg-[rgba(0,0,0,0.2)] transition-all duration-300'>
                       <div className='px-4 2xl:px-6 py-3 flex items-center gap-3'>
@@ -58,7 +59,7 @@ const Community = () => {
                     </div>
                   </div>
                 </Link>
-                <Link href='#'>
+                <Link href={URLS.telegram} target='_blank'>
                   <div className={`border border-[#FFFFFF] rounded-[15px] h-full`}>
                     <div className='relative h-full overflow-hidden rounded-[15px] bg-[rgba(255,255,255,0.1)] hover:bg-[rgba(0,0,0,0.2)] transition-all duration-300'>
                       <div className='px-4 2xl:px-6 py-3 flex items-center gap-3'>
@@ -70,7 +71,7 @@ const Community = () => {
                     </div>
                   </div>
                 </Link>
-                <Link href='#'>
+                <Link href={URLS.xtwitter} target='_blank'>
                   <div className={`border border-[#FFFFFF] rounded-[15px] h-full`}>
                     <div className='relative h-full overflow-hidden rounded-[15px] bg-[rgba(255,255,255,0.1)] hover:bg-[rgba(0,0,0,0.2)] transition-all duration-300'>
                       <div className='px-4 2xl:px-6 py-3 flex items-center gap-3'>

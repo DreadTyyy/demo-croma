@@ -8,9 +8,17 @@ import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
 import ButtonPrimary from "@/components/ButtonPrimary";
+import NftGrid from "@/components/NftGrid";
+import { URLS } from "@/constant/urls";
+import { NFTItemType } from "@/types/nft";
+import { nftImages } from "@/utils/nftData";
 
 import 'swiper/css';
 import 'swiper/css/pagination';
+
+type NFTItemProps = {
+  item: NFTItemType
+}
 
 const FeaturedArtworks = () => {
   const [tab, setTab] = useState<number>(0);
@@ -69,6 +77,8 @@ const FeaturedArtworks = () => {
         <Swiper
         slidesPerView='auto'
         spaceBetween={24}
+        // centeredSlides={true}
+        centerInsufficientSlides={true}
         freeMode={true}
         pagination={{
           dynamicBullets: true,
@@ -80,320 +90,96 @@ const FeaturedArtworks = () => {
         modules={[FreeMode, Pagination]}
         className='mySwiper my_artworks_gallery'
       >
-        {dataImages.map((item, i) => (
-            item.isList === false ? (
-                <SwiperSlide key={`single-${i}`} 
-                  className='group relative overflow-hidden border-[#FC6400] hover:border-[2px]'
-                  style={{ 
-                    width: `${item.covers!.width}px`,
-                    height: `${item.covers!.height}px`
+        {nftImages.map((item, i) => {
+          const groupIndex = i % 5;
+          const listSize = [[304, 380], [304, 190], [304, 190], [304, 410], [304, 370]];
+
+          if (groupIndex === 2) {
+              return
+          } else if (groupIndex === 1) {
+            return (
+              <SwiperSlide
+                key={i}
+                className="space-y-6"
+                style={{
+                  width: `${listSize[1][0]}px`,
+                  height: `${listSize[1][1] * 2}px`,
+                }}
+              >
+                <div className="group relative overflow-hidden border-[#FC6400] hover:border-[2px]"
+                  style={{
+                    width: `${listSize[1][0]}px`,
+                    height: `${listSize[1][1]}px`, 
                   }}
                 >
-                  <div className='z-[9] group-hover:opacity-100 opacity-0 absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[rgba(0,0,0,0.9)] to-[rgba(0,0,0,0)] transition-all duration-300'></div>
-                  <div className='z-10 px-2 absolute group-hover:opacity-100 opacity-0 bottom-2 w-full'>
-                    <p className='text-lg font-semibold'>{item.artist!}</p>
-                    <div className={`${poppins.className}`}>
-                    <span className='text-[13px] opacity-80'>{item.text!}</span>
-                    <span className='ml-[2px] text-[13px] text-[#FC6400] font-bold'>
-                      <Link href={item.url!}>
-                        Read Full Story
-                      </Link>
-                    </span>
-                    </div>
-                  </div>
-                  <Image 
-                    src={`/artworks/${item.covers!.image}`}
-                    alt={`Image by ${item.artist}`}
-                    fill
-                    className='object-cover object-center'
-                  />
-                </SwiperSlide>
-            ) : (
-                <SwiperSlide key={`list-${i}`} className='space-y-6'
-                  style={{ 
-                    width: `${item.list![0].covers.width}px`,
-                    minWidth: `${item.list![0].covers.width}px`
-                   }}
+                  <NftCard item={item} />
+                </div>
+                <div className="group relative overflow-hidden border-[#FC6400] hover:border-[2px]"
+                  style={{
+                    width: `${listSize[1][0]}px`,
+                    height: `${listSize[1][1]}px`, 
+                  }} 
                 >
-                    {item.list!.map((t, j) => (
-                    <div key={`list-${i}-${j}`}
-                      className='group relative overflow-hidden border-[#FC6400] hover:border-[2px]'
-                      style={{ 
-                        width: `${t.covers!.width}px`,
-                        height: `${t.covers!.height}px`
-                      }}
-                    >
-                      <div className='z-[9] group-hover:opacity-100 opacity-0 absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[rgba(0,0,0,0.9)] to-[rgba(0,0,0,0)] transition-all duration-300'></div>
-                      <div className='z-10 px-2 absolute group-hover:opacity-100 opacity-0 bottom-2 w-full'>
-                        <p className='text-lg font-semibold'>{t.artist!}</p>
-                        <div className={`${poppins.className}`}>
-                        <span className='text-[13px] opacity-80'>{t.text!}</span>
-                        <span className='ml-[2px] text-[13px] text-[#FC6400] font-bold'>
-                        <Link href={t.url!}>
-                            Read Full Story
-                        </Link>
-                        </span>
-                        </div>
-                      </div>
-                      <Image 
-                        src={`/artworks/${t.covers!.image}`}
-                        alt={`Image by ${t.artist}`}
-                        fill
-                        className='object-cover object-center'
-                      />
-                    </div>
-                    ))}
-                </SwiperSlide>
+                  <NftCard item={nftImages[i+1]} />
+                </div>
+              </SwiperSlide>
             )
-            ))}
+          } else {
+            return (
+              <SwiperSlide
+                key={i}
+                className="group relative overflow-hidden border-[#FC6400] hover:border-[2px]"
+                style={{
+                  width: `${listSize[groupIndex][0]}px`,
+                  height: `${listSize[groupIndex][1]}px`,
+                }}
+              >
+                <NftCard item={item} />
+              </SwiperSlide>
+            );
+          }
+        })}
             <div className='custom-pagination'></div>
       </Swiper>
       </div>
       <div className='my-5 px-4 block md:hidden'>
-        <div className='flex w-full gap-2'>
-          <div className='flex flex-col gap-y-2 max-w-1/2'>
-            <div className='h-[320px] rounded-2xl overflow-hidden'
-              style={{ 
-                height: `320px`
-               }}
-            >
-              <Image 
-                src={`/artworks/${dataImages[0].covers!.image}`} 
-                alt={`Image by ${dataImages[0]}`}
-                width={280} 
-                height={320} 
-                className='w-full h-full object-cover' 
-              />
-            </div>
-            <div className='h-[320px] rounded-2xl overflow-hidden'
-              style={{ 
-                height: `180px`
-               }}
-            >
-              <Image 
-                src={`/artworks/${dataImages[1].list![0].covers!.image}`} 
-                alt={`Image by ${dataImages[1].list![0].artist}`}
-                width={280} 
-                height={180} 
-                className='w-full h-full object-cover' 
-              />
-            </div>
-          </div>
-          <div className='flex flex-col gap-y-2 max-w-1/2'>
-            <div className='h-[320px] rounded-2xl overflow-hidden'
-              style={{ 
-                height: `130px`
-               }}
-            >
-              <Image 
-                src={`/artworks/${dataImages[1].list![1].covers!.image}`} 
-                alt={`Image by ${dataImages[1].list![1].artist}`}
-                width={280} 
-                height={130} 
-                className='w-full h-full object-cover' 
-              />
-            </div>
-            <div className='h-[320px] rounded-2xl overflow-hidden'
-              style={{ 
-                height: `380px`
-               }}
-            >
-              <Image 
-                src={`/artworks/${dataImages[2].covers!.image}`} 
-                alt={`Image by ${dataImages[2]}`}
-                width={280} 
-                height={380} 
-                className='w-full h-full object-cover' 
-              />
-            </div>
-          </div>
-        </div>
+        <NftGrid />
       </div>
-      <div className={`${padding} flex justify-center`}>
+      <Link href={URLS.opensea} target='_blank' 
+        className={`${padding} flex justify-center`}
+      >
         <ButtonPrimary>
             See All Artwork
         </ButtonPrimary>
-      </div>
+      </Link>
     </section>
   )
 };
 
 export default FeaturedArtworks;
 
-const dataImages = [{
-    isList: false,
-    covers: {
-      image: 'image_3.png',
-      width: 208,
-      height: 338
-    },
-    artist: 'Pavel Durov',
-    text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
-    url: '#',
-}, {
-    isList: true,
-    list: [
-      {
-        covers: {
-          image: 'image_5.png',
-          width: 232,
-          height: 213
-        },
-        artist: 'Pavel Durov',
-        text: 'Pavel Durov is the founder of Telegram, a messaging"',
-        url: '#',
-      },
-      {
-        covers: {
-          image: 'image_4.png',
-          width: 232,
-          height: 196
-        },
-        artist: 'Pavel Durov',
-        text: 'Pavel Durov is the founder of Telegram, a messaging"',
-        url: '#',
-      },
-    ]
-}, {
-    isList: false,
-    covers: {
-      image: 'image_8.png',
-      width: 208,
-      height: 352
-    },
-    artist: 'Pavel Durov',
-    text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
-    url: '#',
-}, {
-    isList: false,
-    covers: {
-      image: 'image_1.png',
-      width: 276,
-      height: 385
-    },
-    artist: 'Pavel Durov',
-    text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
-    url: '#',
-}, {
-    isList: true,
-    list: [
-      {
-        covers: {
-          image: 'image_7.png',
-          width: 380,
-          height: 237
-        },
-        artist: 'Pavel Durov',
-        text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
-        url: '#',
-      },
-      {
-        covers: {
-          image: 'image_6.png',
-          width: 380,
-          height: 172
-        },
-        artist: 'Pavel Durov',
-        text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
-        url: '#',
-      },
-    ]
-}, {
-    isList: false,
-    covers: {
-      image: 'image_3.png',
-      width: 232,
-      height: 359
-    },
-    artist: 'Pavel Durov',
-    text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
-    url: '#',
-}, {
-    isList: false,
-    covers: {
-      image: 'image_3.png',
-      width: 208,
-      height: 338
-    },
-    artist: 'Pavel Durov',
-    text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
-    url: '#',
-}, {
-    isList: true,
-    list: [
-      {
-        covers: {
-          image: 'image_5.png',
-          width: 232,
-          height: 213
-        },
-        artist: 'Pavel Durov',
-        text: 'Pavel Durov is the founder of Telegram, a messaging"',
-        url: '#',
-      },
-      {
-        covers: {
-          image: 'image_4.png',
-          width: 232,
-          height: 196
-        },
-        artist: 'Pavel Durov',
-        text: 'Pavel Durov is the founder of Telegram, a messaging"',
-        url: '#',
-      },
-    ]
-}, {
-    isList: false,
-    covers: {
-      image: 'image_8.png',
-      width: 208,
-      height: 352
-    },
-    artist: 'Pavel Durov',
-    text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
-    url: '#',
-}, {
-    isList: false,
-    covers: {
-      image: 'image_1.png',
-      width: 276,
-      height: 385
-    },
-    artist: 'Pavel Durov',
-    text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
-    url: '#',
-}, {
-    isList: true,
-    list: [
-      {
-        covers: {
-          image: 'image_7.png',
-          width: 380,
-          height: 237
-        },
-        artist: 'Pavel Durov',
-        text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
-        url: '#',
-      },
-      {
-        covers: {
-          image: 'image_6.png',
-          width: 380,
-          height: 172
-        },
-        artist: 'Pavel Durov',
-        text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
-        url: '#',
-      },
-    ]
-}, {
-    isList: false,
-    covers: {
-      image: 'image_3.png',
-      width: 232,
-      height: 359
-    },
-    artist: 'Pavel Durov',
-    text: 'Pavel Durov is the founder of Telegram, a messaging platform known for its strong encryption and commitment to freedom of expression. Born in 1984 in Russia, Pavel was once dubbed the "Zuckerberg of Russia"',
-    url: '#',
-},]
+const NftCard = ({ item }: NFTItemProps) => {
+  return (
+    <>
+      <div className="z-[9] group-hover:opacity-100 opacity-0 absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[rgba(0,0,0,0.9)] to-[rgba(0,0,0,0)] transition-all duration-300"></div>
+      <div className="z-10 px-2 absolute group-hover:opacity-100 opacity-0 bottom-2 w-full">
+        <p className="text-lg font-semibold line-clamp-1 overflow-ellipsis">{item.artist!}</p>
+        <div className={`${poppins.className}`}>
+          <span className="text-[13px] opacity-80 line-clamp-4 overflow-hidden">{item.text!}</span>
+          <span className="ml-[2px] text-[13px] text-[#FC6400] font-bold">
+            <Link href={item.url!}>
+              Read Full Story
+            </Link>
+          </span>
+        </div>
+      </div>
+      <Image
+        src={`/nft/${item.cover.image}`}
+        alt={`Image by ${item.artist}`}
+        fill
+        className="object-cover w-auto object-center"
+      />
+    </>
+  )
+}
+

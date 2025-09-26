@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { poppins } from '@/app/font';
 import { motion } from 'framer-motion';
 import { FaChevronDown } from 'react-icons/fa';
+import { URLS } from '@/constant/urls';
 import ButtonPrimary from '@/components/ButtonPrimary';
 import GlassBox from '@/components/GlassBox';
 
@@ -112,7 +113,7 @@ export default function HeaderHomepage() {
                  }}
                 className='inline-block min-w-[60px]'
               >
-                <Link href='#' className='block'>
+                <Link href={URLS.claimairdrop} target='_blank' className='block'>
                   <ButtonPrimary>
                     <div className='min-w-[30px] xl:min-w-fit'>
                       <motion.div
@@ -139,7 +140,7 @@ export default function HeaderHomepage() {
                  }}
                 className='inline-block'
               >
-                <Link href='#'
+                <Link href={URLS.community}
                   className='group relative my_border_gradient_primary block px-4 xl:px-8 py-3 xl:py-5 text-center text-sm xl:text-base rounded-[10px] before:rounded-[10px] transition-all duration-300 hover:shadow-[0_2px_30px_rgba(252,100,0,0.5)] overflow-hidden'>
                     <div className='z-0 absolute top-0 left-0 w-full h-0 bg-gradient-to-r from-[#B72204] to-[#FC6400] group-hover:h-full transition-all duration-300'></div>
                     <motion.div

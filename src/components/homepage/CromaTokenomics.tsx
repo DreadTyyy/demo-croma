@@ -1,9 +1,9 @@
 'use client';
 
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { poppins } from '@/app/font';
 import GlassBox from '@/components/GlassBox';
-import { motion } from 'framer-motion';
 
 const CromaTokenomics = () => {
   return (
@@ -78,7 +78,7 @@ const CromaTokenomics = () => {
                           <span className='text-sm lg:text-base font-bold bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                             {percentage}% {' '}
                           </span>
-                          <span className='text-sm lg:text-base font-bold text-white'>({amount}.5M)</span>
+                          <span className='text-sm lg:text-base font-bold text-white'>({amount}M)</span>
                         </div>
                       </div>
                       <div className='relative bg-[#323336] ring-inset-[#3E3E3E] w-full h-[28px] rounded-full'>
@@ -159,20 +159,20 @@ export default CromaTokenomics;
 
 const dataCrmToken = [{
   title: 'Presale',
-  percentage: 49,
-  amount: 465.5 
+  percentage: 52.6,
+  amount: 500 
 }, {
-  title: 'LP',
-  percentage: 10,
-  amount: 92
+  title: 'Liquidity',
+  percentage: 7.9,
+  amount: 75
 }, {
-  title: 'Airdrop',
-  percentage: 15,
-  amount: 142.5 
+  title: 'Marketing',
+  percentage: 7.9,
+  amount: 75
 }, {
-  title: 'Burn/Reward/Treasury',
-  percentage: 15,
-  amount: 142.5 
+  title: 'Minning Locked',
+  percentage: 31.6,
+  amount: 300
 }];
 
 const dataCrcToken = [{

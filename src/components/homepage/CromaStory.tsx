@@ -1,11 +1,13 @@
 'use client';
 
+import { useRef } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { poppins } from '@/app/font';
 import { motion, useInView } from 'framer-motion';
 import ButtonPrimary from '@/components/ButtonPrimary';
 import GlassBox from '@/components/GlassBox';
-import { useRef } from 'react';
+import { URLS } from '@/constant/urls';
 
 const CromaStory = () => {
   const ref = useRef(null);
@@ -71,9 +73,11 @@ const CromaStory = () => {
                       </GlassBox>
                     </div>
                   </div>
-                  <ButtonPrimary>
-                    Join the Story
-                  </ButtonPrimary>
+                  <Link href={URLS.crmtoken} target='_blank'>
+                    <ButtonPrimary>
+                      Join the Story
+                    </ButtonPrimary>
+                  </Link>
                 </div>
               </div>
             </div>

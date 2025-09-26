@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { poppins } from '@/app/font';
-import { FaTwitter, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaDiscord,FaTelegramPlane } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import { URLS } from '@/constant/urls';
 
 const Footer = () => {
@@ -33,24 +34,19 @@ const Footer = () => {
                 The world's most advanced Layer 2 solution combining AI-powered development, quantum-resistant security, and lightning-fast performance.
               </p>
               <div className='flex items-center gap-5'>
-                <Link href='#'>
+                <Link href={URLS.discrod} target='_blank'>
                   <div className='flex justify-center items-center bg-[rgba(255,255,255,0.1)] size-10 rounded-full'>
-                      <FaTwitter size={24} color='#FFFFFF' />
+                      <FaDiscord size={24} color='#FFFFFF' />
                   </div>
                 </Link>
-                <Link href='#'>
+                <Link href={URLS.telegram} target='_blank'>
                   <div className='flex justify-center items-center bg-[rgba(255,255,255,0.1)] size-10 rounded-full'>
-                      <FaInstagram size={24} color='#FFFFFF' />
+                      <FaTelegramPlane size={24} color='#FFFFFF' />
                   </div>
                 </Link>
-                <Link href='#'>
+                <Link href={URLS.xtwitter} target='_blank'>
                   <div className='flex justify-center items-center bg-[rgba(255,255,255,0.1)] size-10 rounded-full'>
-                      <FaFacebook size={24} color='#FFFFFF' />
-                  </div>
-                </Link>
-                <Link href='#'>
-                  <div className='flex justify-center items-center bg-[rgba(255,255,255,0.1)] size-10 rounded-full'>
-                      <FaYoutube size={24} color='#FFFFFF' />
+                      <FaXTwitter size={24} color='#FFFFFF' />
                   </div>
                 </Link>
               </div>

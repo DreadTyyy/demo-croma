@@ -1,8 +1,10 @@
 'use client';
 
+import Link from 'next/link';
 import Image from 'next/image';
 import { poppins } from '@/app/font';
 import { motion } from 'framer-motion';
+import { URLS } from '@/constant/urls';
 import ButtonPrimary from '@/components/ButtonPrimary';
 import GlassBox from '@/components/GlassBox';
 
@@ -66,9 +68,11 @@ const Partnership = () => {
           </p>
         </motion.div>
         <div className='text-nowrap'>
-          <ButtonPrimary>
-            Become a Partner
-          </ButtonPrimary>
+          <Link href={`mailto:${URLS.mail}`}>
+            <ButtonPrimary>
+              Become a Partner
+            </ButtonPrimary>
+          </Link>
         </div>
       </div>
     </section>

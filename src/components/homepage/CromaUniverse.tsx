@@ -2,11 +2,12 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { poppins } from '@/app/font';
+import { URLS } from '@/constant/urls';
 import ButtonPrimary from '@/components/ButtonPrimary';
 import GlassBox from '@/components/GlassBox';
 
-import { motion } from 'framer-motion';
 
 const CromaUniverse = () => {
   return (
@@ -79,7 +80,7 @@ const CromaUniverse = () => {
               <p className={`${poppins.className} mt-3 mb-6 font-medium text-base 2xl:text-xl text-[#E9E9E9]`}>
                 NFT marketplace for original art & meme art. Discover, create, and trade unique digital artworks with seamless blockchain integration.
               </p>
-              <Link href='#'>
+              <Link href={URLS.cromaartio} target='_blank'>
                 <ButtonPrimary>
                   Learn More
                 </ButtonPrimary>
@@ -120,7 +121,7 @@ const CromaUniverse = () => {
               <p className={`${poppins.className} mt-3 mb-6 font-medium text-base 2xl:text-xl text-[#E9E9E9]`}>
                 Modular Layer-2 blockchain powered by $CMC token. Fast, secure, and scalable infrastructure for the next generation of dApps.
               </p>
-              <Link href='#'>
+              <Link href={URLS.cromachain} target='_blank'>
                 <ButtonPrimary>
                   Learn More
                 </ButtonPrimary>
@@ -171,7 +172,7 @@ const CromaUniverse = () => {
                 <p className={`${poppins.className} mt-3 mb-6 font-medium text-base 2xl:text-xl text-[#E9E9E9]`}>
                   Secure, fast, and user-friendly Web3 wallet. Manage your crypto assets, NFTs, and interact with dApps effortlessly.
                 </p>
-                <Link href='#'>
+                <Link href={URLS.trixwallet}>
                   <ButtonPrimary>
                     Learn More
                   </ButtonPrimary>
@@ -205,7 +206,7 @@ const CromaUniverse = () => {
                 <p className={`${poppins.className} mt-3 mb-6 font-medium text-base 2xl:text-xl text-[#E9E9E9]`}>
                   Real-time crypto news portal. Stay updated with the latest blockchain developments, market insights, and project updates.
                 </p>
-                <Link href='#'>
+                <Link href={URLS.trixnews}>
                   <ButtonPrimary>
                     Learn More
                   </ButtonPrimary>

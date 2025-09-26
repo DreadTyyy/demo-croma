@@ -6,6 +6,7 @@ import { poppins } from '@/app/font';
 import { motion } from 'framer-motion';
 import ButtonPrimary from '@/components/ButtonPrimary';
 import GlassBox from '@/components/GlassBox';
+import { URLS } from '@/constant/urls';
 
 const ClaimToken = () => {
   return (
@@ -132,7 +133,7 @@ const ClaimToken = () => {
               </div>
             </div>
             <div className='mt-[26px] flex flex-col gap-2'>
-              <Link href=''>
+              <Link href={URLS.claimairdrop}>
                 <ButtonPrimary>
                   Claim Airdrop Now
                 </ButtonPrimary>

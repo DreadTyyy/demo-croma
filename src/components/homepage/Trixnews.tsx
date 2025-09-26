@@ -1,10 +1,12 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import { poppins } from '@/app/font';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { URLS } from '@/constant/urls';
 import GlassBox from '@/components/GlassBox';
 import ButtonPrimary from '@/components/ButtonPrimary';
 
@@ -12,36 +14,35 @@ import '@/styles/globals.css';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import { motion } from 'framer-motion';
 
 const dataNews = [{
     id: 1,
-    url: '#',
+    url: 'https://www.trixnews.com/articles/layer2-ethereum-scaling-cromachain-web3',
     cover: 'news_1.png',
     title: 'Layer-2 Expansion: Ethereum Scaling and CromaChain’s Role in Web3 Adoption'
 },{
     id: 2,
-    url: '#',
+    url: 'https://www.trixnews.com/articles/nft-market-rebound-cromaart-blockchain-art',
     cover: 'news_2.png',
     title: 'NFT Market Rebounds: From Collectibles to CromaArt’s Curated Blockchain Art'
 },{
     id: 3,
-    url: '#',
+    url: 'https://www.trixnews.com/articles/web3-industry-tokenization-enterprise-adoption',
     cover: 'news_3.png',
     title: 'Web3 Industry Expands: From Tokenized Assets to Enterprise Adoption'
 },{
     id: 4,
-    url: '#',
+    url: 'https://www.trixnews.com/articles/layer2-ethereum-scaling-cromachain-web3',
     cover: 'news_1.png',
     title: 'Layer-2 Expansion: Ethereum Scaling and CromaChain’s Role in Web3 Adoption'
 },{
     id: 5,
-    url: '#',
+    url: 'https://www.trixnews.com/articles/nft-market-rebound-cromaart-blockchain-art',
     cover: 'news_2.png',
     title: 'NFT Market Rebounds: From Collectibles to CromaArt’s Curated Blockchain Art'
 },{
     id: 6,
-    url: '#',
+    url: 'https://www.trixnews.com/articles/web3-industry-tokenization-enterprise-adoption',
     cover: 'news_3.png',
     title: 'Web3 Industry Expands: From Tokenized Assets to Enterprise Adoption'
 }]
@@ -134,11 +135,11 @@ const Trixnews = () => {
         </Swiper>
       </div>
       <div className='w-full flex flex-col justify-center items-center'>
-        <ButtonPrimary>
-            <Link href='trixnews.com' className='mt-6' target='_blank'>
+        <Link href={URLS.trixnews} className='mt-6' target='_blank'>
+          <ButtonPrimary>
             Read More on Trixnews.com
-            </Link>
-        </ButtonPrimary>
+          </ButtonPrimary>
+        </Link>
       </div>
     </section>
   )
