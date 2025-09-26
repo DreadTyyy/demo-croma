@@ -49,7 +49,7 @@ export default function Navbar({active}: {active: string}) {
                 className='pb-4 lg:pb-0 border-b lg:border-none border-white w-full lg:w-fit font-bold bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text transition-all duration-300 hover:text-transparent'>
                 Home
               </Link>
-              <Link href='#roadmap' 
+              <Link href='/#roadmap' 
                 className='pb-4 lg:pb-0 border-b lg:border-none border-white w-full lg:w-fit font-normal bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text transition-all duration-300 hover:text-transparent'>
                 Roadmap
               </Link>
@@ -61,7 +61,7 @@ export default function Navbar({active}: {active: string}) {
                 className='pb-4 lg:pb-0 border-b lg:border-none border-white w-full lg:w-fit font-normal bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text transition-all duration-300 hover:text-transparent'>
                 Whitepaper
               </Link>
-              <Link href='#tokenomics' 
+              <Link href='/#tokenomics' 
                 className='pb-4 lg:pb-0 border-b lg:border-none border-white w-full lg:w-fit font-normal bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text transition-all duration-300 hover:text-transparent'>
                 Tokenomics
               </Link>
