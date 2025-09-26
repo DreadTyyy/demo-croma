@@ -174,13 +174,16 @@ const Whitepaper = () => {
                   <SubSubHeading>Distribution</SubSubHeading>
                   <ul>
                     <li><Paragraph opacity={60}>
-                      Presale:84.2% (800,000,000 CRM)
+                      Presale:52.6% (500,000,000 CRM)
                     </Paragraph></li>
                     <li><Paragraph opacity={60}>
-                      Liquidity Pool:7.9% (75,000,000 CRM)
+                      Liquidity:7.9% (75,000,000 CRM)
                     </Paragraph></li>
                     <li><Paragraph opacity={60}>
-                      Community & Marketing:7.9% (75,000,000 CRM)
+                      Marketing:7.9% (75,000,000 CRM)
+                    </Paragraph></li>
+                    <li><Paragraph opacity={60}>
+                      Minning Locked:31.6% (300,000,000 CRM)
                     </Paragraph></li>
                   </ul>
                 </div>
@@ -189,27 +192,27 @@ const Whitepaper = () => {
               <SubSubHeading>TOKEN DISTRIBUTION DETAILS</SubSubHeading>
               <div className='space-y-6'>
                 <div>
-                  <SubSubHeading>Presale – 84.2% (800,000,000 CRM)</SubSubHeading>
-                  <Paragraph opacity={60}>Tokens allocated for the public sale and early investors. Funds raised during the presale phase will be used to:</Paragraph>
-                  <ul className="ml-4 xl:ml-8">
-                    {['Develop the Croma Art ecosystem and infrastructure', 'Support the deployment of CromaChain', 'Cover operational and expansion costs', 'Fund strategic partnerships and listings']
-                    .map((text, i) => (
-                      <li key={i} className='list-disc'>
-                        <Paragraph opacity={60}>{text}</Paragraph>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <SubSubHeading>Liquidity Pool – 7.9% (75,000,000 CRM)</SubSubHeading>
+                  <SubSubHeading>Presale – 52.6% (500,000,000 CRM)</SubSubHeading>
                   <Paragraph opacity={60}>
-                    Allocated to provide liquidity on decentralized exchanges (DEX) such as Uniswap. This ensures smooth and stable trading of CRM tokens in the open market, especially post-presale.
+                    The majority of the supply is allocated to the presale, giving early investors the opportunity to participate while establishing the initial liquidity and community foundation.
                   </Paragraph>
                 </div>
                 <div>
-                  <SubSubHeading>Community & Marketing – 7.9% (75,000,000 CRM)</SubSubHeading>
+                  <SubSubHeading>Liquidity – 7.9% (75,000,000 CRM)</SubSubHeading>
                   <Paragraph opacity={60}>
-                    Reserved for airdrops, community incentives, ambassador programs, promotional events, and strategic collaborations to grow brand awareness and user engagement.
+                    Reserved to provide liquidity on exchanges (DEX and CEX) to maintain price stability and ensure smooth trading.
+                  </Paragraph>
+                </div>
+                <div>
+                  <SubSubHeading>Marketing – 7.9% (75,000,000 CRM)</SubSubHeading>
+                  <Paragraph opacity={60}>
+                    Dedicated to promotional campaigns, partnerships, and community growth initiatives aimed at expanding adoption and visibility of the ecosystem.
+                  </Paragraph>
+                </div>
+                <div>
+                  <SubSubHeading>Minning Locked: – 31.6% (300,000,000 CRM)</SubSubHeading>
+                  <Paragraph opacity={60}>
+                    Locked tokens allocated exclusively for mining and staking rewards. This incentivizes community participation in securing the network and supporting ecosystem activity.
                   </Paragraph>
                 </div>
               </div>
@@ -247,7 +250,7 @@ const Whitepaper = () => {
                 CromaChain is a next-generation modular Layer 2 protocol built to redefine the infrastructure landscape of Web3. Where legacy chains are rigid, opaque, and developer-centric, CromaChain is inclusive, scalable, and future-secure. Our vision is to democratize blockchain access through zero-code tools, quantum-resistant security, and provable execution.
               </Paragraph>
               <ButtonPrimary>
-                <Link href='#' className={`${orbitron.className}`}>
+                <Link href='https://cromachain.com/' target='_blank' className={`${orbitron.className}`}>
                     View Cromachain
                 </Link>
               </ButtonPrimary>
@@ -636,7 +639,7 @@ const Whitepaper = () => {
           </GlassBox>
           <GlassBox baseColor='orange'>
             <div className="px-4 py-8 xl:p-10 space-y-6 backdrop-blur-[50px]">
-              <SubSubHeading>CRC Token Strategy</SubSubHeading>
+              <SubSubHeading>CMC Token Strategy</SubSubHeading>
               <Paragraph opacity={60}>
                 CMC tokens will be listed on Ethereum DEX/CEX platforms with zkBridge-enabled migration capabilities. SDKs will be provided for third-party listing integrators to ensure seamless adoption.
               </Paragraph>
