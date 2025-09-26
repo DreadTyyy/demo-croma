@@ -178,6 +178,9 @@ const NftCard = ({ item }: NFTItemProps) => {
         alt={`Image by ${item.artist}`}
         fill
         className="object-cover w-auto object-center"
+        draggable={false}
+        onContextMenu={(e) => e.preventDefault()} 
+        style={{ pointerEvents: "none" }} 
       />
     </>
   )
