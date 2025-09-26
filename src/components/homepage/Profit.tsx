@@ -36,7 +36,7 @@ const Profit = () => {
         <motion.div 
           initial={{ y: 60, x: -60, opacity: 0 }}
           whileInView={{ y: 0, x: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: 'easeIn' }}
+          transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.2 }}
           className='motion-element'
         >
@@ -65,7 +65,7 @@ const Profit = () => {
         <motion.div 
           initial={{ y: 60, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, ease: 'easeIn' }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.2 }}
           className='motion-element'
         >
@@ -94,7 +94,7 @@ const Profit = () => {
         <motion.div 
           initial={{ y: 60, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.5, ease: 'easeIn' }}
+          transition={{ delay: 0.3, duration: 0.5, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.2 }}
           className='motion-element'
         >

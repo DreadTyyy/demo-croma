@@ -36,7 +36,7 @@ const CromaUniverse = () => {
         <motion.div
           initial={{ y: 20, x: -20, opacity: 0 }}
           whileInView={{ y: 0, x: 0, opacity: 1 }}
-          transition={{ delay: 0.4, duration: 1, ease: 'easeIn' }}
+          transition={{ delay: 0.4, duration: 1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
           className='w-full motion-element'
         >
@@ -54,7 +54,7 @@ const CromaUniverse = () => {
                 </ButtonPrimary>
               </Link>
               <Image
-                src='/skate_people.png'
+                src='/skate_people.webp'
                 alt='Skateboard image'
                 width={340}
                 height={420}
@@ -68,7 +68,7 @@ const CromaUniverse = () => {
         <motion.div
           initial={{ y: 60, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, ease: 'easeIn' }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.1 }}
           className='motion-element'
         >
@@ -98,7 +98,7 @@ const CromaUniverse = () => {
         <motion.div
           initial={{ y: 60, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.5, ease: 'easeIn' }}
+          transition={{ delay: 0.2, duration: 0.5, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.1 }}
           className='motion-element'
         >
@@ -133,7 +133,7 @@ const CromaUniverse = () => {
         <motion.div
           initial={{ y: 60, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.4, duration: 0.5, ease: 'easeIn' }}
+          transition={{ delay: 0.4, duration: 0.5, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.1 }}
           className='motion-element h-full lg:row-start-1 lg:row-end-3 lg:col-start-3'
         >
@@ -160,7 +160,7 @@ const CromaUniverse = () => {
                     ))}
                   </div>
                   <Image
-                    src='/phone_trix.png'
+                    src='/phone_trix.webp'
                     alt='Phone trix wallet'
                     width={292}
                     height={335}
@@ -186,7 +186,7 @@ const CromaUniverse = () => {
         <motion.div
           initial={{ y: 60, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, ease: 'easeIn' }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }}
           className='motion-element xl:col-span-2'
         >
@@ -194,7 +194,7 @@ const CromaUniverse = () => {
             <GlassBox baseColor='orange'>
             <div className='px-4 py-8 lg:p-8 2xl:p-10 flex flex-col lg:flex-row items-center justify-between backdrop-blur[50] w-full gap-4'>
               <Image
-                src='/king_read_book.png'
+                src='/king_read_book.webp'
                 alt='King read book image'
                 width={325}
                 height={289}
