@@ -41,7 +41,7 @@ const Profit = () => {
           className='motion-element'
         >
           <GlassBox baseColor='orange'>
-            <div className='px-4 lg:px-6 py-8 backdrop-blur-[10px] bg-[url("/wave_pattern.webp")] bg-center bg-cover space-y-4 2xl:space-y-6'>
+            <div className='px-4 lg:px-6 py-8 bg-[url("/wave_pattern.webp")] bg-center bg-cover space-y-4 2xl:space-y-6'>
               <div className='w-fit'>
                 <GlassBox baseColor='white' rounded='9999'>
                   <Image
@@ -70,7 +70,7 @@ const Profit = () => {
           className='motion-element'
         >
           <GlassBox baseColor='orange'>
-            <div className='px-4 lg:px-6 py-8 backdrop-blur-[10px] bg-[url("/wave_pattern.webp")] bg-center bg-cover space-y-4 2xl:space-y-6'>
+            <div className='px-4 lg:px-6 py-8 bg-[url("/wave_pattern.webp")] bg-center bg-cover space-y-4 2xl:space-y-6'>
               <div className='w-fit'>
                 <GlassBox baseColor='white' rounded='9999'>
                   <Image
@@ -99,7 +99,7 @@ const Profit = () => {
           className='motion-element'
         >
           <GlassBox baseColor='orange'>
-            <div className='px-4 lg:px-6 py-8 backdrop-blur-[10px] bg-[url("/wave_pattern.webp")] bg-center bg-cover space-y-4 2xl:space-y-6'>
+            <div className='px-4 lg:px-6 py-8 bg-[url("/wave_pattern.webp")] bg-center bg-cover space-y-4 2xl:space-y-6'>
               <div className='w-fit'>
                 <GlassBox baseColor='white' rounded='9999'>
                   <Image

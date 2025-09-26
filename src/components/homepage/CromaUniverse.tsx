@@ -41,7 +41,7 @@ const CromaUniverse = () => {
           className='w-full motion-element'
         >
           <GlassBox baseColor='orange'>
-            <div className='px-4 py-8 lg:p-8 2xl:p-10 backdrop-blur-[10px]'>
+            <div className='px-4 py-8 lg:p-8 2xl:p-10'>
               <h2 className='text-white text-2xl lg:text-[26px] 2xl:text-[32px] font-semibold leading-[120%] max-w-3/4'>
                 All connected in one vision: building a global art + crypto movement
               </h2>
@@ -73,7 +73,7 @@ const CromaUniverse = () => {
           className='motion-element'
         >
           <GlassBox baseColor='orange'>
-            <div className='px-4 py-8 lg:p-8 2xl:p-10 backdrop-blur-[10px] lg:h-[740px] w-full'>
+            <div className='px-4 py-8 lg:p-8 2xl:p-10 lg:h-[740px] w-full'>
               <h2 className='text-white text-2xl lg:text-[26px] 2xl:text-[32px] font-semibold leading-[120%]'>
                 CromaArt.io
               </h2>
@@ -103,7 +103,7 @@ const CromaUniverse = () => {
           className='motion-element'
         >
           <GlassBox baseColor='orange'>
-            <div className='px-4 py-8 lg:p-8 2xl:p-10 backdrop-blur-[10px] lg:h-[740px] w-full lg:w-[420px]'>
+            <div className='px-4 py-8 lg:p-8 2xl:p-10 lg:h-[740px] w-full lg:w-[420px]'>
               <div className='mb-6 flex justify-center w-full'>
                 <div className='w-[150px] md:w-[310px] 2xl:w-[310px]'>
                   <Image
@@ -139,7 +139,7 @@ const CromaUniverse = () => {
         >
           <div className='h-full'>
             <GlassBox baseColor='orange'>
-              <div className='px-4 py-8 lg:p-8 2xl:p-10 backdrop-blur-[10px] w-full h-full'>
+              <div className='px-4 py-8 lg:p-8 2xl:p-10 w-full h-full'>
                 <div className='mb-10 flex flex-col justify-center items-center w-full gap-5 lg:gap-10'>
                   <Image
                     src='/trixwallet_logo_text.png'
@@ -192,7 +192,7 @@ const CromaUniverse = () => {
         >
           <div>
             <GlassBox baseColor='orange'>
-            <div className='px-4 py-8 lg:p-8 2xl:p-10 flex flex-col lg:flex-row items-center justify-between backdrop-blur-[10px] w-full gap-4'>
+            <div className='px-4 py-8 lg:p-8 2xl:p-10 flex flex-col lg:flex-row items-center justify-between w-full gap-4'>
               <Image
                 src='/king_read_book.webp'
                 alt='King read book image'

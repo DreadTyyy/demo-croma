@@ -68,7 +68,7 @@ export default function HeaderHomepage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.8, duration: 1, ease: 'easeIn' }}
             >
-              <div className='border border-[rgba(255,255,255,0.4)] rounded-[8px] overflow-hidden bg-[linear-gradient(rgba(255,255,255,0.11),rgba(255,255,255,0.11)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))] backdrop-blur-[4px]'>
+              <div className='border border-[rgba(255,255,255,0.4)] rounded-[8px] overflow-hidden bg-[linear-gradient(rgba(255,255,255,0.11),rgba(255,255,255,0.11)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
                 <div className={` relative px-4 xl:px-8 py-3 flex flex-col gap-y-1 md:gap-y-2 items-center justify-between`}>
                   <div className={`${poppins.className} pb-1 w-full text-center border-b border-[rgba(255,255,255,0.6)]`}>
                     <p className='text-xl xl:text-2xl font-bold tracking-wide text-white uppercase'>

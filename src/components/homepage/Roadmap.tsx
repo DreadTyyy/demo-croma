@@ -46,7 +46,7 @@ const Roadmap = () => {
           className='motion-element'
         >
           <GlassBox baseColor='green'>
-            <div className='flex flex-col gap-4 lg:gap-6 px-4 lg:px-6 py-8 backdrop-blur-[10px]'>
+            <div className='flex flex-col gap-4 lg:gap-6 px-4 lg:px-6 py-8'>
               <div className='flex items-center justify-between w-full'>
                 <div className='flex items-center gap-4'>
                   <GlassBox baseColor='white' rounded='9999'>
@@ -55,7 +55,7 @@ const Roadmap = () => {
                       alt='Phase 1'
                       width={54}
                       height={54}
-                      className='p-2.5 backdrop-blur-[5px]'
+                      className='p-2.5'
                     />
                   </GlassBox>
                   <div className='text-[#E9E9E9]'>
@@ -107,7 +107,7 @@ const Roadmap = () => {
         >
           <div className={`border-[6px] border-[#FC6400] rounded-[20px] h-full`}>
             <div className='relative h-full overflow-hidden rounded-[20px] bg-[linear-gradient(rgba(255,255,255,0.11),rgba(255,255,255,0.11)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
-              <div className='flex flex-col gap-4 lg:gap-6 px-4 py-8 backdrop-blur-[10px]'>
+              <div className='flex flex-col gap-4 lg:gap-6 px-4 py-8'>
                 <div className='flex items-center justify-between w-full'>
                   <div className='flex items-center gap-4'>
                     <GlassBox baseColor='white' rounded='9999'>
@@ -116,7 +116,7 @@ const Roadmap = () => {
                         alt='Phase 2'
                         width={54}
                         height={54}
-                        className='p-2.5 backdrop-blur-[5px]'
+                        className='p-2.5'
                       />
                     </GlassBox>
                     <div className='text-[#E9E9E9]'>
@@ -125,7 +125,7 @@ const Roadmap = () => {
                     </div>
                   </div>
                   <div className={`border border-[#FC6400] rounded-full h-full`}>
-                    <div className='px-2 lg:px-4 py-1 lg:py-2 2xl:py-3 w-fit rounded-full bg-[rgba(255,255,255,0.07)] backdrop-blur-[5px]'>
+                    <div className='px-2 lg:px-4 py-1 lg:py-2 2xl:py-3 w-fit rounded-full bg-[rgba(255,255,255,0.07)]'>
                       <span className=' bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent font-semibold text-sm lg:text-base'>
                         In Progress
                       </span>
@@ -171,7 +171,7 @@ const Roadmap = () => {
           className='motion-element'
         >
           <GlassBox baseColor='blue'>
-            <div className='flex flex-col gap-4 lg:gap-6 px-4 lg:px-6 py-8 backdrop-blur-[10px]'>
+            <div className='flex flex-col gap-4 lg:gap-6 px-4 lg:px-6 py-8'>
               <div className='flex items-center justify-between w-full'>
                 <div className='flex items-center gap-4'>
                   <GlassBox baseColor='white' rounded='9999'>
@@ -180,7 +180,7 @@ const Roadmap = () => {
                       alt='Phase 3'
                       width={54}
                       height={54}
-                      className='p-2.5 backdrop-blur-[5px]'
+                      className='p-2.5'
                     />
                   </GlassBox>
                   <div className='text-[#E9E9E9]'>
@@ -231,7 +231,7 @@ const Roadmap = () => {
           className='motion-element'
         >
           <GlassBox baseColor='blue'>
-            <div className='flex flex-col gap-4 lg:gap-6 px-4 lg:px-6 py-8 backdrop-blur-[10px]'>
+            <div className='flex flex-col gap-4 lg:gap-6 px-4 lg:px-6 py-8'>
               <div className='flex items-center justify-between w-full'>
                 <div className='flex items-center gap-4'>
                   <GlassBox baseColor='white' rounded='9999'>
@@ -240,7 +240,7 @@ const Roadmap = () => {
                       alt='Phase 4'
                       width={54}
                       height={54}
-                      className='p-2.5 backdrop-blur-[5px]'
+                      className='p-2.5'
                     />
                   </GlassBox>
                   <div className='text-[#E9E9E9]'>

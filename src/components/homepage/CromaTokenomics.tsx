@@ -61,7 +61,7 @@ const CromaTokenomics = () => {
               <h3 className='mt-4 lg:mt-6 text-2xl lg:text-3xl 2xl:text-4xl font-bold text-white'>$CRM Token</h3>
               <p className={`${poppins.className} mt-2 mb-4 2xl:mb-6 text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>CromaArt Token</p>
               <GlassBox baseColor='white'>
-                <div className='xl:px-8 py-4 2xl:py-6 backdrop-blur-[10px] rounded-[20px]'>
+                <div className='xl:px-8 py-4 2xl:py-6 rounded-[20px]'>
                   <p className='mb-2.5 text-[26px] lg:text-[32px] 2xl:text-[40px] font-bold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                     950,000,000
                   </p>
@@ -120,7 +120,7 @@ const CromaTokenomics = () => {
               <h3 className='mt-4 lg:mt-6 text-2xl lg:text-3xl 2xl:text-4xl font-bold text-white'>$CRC Token</h3>
               <p className={`${poppins.className} mt-2 mb-4 2xl:mb-6 text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>CromaChain Token</p>
               <GlassBox baseColor='white'> 
-                <div className='xl:px-8 py-4 2xl:py-6 backdrop-blur-[10px] rounded-[20px]'>
+                <div className='xl:px-8 py-4 2xl:py-6 rounded-[20px]'>
                   <p className='mb-2.5 text-[26px] lg:text-[32px] 2xl:text-[40px] font-bold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                     2,000,000,000
                   </p>
@@ -131,7 +131,7 @@ const CromaTokenomics = () => {
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 text-left'>
                   {dataCrcToken.map(({title, desc, icon}) => (
                     <GlassBox baseColor='primary' key={title}>
-                      <div className='p-4 2xl:p-6 flex items-start gap-2.5 rounded-[20px] backdrop-blur-[5px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
+                      <div className='p-4 2xl:p-6 flex items-start gap-2.5 rounded-[20px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
                         <Image 
                           src={icon}
                           alt={`Icon ${title}`}

@@ -114,7 +114,7 @@ const Trixnews = () => {
             >
               <Link href={p.url}>
                 <GlassBox baseColor='orange'>
-                    <div className='py-8 px-4 2xl:px-6 w-full backdrop-blur-[50px]'>
+                    <div className='py-8 px-4 2xl:px-6 w-full'>
                     <div className='relative w-full h-[270px] bg-red-500 rounded-[20px] overflow-hidden'>
                         <Image
                         src={`/news_cover/${p.cover}`}
