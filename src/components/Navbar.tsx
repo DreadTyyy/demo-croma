@@ -1,11 +1,12 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import BorderBox from './BorderBox';
-import { useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
+import BorderBox from '@/components/BorderBox';
+import { URLS } from '@/constant/urls';
 
 export default function Navbar({active}: {active: string}) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -41,7 +42,7 @@ export default function Navbar({active}: {active: string}) {
               >
                 <IoClose size={32}/>
               </button>
-              <Link href='/' 
+              <Link href={URLS.home} 
                 style={{ 
                   color: active == 'home' ? 'transparent' : '',
                   fontWeight: active == 'home' ? 'bold' : 'normal',
@@ -49,11 +50,11 @@ export default function Navbar({active}: {active: string}) {
                 className='pb-4 lg:pb-0 border-b lg:border-none border-white w-full lg:w-fit font-bold bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text transition-all duration-300 hover:text-transparent'>
                 Home
               </Link>
-              <Link href='/#roadmap' 
+              <Link href={URLS.roadmap} 
                 className='pb-4 lg:pb-0 border-b lg:border-none border-white w-full lg:w-fit font-normal bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text transition-all duration-300 hover:text-transparent'>
                 Roadmap
               </Link>
-              <Link href='/whitepaper' 
+              <Link href={URLS.whitepaper} 
                 style={{ 
                   color: active == 'whitepaper' ? 'transparent' : '',
                   fontWeight: active == 'whitepaper' ? 'bold' : 'normal'
@@ -61,11 +62,11 @@ export default function Navbar({active}: {active: string}) {
                 className='pb-4 lg:pb-0 border-b lg:border-none border-white w-full lg:w-fit font-normal bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text transition-all duration-300 hover:text-transparent'>
                 Whitepaper
               </Link>
-              <Link href='/#tokenomics' 
+              <Link href={URLS.tokenomics}
                 className='pb-4 lg:pb-0 border-b lg:border-none border-white w-full lg:w-fit font-normal bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text transition-all duration-300 hover:text-transparent'>
                 Tokenomics
               </Link>
-              <Link href='https://airdrop.cromachain.com' target='_blank' 
+              <Link href={URLS.airdrop} target='_blank' 
                 className='pb-4 lg:pb-0 border-b lg:border-none border-white w-full lg:w-fit font-normal bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text transition-all duration-300 hover:text-transparent'>
                 Airdrop
               </Link>
@@ -87,7 +88,7 @@ export default function Navbar({active}: {active: string}) {
 
 const DashboardLink = ({className}: {className: string}) => {
   return (
-    <Link href='#' 
+    <Link href={URLS.dashboard}
       className={`${className} px-8 py-3.5 text-base 2xl:text-lg bg-gradient-to-r from-[#B72204] to-[#FC6400] text-white rounded-lg shadow-[0_2px_20px_rgb(252,100,0,0.5)] transition-all duration-300 hover:shadow-[0_2px_40px_rgba(252,100,0,0.7)]`}>
         Dashboard
     </Link>

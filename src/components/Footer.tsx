@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { poppins } from '@/app/font';
 import { FaTwitter, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
+import { URLS } from '@/constant/urls';
 
 const Footer = () => {
   return (
@@ -57,48 +58,34 @@ const Footer = () => {
             <div className='flex flex-col items-start lg:items-end w-full text-[#E9E9E9]'>
               <div className='flex flex-wrap gap-5 lg:gap-10'>
                 <Link 
-                  href='/'
+                  href={URLS.home}
                   className='font-medium text-base lg:text-lg 2xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
                 >
                   Home
                 </Link>
                 <Link 
-                  href='#'
+                  href={URLS.roadmap}
                   className='font-medium text-base lg:text-lg 2xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
                 >
-                  Leaderboard
+                  Roadmap
                 </Link>
                 <Link 
-                  href='#'
+                  href={URLS.whitepaper}
+                  className='font-medium text-base lg:text-lg 2xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
+                >
+                  Whitepaper
+                </Link>
+                <Link 
+                  href={URLS.tokenomics}
+                  className='font-medium text-base lg:text-lg 2xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
+                >
+                  Tokenomics
+                </Link>
+                <Link 
+                  href={URLS.airdrop} target='_blank'
                   className='font-medium text-base lg:text-lg 2xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
                 >
                   Airdrop
-                </Link>
-                <Link 
-                  href='#'
-                  className='font-medium text-base lg:text-lg 2xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
-                >
-                  Refferal
-                </Link>
-              </div>
-              <div className='mt-8 flex flex-wrap gap-5 lg:gap-10'>
-                <Link 
-                  href='#'
-                  className='font-medium text-base lg:text-lg 2xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
-                >
-                  Terms
-                </Link>
-                <Link 
-                  href='#'
-                  className='font-medium text-base lg:text-lg 2xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
-                >
-                  Privacy
-                </Link>
-                <Link 
-                  href='#'
-                  className='font-medium text-base lg:text-lg 2xl:text-xl hover:text-[#FC6400] transition-all duration-300'  
-                >
-                  Find Us
                 </Link>
               </div>
               <p className='mt-[60px] text-center lg:text-right text-base 2xl:text-xl opacity-50'>

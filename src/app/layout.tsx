@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import '@/styles/globals.css';
 import ReactLenis from 'lenis/react';
 
-import { orbitron } from './font';
+import { orbitron } from '@/app/font';
 
 export const metadata: Metadata = {
   title: 'Croma Art',
