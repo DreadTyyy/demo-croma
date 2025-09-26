@@ -46,7 +46,7 @@ const CromaStory = () => {
                     </p>
                     <div className='flex flex-col lg:flex-row items-center gap-2 lg:gap-4 text-left'>
                       <GlassBox baseColor='primary'>
-                        <div className='p-4 lg:p-6 flex items-start gap-2.5 rounded-[20px] backdrop-blur-[20px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
+                        <div className='p-4 lg:p-6 flex items-start gap-2.5 rounded-[20px] backdrop-blur-[5px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
                           <Image
                             src='contract.svg'
                             alt='Icon'
@@ -59,7 +59,7 @@ const CromaStory = () => {
                         </div>
                       </GlassBox>
                       <GlassBox baseColor='primary'>
-                        <div className='p-4 lg:p-6 flex items-start gap-2.5 rounded-[20px] backdrop-blur-[20px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
+                        <div className='p-4 lg:p-6 flex items-start gap-2.5 rounded-[20px] backdrop-blur-[5px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
                           <Image
                             src='wallet.svg'
                             alt='Icon'
