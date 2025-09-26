@@ -12,7 +12,7 @@ const Profit = () => {
       <div className={`${poppins.className} grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6`}>
         <div className='flex flex-col justify-center items-center text-center w-full'>
           <motion.div
-            initial={{ opacity: 0, filter: 'blur(20px)' }}
+            initial={{ opacity: 0, filter: 'blur(6px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 1, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.3 }} 
@@ -22,7 +22,7 @@ const Profit = () => {
             </h2>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, filter: 'blur(20px)' }}
+            initial={{ opacity: 0, filter: 'blur(6px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.3 }} 

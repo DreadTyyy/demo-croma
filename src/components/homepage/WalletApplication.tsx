@@ -16,7 +16,7 @@ const WalletApplication = () => {
           <span className='text-white text-sm md:text-base'>Wallet Applications</span>
         </div>
         <motion.div
-          initial={{ opacity: 0, filter: 'blur(20px)' }}
+          initial={{ opacity: 0, filter: 'blur(6px)' }}
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 

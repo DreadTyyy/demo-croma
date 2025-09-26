@@ -13,7 +13,7 @@ const CromaTokenomics = () => {
           <span className='text-[#FC6400] text-sm md:text-base'>CROMA Tokenomics</span>
         </div>
         <motion.div
-          initial={{ opacity: 0, filter: 'blur(20px)' }}
+          initial={{ opacity: 0, filter: 'blur(6px)' }}
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
@@ -22,7 +22,7 @@ const CromaTokenomics = () => {
           <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold text-white tracking-[-0.04%]'>Two Tokens, One Ecosystem</h2>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, filter: 'blur(20px)' }}
+          initial={{ opacity: 0, filter: 'blur(6px)' }}
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.1 }} 

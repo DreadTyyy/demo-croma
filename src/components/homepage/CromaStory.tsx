@@ -11,7 +11,7 @@ import { URLS } from '@/constant/urls';
 
 const CromaStory = () => {
   const ref = useRef(null);
-  const inView = useInView(ref, { amount: 0.5, once: true });
+  const inView = useInView(ref, { amount: 0.3, once: true });
 
   return (
     <section ref={ref} className='relative py-12 lg:py-[60px] mx-4 lg:mx-[100px] 2xl:mx-[160px] min-h-[500px]'>
@@ -22,7 +22,7 @@ const CromaStory = () => {
       >
         <div className={`border border-[#FFFFFF] rounded-[15px] h-full`}>
           <motion.div
-            initial={{ opacity: 0, filter: 'blur(8px)' }}
+            initial={{ opacity: 0, filter: 'blur(2px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ delay: 0.7, duration: 1, ease: 'easeIn' }}
             viewport={{ once: true, amount: 0.4 }}

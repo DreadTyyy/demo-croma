@@ -17,7 +17,7 @@ const ClaimToken = () => {
         <div className='relative h-full overflow-hidden rounded-[20px] bg-[rgba(252,100,0,0.1)]'>
           <div className='px-4 py-8 lg:p-8 2xl:p-10 text-center'>
             <motion.div
-              initial={{ opacity: 0, filter: 'blur(20px)' }}
+              initial={{ opacity: 0, filter: 'blur(6px)' }}
               whileInView={{ opacity: 1, filter: 'blur(0px)' }}
               transition={{ duration: 1, ease: 'easeOut' }}
               viewport={{ once: true, amount: 0.3 }} 
@@ -28,7 +28,7 @@ const ClaimToken = () => {
               </h2>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, filter: 'blur(20px)' }}
+              initial={{ opacity: 0, filter: 'blur(6px)' }}
               whileInView={{ opacity: 1, filter: 'blur(0px)' }}
               transition={{ duration: 0.7, ease: 'easeOut' }}
               viewport={{ once: true, amount: 0.3 }} 

@@ -161,8 +161,8 @@ export default function HeaderHomepage() {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ 
-              delay: 0.5,
-              duration: 1,
+              delay: 1.2,
+              duration: 0.6,
               ease: 'easeInOut'
              }}
              className='h-full 2xl:min-w-[500px]'

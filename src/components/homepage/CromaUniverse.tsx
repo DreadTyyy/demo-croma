@@ -22,7 +22,7 @@ const CromaUniverse = () => {
             <span className='text-[#FC6400] text-sm md:text-base'>The CROMA Universe</span>
           </div>
           <motion.div
-            initial={{ opacity: 0, filter: 'blur(20px)' }}
+            initial={{ opacity: 0, filter: 'blur(6px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 1, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.3 }}  

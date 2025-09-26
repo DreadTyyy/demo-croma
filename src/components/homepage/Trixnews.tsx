@@ -55,7 +55,7 @@ const Trixnews = () => {
           <span className='text-[#FC6400] text-base'>Trixnews</span>
         </div>
         <motion.div
-          initial={{ opacity: 0, filter: 'blur(20px)' }}
+          initial={{ opacity: 0, filter: 'blur(6px)' }}
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
@@ -66,7 +66,7 @@ const Trixnews = () => {
           </h2>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, filter: 'blur(20px)' }}
+          initial={{ opacity: 0, filter: 'blur(6px)' }}
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
@@ -118,7 +118,7 @@ const Trixnews = () => {
                     <div className='relative w-full h-[270px] bg-red-500 rounded-[20px] overflow-hidden'>
                         <Image
                         src={`/news_cover/${p.cover}`}
-                        alt={p.title}
+                        alt='Cover news'
                         fill
                         className='object-cover object-center w-full h-full'
                         />

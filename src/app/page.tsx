@@ -45,6 +45,7 @@ export default function Home() {
             alt='Coin side header'
             width={281}
             height={447}
+            priority
             sizes='(max-width: 768px) 150px, (max-width: 1024px) 200px, 281px'
             className='w-[60px] h-[140px] md:w-[200px] md:h-[340px] 2xl:w-[281px] 2xl:h-[447px]'
           />
