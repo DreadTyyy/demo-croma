@@ -22,10 +22,11 @@ import BuyForm from '@/components/homepage/BuyForm';
 export default function Home() {
   return (
     <>
-      <div className='relative pt-[140px] overflow-hidden pb-10'>
+      <div className='relative pt-[140px] overflow-hidden pb-10 bg-[url("/header_pattern.png")] bg-auto lg:bg-cover bg-center'>
         <div className='-z-[9] absolute top-0 left-0 w-full h-full bg-gradient-to-br from-black to-[rgba(0,0,0,0.26)]'>
         </div>
-        <Image
+        <div className='absolute inset-0 bg-[url("/header_stars.png")] bg-cover bg-center -z-20'></div>
+        {/* <Image
           src='/header_pattern.png'
           alt='Rectangle pattern image'
           fill
@@ -36,7 +37,7 @@ export default function Home() {
           alt='Stars pattern image'
           fill
           className='-z-10 object-cover'
-        />
+        /> */}
         <Navbar active='home' />
         <div className='-z-[1] absolute -top-6 -left-[8%] 2xl:-left-[10%]'>
           <Image 
