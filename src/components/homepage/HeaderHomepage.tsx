@@ -217,9 +217,7 @@ export default function HeaderHomepage() {
                                 height={28}
                               />
                               <span className='uppercase text-base xl:text-lg'>ETH</span>
-                              <span>
-                                <FaChevronDown />
-                              </span>
+                              <FaChevronDown />
                             </div>
                           </div>
                         </GlassBox>
@@ -243,9 +241,7 @@ export default function HeaderHomepage() {
                                 height={28}
                               />
                               <span className='uppercase text-base xl:text-lg'>CRM</span>
-                              <span>
-                                <FaChevronDown />
-                              </span>
+                              <FaChevronDown />
                             </div>
                           </div>
                         </GlassBox>

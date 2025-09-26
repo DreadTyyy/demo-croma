@@ -63,7 +63,7 @@ const ClaimToken = () => {
                   className='motion-element'
                 >
                   <GlassBox baseColor='orange'>
-                    <div className='relative px-4 lg:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.png")] bg-center'>
+                    <div className='relative px-4 lg:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.webp")] bg-center'>
                       <div className='mb-4 2xl:mb-6 flex items-center gap-4'>
                         <GlassBox baseColor='white' rounded='9999'>
                           <p className='flex justify-center items-center size-[36] lg:size-[42] 2xl:size-[54px] text-white text-xl 2xl:text-2xl font-semibold'>
@@ -88,7 +88,7 @@ const ClaimToken = () => {
                   className='motion-element'
                 >
                   <GlassBox baseColor='orange'>
-                    <div className='relative px-4 lg:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.png")] bg-center'>
+                    <div className='relative px-4 lg:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.webp")] bg-center'>
                       <div className='mb-4 lg:mb-6 flex items-center gap-4'>
                         <GlassBox baseColor='white' rounded='9999'>
                           <p className='flex justify-center items-center size-[36] lg:size-[42] 2xl:size-[54px] text-white text-xl 2xl:text-2xl font-semibold'>
@@ -113,7 +113,7 @@ const ClaimToken = () => {
                   className='motion-element'
                 >
                   <GlassBox baseColor='orange'>
-                    <div className='relative px-4 lg:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.png")] bg-center'>
+                    <div className='relative px-4 lg:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.webp")] bg-center'>
                       <div className='mb-4 lg:mb-6 flex items-center gap-4'>
                         <GlassBox baseColor='white' rounded='9999'>
                           <p className='flex justify-center items-center size-[36] lg:size-[42] 2xl:size-[54px] text-white text-xl 2xl:text-2xl font-semibold'>
