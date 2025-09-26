@@ -20,7 +20,7 @@ const WalletApplication = () => {
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
-          className='w-[150px] md:w-[240px] 2xl:w-[300px]'
+          className='blur-animate w-[150px] md:w-[240px] 2xl:w-[300px]'
         >
           <Image
             src='/trix_wallet_logo_text_horizontal.png'
@@ -37,6 +37,7 @@ const WalletApplication = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0 }}
+          className='motion-element'
         >
           <Image
             src='/all_phones.png'
@@ -50,6 +51,7 @@ const WalletApplication = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.2 }}
+          className='motion-element'
         >
           <p className='text-center max-w-[680px] text-base 2xl:text-xl font-medium text-[#E9E9E9]'>
             Secure, fast, and user-friendly Web3 wallet. Manage your crypto assets, NFTs, and interact with dApps effortlessly.
@@ -63,7 +65,7 @@ const WalletApplication = () => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: i * 0.1 + 0.1,duration: 0.5, ease: 'easeIn' }}
               viewport={{ once: true, amount: 0 }}
-              className={`border border-[#FFFFFF] rounded-[20px] h-full`}
+              className={`motion-element border border-[#FFFFFF] rounded-[20px] h-full`}
             >
               <div className={`relative px-2 lg:px-4 2xl:px-6 py-3 h-full overflow-hidden rounded-[20px] bg-[rgba(0,0,0,0.1)]`}>
                 <span className='text-sm lg:text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80'>

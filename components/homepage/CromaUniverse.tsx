@@ -24,7 +24,8 @@ const CromaUniverse = () => {
             initial={{ opacity: 0, filter: 'blur(20px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 1, ease: 'easeOut' }}
-            viewport={{ once: true, amount: 0.3 }} 
+            viewport={{ once: true, amount: 0.3 }}  
+            className='blur-animate'
           >
             <p className='mt-4 font-semibold text-2xl lg:text-3xl 2xl:text-4xl text-white '>
               CROMA is not just a taken. It's a complete ecosystem:
@@ -36,7 +37,7 @@ const CromaUniverse = () => {
           whileInView={{ y: 0, x: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 1, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.3 }} 
-          className='w-full'
+          className='w-full motion-element'
         >
           <GlassBox baseColor='orange'>
             <div className='px-4 py-8 lg:p-8 2xl:p-10 backdrop-blur-[50px]'>
@@ -68,6 +69,7 @@ const CromaUniverse = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.1 }}
+          className='motion-element'
         >
           <GlassBox baseColor='orange'>
             <div className='px-4 py-8 lg:p-8 2xl:p-10 backdrop-blur[50] lg:h-[740px] w-full'>
@@ -97,6 +99,7 @@ const CromaUniverse = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.1 }}
+          className='motion-element'
         >
           <GlassBox baseColor='orange'>
             <div className='px-4 py-8 lg:p-8 2xl:p-10 backdrop-blur[50] lg:h-[740px] w-full lg:w-[420px]'>
@@ -131,7 +134,7 @@ const CromaUniverse = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.1 }}
-          className='h-full lg:row-start-1 lg:row-end-3 lg:col-start-3'
+          className='motion-element h-full lg:row-start-1 lg:row-end-3 lg:col-start-3'
         >
           <div className='h-full'>
             <GlassBox baseColor='orange'>
@@ -184,7 +187,7 @@ const CromaUniverse = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.3 }}
-          className='xl:col-span-2'
+          className='motion-element xl:col-span-2'
         >
           <div>
             <GlassBox baseColor='orange'>

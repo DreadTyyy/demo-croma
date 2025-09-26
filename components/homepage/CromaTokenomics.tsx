@@ -17,6 +17,7 @@ const CromaTokenomics = () => {
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
+          className='blur-animate'
         >
           <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold text-white tracking-[-0.04%]'>Two Tokens, One Ecosystem</h2>
         </motion.div>
@@ -25,6 +26,7 @@ const CromaTokenomics = () => {
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.1 }} 
+          className='blur-animate'
         >
           <p className='text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-[680px]'>
             $CRM powers the art marketplace while $CMC fuels the blockchain infrastructure. Real utility for art & chain with transparent, community-focused distribution.
@@ -37,7 +39,7 @@ const CromaTokenomics = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.1 }} 
-          className='w-full'
+          className='w-full motion-element'
         >
           <GlassBox baseColor='orange'>
             <Image
@@ -96,7 +98,7 @@ const CromaTokenomics = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.1 }} 
-          className='w-full'
+          className='w-full motion-element'
         >
           <GlassBox baseColor='orange'>
             <Image

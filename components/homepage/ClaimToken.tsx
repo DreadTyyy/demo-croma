@@ -20,6 +20,7 @@ const ClaimToken = () => {
               whileInView={{ opacity: 1, filter: 'blur(0px)' }}
               transition={{ duration: 1, ease: 'easeOut' }}
               viewport={{ once: true, amount: 0.3 }} 
+              className='blur-animate'
             >
               <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                 How to Claim
@@ -30,6 +31,7 @@ const ClaimToken = () => {
               whileInView={{ opacity: 1, filter: 'blur(0px)' }}
               transition={{ duration: 0.7, ease: 'easeOut' }}
               viewport={{ once: true, amount: 0.3 }} 
+              className='blur-animate'
             >
               <p className={`${poppins.className} mt-2 2xl:mt-4 text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>
                 Simple 3-step process to get your free tokens
@@ -41,7 +43,7 @@ const ClaimToken = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, ease: 'easeIn' }}
                 viewport={{ once: true, amount: 0.2 }}
-                className='xl:max-w-1/2'
+                className='motion-element xl:max-w-1/2'
               >
                 <Image
                   src='/claim_coin.png'
@@ -57,6 +59,7 @@ const ClaimToken = () => {
                   whileInView={{ y: 0, x: 0, opacity: 1 }}
                   transition={{ duration: 1, ease: 'easeIn' }}
                   viewport={{ once: true, amount: 0.2 }}
+                  className='motion-element'
                 >
                   <GlassBox baseColor='orange'>
                     <div className='relative px-4 lg:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.png")] bg-center'>
@@ -81,6 +84,7 @@ const ClaimToken = () => {
                   whileInView={{ y: 0, x: 0, opacity: 1 }}
                   transition={{ delay: 0.3, duration: 0.7, ease: 'easeIn' }}
                   viewport={{ once: true, amount: 0.1 }}
+                  className='motion-element'
                 >
                   <GlassBox baseColor='orange'>
                     <div className='relative px-4 lg:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.png")] bg-center'>
@@ -105,6 +109,7 @@ const ClaimToken = () => {
                   whileInView={{ y: 0, x: 0, opacity: 1 }}
                   transition={{ duration: 0.5, ease: 'easeIn' }}
                   viewport={{ once: true, amount: 0.1 }}
+                  className='motion-element'
                 >
                   <GlassBox baseColor='orange'>
                     <div className='relative px-4 lg:px-6 py-8 text-left max-w-[500px] bg-[url("/polygon_pattern_10.png")] bg-center'>

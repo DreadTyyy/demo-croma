@@ -26,6 +26,7 @@ const Profit = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.3 }} 
+            className='blur-animate'
           >
             <p className='mt-4 lg:mt-6 text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-[560px]'>
               CROMA is painted with honesty, not bullshit. Clean tokenomics with zero buy/sell taxes.
@@ -37,6 +38,7 @@ const Profit = () => {
           whileInView={{ y: 0, x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.2 }}
+          className='motion-element'
         >
           <GlassBox baseColor='orange'>
             <div className='px-4 lg:px-6 py-8 backdrop-blur-[50px] bg-[url("/wave_pattern.png")] bg-center bg-cover space-y-4 2xl:space-y-6'>
@@ -65,6 +67,7 @@ const Profit = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.2 }}
+          className='motion-element'
         >
           <GlassBox baseColor='orange'>
             <div className='px-4 lg:px-6 py-8 backdrop-blur-[50px] bg-[url("/wave_pattern.png")] bg-center bg-cover space-y-4 2xl:space-y-6'>
@@ -93,6 +96,7 @@ const Profit = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.2 }}
+          className='motion-element'
         >
           <GlassBox baseColor='orange'>
             <div className='px-4 lg:px-6 py-8 backdrop-blur-[50px] bg-[url("/wave_pattern.png")] bg-center bg-cover space-y-4 2xl:space-y-6'>

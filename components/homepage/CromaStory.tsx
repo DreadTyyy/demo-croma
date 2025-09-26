@@ -2,25 +2,29 @@
 
 import Image from 'next/image';
 import { poppins } from '@/app/font';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import ButtonPrimary from '@/components/ButtonPrimary';
 import GlassBox from '@/components/GlassBox';
+import { useRef } from 'react';
 
 const CromaStory = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { amount: 0.5, once: true });
+
   return (
-    <section className='relative py-12 lg:py-[60px] mx-4 lg:mx-[100px] 2xl:mx-[160px] min-h-[500px]'>
+    <section ref={ref} className='relative py-12 lg:py-[60px] mx-4 lg:mx-[100px] 2xl:mx-[160px] min-h-[500px]'>
       <motion.div
         initial={{ height: 0 }}
-        whileInView={{ height: 'auto' }}
+        animate={ inView ? { height: 'auto' } : {}}
         transition={{ duration: 0.7, ease: 'easeIn' }}
-        viewport={{ once: true, amount: 0.4 }}
       >
         <div className={`border border-[#FFFFFF] rounded-[15px] h-full`}>
           <motion.div
             initial={{ opacity: 0, filter: 'blur(8px)' }}
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-            transition={{ delay: 0.8, duration: 1, ease: 'easeIn' }}
+            transition={{ delay: 0.7, duration: 1, ease: 'easeIn' }}
             viewport={{ once: true, amount: 0.4 }}
+            className='blur-animate'
           >
             <div className='relative h-full overflow-hidden rounded-[15px]'>
               <div className='-z-10 absolute -top-[200px] lg:-top-[450px] left-1/2 -translate-x-1/2 size-[400px] lg:size-[900px] rounded-full bg-[radial-gradient(circle_at_center,#FC6400_0%,rgba(242,39,174,0)_70%)] blur-3xl opacity-80'></div>

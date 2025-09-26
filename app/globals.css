@@ -29,6 +29,14 @@ body {
   scroll-behavior: smooth;
 }
 
+.motion-element {
+  will-change: transform, opacity;
+}
+
+.blur-animate {
+  will-change: filter;
+}
+
 /* START LENIS STYLE */
 html.lenis,
 html.lenis body {

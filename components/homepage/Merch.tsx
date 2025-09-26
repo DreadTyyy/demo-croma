@@ -31,6 +31,7 @@ const Merch = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 1, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.3 }} 
+            className='blur-animate'
           >
             <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold tracking-[-0.04%] text-white'>
               Croma March
@@ -41,6 +42,7 @@ const Merch = () => {
             whileInView={{ opacity: 1, filter: 'blur(0px)' }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.3 }} 
+            className='blur-animate'
           >
             <p className='text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-fit lg:max-w-[500px]'>
               A limited collection designed for those who lead, not follow.
@@ -54,7 +56,7 @@ const Merch = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ delay: i * 0.1 + 0.1,duration: 0.5, ease: 'easeIn' }}
                 viewport={{ once: true, amount: 0.2 }}
-                className={`border border-[#FFFFFF] rounded-[20px] h-full`}
+                className={`motion-element border border-[#FFFFFF] rounded-[20px] h-full`}
               >
                 <div className={`relative px-2 lg:px-4 2xl:px-6 py-3 h-full overflow-hidden rounded-[20px] bg-[rgba(0,0,0,0.1)]`}>
                   <span className='text-sm lg:text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80'>

@@ -58,6 +58,7 @@ const Trixnews = () => {
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
+          className='blur-animate'
         >
           <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold tracking-[-0.04%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
             Latest Update
@@ -68,6 +69,7 @@ const Trixnews = () => {
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
+          className='blur-animate'
         >
           <p className='text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-fit xl:max-w-[500px]'>
             Hand-drawn masterpieces immortalized as NFTs

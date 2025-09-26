@@ -21,6 +21,7 @@ const NftGallery = () => {
               whileInView={{ opacity: 1, filter: 'blur(0px)' }}
               transition={{ duration: 1, ease: 'easeOut' }}
               viewport={{ once: true, amount: 0.1}} 
+              className='blur-animate'
             >
               <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold text-white tracking-[-0.04%]'>
                 CROMA Meme & Art Gallery
@@ -31,6 +32,7 @@ const NftGallery = () => {
               whileInView={{ opacity: 1, filter: 'blur(0px)' }}
               transition={{ duration: 1, ease: 'easeOut' }}
               viewport={{ once: true, amount: 0.1}} 
+              className='blur-animate'
             >
               <p className='text-base lg:text-lg 2xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-[680px]'>
                 From the community, for the community. Show your creativity through NFT & meme art. lets Submit Your Art

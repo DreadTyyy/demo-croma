@@ -17,7 +17,8 @@ const Roadmap = () => {
           initial={{ opacity: 0, filter: 'blur(20px)' }}
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1, ease: 'easeOut' }}
-          viewport={{ once: true, amount: 0.3 }} 
+          viewport={{ once: true, amount: 0.3 }}  
+          className='blur-animate'
         >
           <h2 className=' text-2xl lg:text-3xl 2xl:text-4xl font-semibold text-white tracking-[-0.04%]'>
             <span className='bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>CROMA {' '}</span>
@@ -29,6 +30,7 @@ const Roadmap = () => {
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
+          className='blur-animate'
         >
           <p className='text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-[680px]'>
             From airdrop launch to full ecosystem deployment. Track our progress as we build the future of art and blockchain integration step by step.
@@ -41,6 +43,7 @@ const Roadmap = () => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.2 }}
+          className='motion-element'
         >
           <GlassBox baseColor='green'>
             <div className='flex flex-col gap-4 lg:gap-6 px-4 lg:px-6 py-8 backdrop-blur-[50px]'>
@@ -100,6 +103,7 @@ const Roadmap = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0.2 }}
+          className='motion-element'
         >
           <div className={`border-[6px] border-[#FC6400] rounded-[20px] h-full`}>
             <div className='relative h-full overflow-hidden rounded-[20px] bg-[linear-gradient(rgba(255,255,255,0.11),rgba(255,255,255,0.11)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
@@ -164,6 +168,7 @@ const Roadmap = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0 }}
+          className='motion-element'
         >
           <GlassBox baseColor='blue'>
             <div className='flex flex-col gap-4 lg:gap-6 px-4 lg:px-6 py-8 backdrop-blur-[50px]'>
@@ -223,6 +228,7 @@ const Roadmap = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.5, ease: 'easeIn' }}
           viewport={{ once: true, amount: 0 }}
+          className='motion-element'
         >
           <GlassBox baseColor='blue'>
             <div className='flex flex-col gap-4 lg:gap-6 px-4 lg:px-6 py-8 backdrop-blur-[50px]'>

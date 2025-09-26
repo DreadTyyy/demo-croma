@@ -26,8 +26,9 @@ const FeaturedArtworks = () => {
         <motion.div
           initial={{ opacity: 0, filter: 'blur(20px)' }}
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-          transition={{ duration: 0.7, ease: 'easeOut' }}
+          transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
+          className='blur-animate'
         >
           <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold text-white tracking-[-0.04%]'>FEATURED ARTWORKS</h2>
         </motion.div>
@@ -36,6 +37,7 @@ const FeaturedArtworks = () => {
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.1 }} 
+          className='blur-animate'
         >
           <p className='text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80'>
             Hand-drawn masterpieces immortalized as NFTs

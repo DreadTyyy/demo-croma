@@ -18,6 +18,7 @@ const Partnership = () => {
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 1, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
+          className='blur-animate'
         >
           <h2 className='text-2xl lg:text-3xl 2xl:text-4xl font-semibold tracking-[-0.04%] text-white'>
             Our Ecosystem Partners
@@ -28,6 +29,7 @@ const Partnership = () => {
           whileInView={{ opacity: 1, filter: 'blur(0px)' }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0.3 }} 
+          className='blur-animate'
         >
           <p className='text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80 max-w-fit lg:max-w-[500px]'>
             Collaborating with industry leaders to bring you the finest art experience on the blockchain
@@ -57,6 +59,7 @@ const Partnership = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
           viewport={{ once: true, amount: 0 }} 
+          className='motion-element'
         >
           <p className={`${poppins.className} text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>
             Are you interested in partnering with Croma Art? We're always looking for strategic collaborations that can enhance our ecosystem and provide value to our community.
