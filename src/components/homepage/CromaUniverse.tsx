@@ -173,7 +173,7 @@ const CromaUniverse = () => {
                   Secure, fast, and user-friendly Web3 wallet. Manage your crypto assets, NFTs, and interact with dApps effortlessly.
                 </p>
                 <Link href={URLS.trixwallet} target='_blank'>
-                  <ButtonPrimary bgColor='bg-gradient-to-r from-blue-600 to-purple-600'>
+                  <ButtonPrimary bgColor='bg-gradient-to-r from-blue-600 to-purple-600' hoverShadow='hover:shadow-[0_2px_40px_rgba(21,93,252,0.7)]' shadow='shadow-[0_2px_40px_rgba(21,93,252,0.5)]'>
                     Learn More
                   </ButtonPrimary>
                 </Link>
