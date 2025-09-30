@@ -45,7 +45,7 @@ const Roadmap = () => {
           viewport={{ once: true, amount: 0.2 }}
           className='motion-element'
         >
-          <GlassBox baseColor='green'>
+          <GlassBox baseColor='orange'>
             <div className='flex flex-col gap-4 lg:gap-6 px-4 lg:px-6 py-8'>
               <div className='flex items-center justify-between w-full'>
                 <div className='flex items-center gap-4'>
@@ -63,9 +63,13 @@ const Roadmap = () => {
                     <p className='text-sm lg:text-base opacity-50'>Now - Completed</p>
                   </div>
                 </div>
-                <div className='px-2 lg:px-4 py-1 lg:py-2 2xl:py-3 w-fit rounded-full bg-[rgba(255,255,255,0.07)] border border-[#16BA00]'>
-                  <span className='text-[#16BA00] font-semibold text-sm lg:text-base'>Completed</span>
-                </div>
+                <div className={`border border-[#FC6400] rounded-full h-full`}>
+                    <div className='px-2 lg:px-4 py-1 lg:py-2 2xl:py-3 w-fit rounded-full bg-[rgba(255,255,255,0.07)]'>
+                      <span className=' bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent font-semibold text-sm lg:text-base'>
+                        Completed
+                      </span>
+                    </div>
+                  </div>
               </div>
               <h2 className='text-xl 2xl:text-2xl font-semibold text-white'>
                 Airdrop Distribution
@@ -105,8 +109,7 @@ const Roadmap = () => {
           viewport={{ once: true, amount: 0.2 }}
           className='motion-element'
         >
-          <div className={`border-[6px] border-[#FC6400] rounded-[20px] h-full`}>
-            <div className='relative h-full overflow-hidden rounded-[20px] bg-[linear-gradient(rgba(255,255,255,0.11),rgba(255,255,255,0.11)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
+          <GlassBox baseColor='orange'>
               <div className='flex flex-col gap-4 lg:gap-6 px-4 py-8'>
                 <div className='flex items-center justify-between w-full'>
                   <div className='flex items-center gap-4'>
@@ -151,8 +154,7 @@ const Roadmap = () => {
                   ))}
                 </div>
               </div>
-            </div>
-          </div>
+          </GlassBox>
         </motion.div>
         <div className='flex lg:hidden items-center justify-center rotate-90'>
           <Image
@@ -170,7 +172,7 @@ const Roadmap = () => {
           viewport={{ once: true, amount: 0 }}
           className='motion-element'
         >
-          <GlassBox baseColor='blue'>
+          <GlassBox baseColor='orange'>
             <div className='flex flex-col gap-4 lg:gap-6 px-4 lg:px-6 py-8'>
               <div className='flex items-center justify-between w-full'>
                 <div className='flex items-center gap-4'>
@@ -188,9 +190,13 @@ const Roadmap = () => {
                     <p className='text-sm lg:text-base opacity-50'>Q2 2025</p>
                   </div>
                 </div>
-                <div className='px-2 lg:px-4 py-1 lg:py-2 2xl:py-3 w-fit rounded-full bg-[rgba(255,255,255,0.07)] border border-[#00B7FF]'>
-                  <span className='text-[#00B7FF] font-semibold text-sm lg:text-base'>Upcoming</span>
-                </div>
+                <div className={`border border-[#FC6400] rounded-full h-full`}>
+                    <div className='px-2 lg:px-4 py-1 lg:py-2 2xl:py-3 w-fit rounded-full bg-[rgba(255,255,255,0.07)]'>
+                      <span className=' bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent font-semibold text-sm lg:text-base'>
+                        Upcoming
+                      </span>
+                    </div>
+                  </div>
               </div>
               <h2 className='text-xl 2xl:text-2xl font-semibold text-white'>
                 CEX & DEX Listings
@@ -230,7 +236,7 @@ const Roadmap = () => {
           viewport={{ once: true, amount: 0 }}
           className='motion-element'
         >
-          <GlassBox baseColor='blue'>
+          <GlassBox baseColor='orange'>
             <div className='flex flex-col gap-4 lg:gap-6 px-4 lg:px-6 py-8'>
               <div className='flex items-center justify-between w-full'>
                 <div className='flex items-center gap-4'>
@@ -248,9 +254,13 @@ const Roadmap = () => {
                     <p className='text-sm lg:text-base opacity-50'>Q3-Q4 2025</p>
                   </div>
                 </div>
-                <div className='px-2 lg:px-4 py-1 lg:py-2 2xl:py-3 w-fit rounded-full bg-[rgba(255,255,255,0.07)] border border-[#00B7FF]'>
-                  <span className='text-[#00B7FF] font-semibold text-sm lg:text-base'>Upcoming</span>
-                </div>
+                <div className={`border border-[#FC6400] rounded-full h-full`}>
+                    <div className='px-2 lg:px-4 py-1 lg:py-2 2xl:py-3 w-fit rounded-full bg-[rgba(255,255,255,0.07)]'>
+                      <span className=' bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent font-semibold text-sm lg:text-base'>
+                        Upcoming
+                      </span>
+                    </div>
+                  </div>
               </div>
               <h2 className='text-xl 2xl:text-2xl font-semibold text-white'>
                 Ecosystem Integration

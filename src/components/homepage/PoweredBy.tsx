@@ -8,11 +8,11 @@ import 'swiper/css';
 
 const PoweredBy = () => {
   return (
-    <section className='py-5 xl:py-10 bg-gradient-to-r from-[#B72204] to-[#FC6400]'>
+    <section className='pt-4'>
         <p className='px-0 md:px-4 xl:px-[120px] font-semibold text-xl xl:text-2xl text-white text-center'>
           Powered By
         </p>
-        <div className='flex mt-4 md:mt-8 xl:mt-10 w-full justify-center'>
+        <div className='flex mt-4 py-4 w-full justify-center bg-gradient-to-r from-[#B72204] to-[#FC6400]'>
           <SliderComponent />
         </div>
       </section>
@@ -33,13 +33,13 @@ const SliderComponent = () => {
       breakpoints={{
         640: {
           slidesPerView: 7,
-          spaceBetween: 24,
+          spaceBetween: 16,
         },
       }}
     >
       {supportTeams.map(({icon, width, height}: {icon: string; width: number; height: number}) => (
         <SwiperSlide key={icon}>
-          <div className='w-full h-[24px] xl:h-[48px] flex justify-center'>
+          <div className='w-full h-[24px] xl:h-[24] flex justify-center'>
             <Image
               src={`/support_logo/${icon}`}
               alt='Logo support'

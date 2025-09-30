@@ -13,7 +13,7 @@ export const URLS = {
   cromaartio: 'https://cromaart.io/',
   opensea: 'https://opensea.io/collection/croma-executive-portrait-series',
   claimairdrop: '#',
-  trixwallet: '#',
+  trixwallet: 'https://trixwallet.com/',
   // Story
   crmtoken: 'https://etherscan.io/token/0x3fdf5aab678df0e34f3ba2255823c5340550711d', 
 

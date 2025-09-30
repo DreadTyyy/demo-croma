@@ -90,55 +90,18 @@ const FeaturedArtworks = () => {
         modules={[FreeMode, Pagination]}
         className='mySwiper my_artworks_gallery'
       >
-        {nftImages.map((item, i) => {
-          const groupIndex = i % 5;
-          const listSize = [[304, 380], [304, 190], [304, 190], [304, 410], [304, 370]];
-
-          if (groupIndex === 2) {
-              return
-          } else if (groupIndex === 1) {
-            return (
-              <SwiperSlide
-                key={i}
-                className="space-y-6"
-                style={{
-                  width: `${listSize[1][0]}px`,
-                  height: `${listSize[1][1] * 2}px`,
-                }}
-              >
-                <div className="group relative overflow-hidden border-[#FC6400] hover:border-[2px]"
-                  style={{
-                    width: `${listSize[1][0]}px`,
-                    height: `${listSize[1][1]}px`, 
-                  }}
-                >
-                  <NftCard item={item} />
-                </div>
-                <div className="group relative overflow-hidden border-[#FC6400] hover:border-[2px]"
-                  style={{
-                    width: `${listSize[1][0]}px`,
-                    height: `${listSize[1][1]}px`, 
-                  }} 
-                >
-                  <NftCard item={nftImages[i+1]} />
-                </div>
-              </SwiperSlide>
-            )
-          } else {
-            return (
-              <SwiperSlide
-                key={i}
-                className="group relative overflow-hidden border-[#FC6400] hover:border-[2px]"
-                style={{
-                  width: `${listSize[groupIndex][0]}px`,
-                  height: `${listSize[groupIndex][1]}px`,
-                }}
-              >
-                <NftCard item={item} />
-              </SwiperSlide>
-            );
-          }
-        })}
+        {nftImages.map((item, i) => (
+          <SwiperSlide
+            key={i}
+            className="group relative overflow-hidden border-[#FC6400] hover:border-[2px]"
+            style={{
+              width: `304px`,
+              height: `380px`,
+            }}
+          >
+            <NftCard item={item} />
+          </SwiperSlide>
+        ))}
             <div className='custom-pagination'></div>
       </Swiper>
       </div>

@@ -54,7 +54,7 @@ const CromaUniverse = () => {
                 </ButtonPrimary>
               </Link>
               <Image
-                src='/skate_people.webp'
+                src='/skate_people.png'
                 alt='Skateboard image'
                 width={340}
                 height={420}
@@ -172,8 +172,8 @@ const CromaUniverse = () => {
                 <p className={`${poppins.className} mt-3 mb-6 font-medium text-base 2xl:text-xl text-[#E9E9E9]`}>
                   Secure, fast, and user-friendly Web3 wallet. Manage your crypto assets, NFTs, and interact with dApps effortlessly.
                 </p>
-                <Link href={URLS.trixwallet}>
-                  <ButtonPrimary>
+                <Link href={URLS.trixwallet} target='_blank'>
+                  <ButtonPrimary bgColor='bg-gradient-to-r from-blue-600 to-purple-600'>
                     Learn More
                   </ButtonPrimary>
                 </Link>
@@ -206,7 +206,7 @@ const CromaUniverse = () => {
                 <p className={`${poppins.className} mt-3 mb-6 font-medium text-base 2xl:text-xl text-[#E9E9E9]`}>
                   Real-time crypto news portal. Stay updated with the latest blockchain developments, market insights, and project updates.
                 </p>
-                <Link href={URLS.trixnews}>
+                <Link href={URLS.trixnews} target='_blank'>
                   <ButtonPrimary>
                     Learn More
                   </ButtonPrimary>

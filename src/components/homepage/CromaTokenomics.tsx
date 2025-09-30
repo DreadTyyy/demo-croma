@@ -112,12 +112,12 @@ const CromaTokenomics = () => {
               <div className='flex w-full justify-center'>
                 <Image 
                   src='/crc_token_logo.png'
-                  alt='CRC token logo'
+                  alt='CMC token logo'
                   width={126}
                   height={126}
                 />
               </div>
-              <h3 className='mt-4 lg:mt-6 text-2xl lg:text-3xl 2xl:text-4xl font-bold text-white'>$CRC Token</h3>
+              <h3 className='mt-4 lg:mt-6 text-2xl lg:text-3xl 2xl:text-4xl font-bold text-white'>$CMC Token</h3>
               <p className={`${poppins.className} mt-2 mb-4 2xl:mb-6 text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>CromaChain Token</p>
               <GlassBox baseColor='white'> 
                 <div className='xl:px-8 py-4 2xl:py-6 rounded-[20px]'>
@@ -129,7 +129,7 @@ const CromaTokenomics = () => {
               </GlassBox>
               <div className={`${poppins.className} mt-4 2xl:mt-6`}>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 text-left'>
-                  {dataCrcToken.map(({title, desc, icon}) => (
+                  {dataCmcToken.map(({title, desc, icon}) => (
                     <GlassBox baseColor='primary' key={title}>
                       <div className='p-4 2xl:p-6 flex items-start gap-2.5 rounded-[20px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
                         <Image 
@@ -175,7 +175,7 @@ const dataCrmToken = [{
   amount: 300
 }];
 
-const dataCrcToken = [{
+const dataCmcToken = [{
   title: 'Gas Fees',
   desc: 'Transaction costs on CromaChain',
   icon: 'gas_fees.svg'
