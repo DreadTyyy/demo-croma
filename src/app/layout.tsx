@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
         <body
-          className={`${orbitron.className} antialiased overflow-x-hidden`}
+          className={`${orbitron.className} antialiased overflow-x-hidden bg-[#0a0a0a] text-[#EAEAEA]`}
         >
           {/* <Navbar active='home' /> */}
           {children}

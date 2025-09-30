@@ -7,7 +7,7 @@ import GlassBox from '@/components/GlassBox';
 
 const CromaTokenomics = () => {
   return (
-    <section id='tokenomics' className='scroll-mt-[100px] px-4 lg:px-[64px] 2xl:px-[100px] py-12 lg:py-20 border-t border-[#414141]'>
+    <section className='px-4 lg:px-[64px] 2xl:px-[100px] py-12 lg:py-20 border-t border-[#414141]'>
       <div className={`${poppins.className} flex flex-col text-center items-center gap-4`}>
         <div className='px-3.5 py-2 w-fit rounded-full bg-black border border-[#FC6400]'>
           <span className='text-[#FC6400] text-sm md:text-base'>CROMA Tokenomics</span>
@@ -33,7 +33,7 @@ const CromaTokenomics = () => {
           </p>
         </motion.div>
       </div>
-      <div className='mt-10 2xl:mt-[60px] grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-x-4 2xl:gap-x-6'>
+      <div id='tokenomics' className='scroll-mt-[120px] 2xl:scroll-mt-[160px] mt-10 2xl:mt-[60px] grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-x-4 2xl:gap-x-6'>
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -45,34 +45,34 @@ const CromaTokenomics = () => {
             <Image
               src='/coin_cromaart_2.png'
               alt='Coin CromaArt'
-              width={264}
-              height={264}
+              width={214}
+              height={214}
               className='-z-10 absolute -right-12 top-0 blur-xs'
             />
-            <div className='mb-6 px-4 py-8 lg:p-8 2xl:p-10 text-center'>
+            <div className='mb-6 px-4 py-4 lg:px-8 2xl:px-10 text-center'>
               <div className='flex w-full justify-center'>
                 <Image 
                   src='/crm_token_logo.png'
                   alt='CRM token logo'
-                  width={126}
-                  height={126}
+                  width={104}
+                  height={104}
                 />
               </div>
-              <h3 className='mt-4 lg:mt-6 text-2xl lg:text-3xl 2xl:text-4xl font-bold text-white'>$CRM Token</h3>
-              <p className={`${poppins.className} mt-2 mb-4 2xl:mb-6 text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>CromaArt Token</p>
+              <h3 className='mt-4 text-2xl lg:text-3xl 2xl:text-4xl font-bold text-white'>$CRM Token</h3>
+              <p className={`${poppins.className} mt-2 mb-4 text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>CromaArt Token</p>
               <GlassBox baseColor='white'>
-                <div className='xl:px-8 py-4 2xl:py-6 rounded-[20px]'>
+                <div className='xl:px-8 py-4 rounded-[20px]'>
                   <p className='mb-2.5 text-[26px] lg:text-[32px] 2xl:text-[40px] font-bold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                     950,000,000
                   </p>
                   <span className={`${poppins.className} text-sm 2xl:text-base font-semibold text-[#E9E9E9] uppercase`}>Total suply</span>
                 </div>
               </GlassBox>
-              <div className='mt-4 2xl:mt-6'>
+              <div className='mt-4'>
                 <div className='flex flex-col gap-2 lg:gap-4'>
                   {dataCrmToken.map(({title, percentage, amount}) => (
                     <div className='flex flex-col gap-1' key={title}>
-                      <div className='mb-2 flex w-full justify-between items-center'>
+                      <div className='mb-1 flex w-full justify-between items-center'>
                         <p className='block font-medium text-xs lg:text-sm'>{title}</p>
                         <div>
                           <span className='text-sm lg:text-base font-bold bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
@@ -81,7 +81,7 @@ const CromaTokenomics = () => {
                           <span className='text-sm lg:text-base font-bold text-white'>({amount}M)</span>
                         </div>
                       </div>
-                      <div className='relative bg-[#323336] ring-inset-[#3E3E3E] w-full h-[28px] rounded-full'>
+                      <div className='relative bg-[#323336] ring-inset-[#3E3E3E] w-full h-[20px] 2xl:h-[26px] rounded-full'>
                         <div 
                           style={{ width: `${percentage}%` }} 
                           className={`absolute top-0 left-0 h-full rounded-full bg-gradient-to-r from-[#B72204] to-[#FC6400]`}></div>
@@ -104,34 +104,34 @@ const CromaTokenomics = () => {
             <Image
               src='/coin_cromaart_2.png'
               alt='Coin CromaArt'
-              width={264}
-              height={264}
+              width={214}
+              height={214}
               className='-z-10 absolute -right-12 top-0 blur-xs'
             />
-            <div className='mb-6 px-4 py-8 lg:p-8 2xl:p-10 text-center'>
+            <div className='mb-6 px-4 py-4 lg:px-8 2xl:px-10 text-center'>
               <div className='flex w-full justify-center'>
                 <Image 
                   src='/crc_token_logo.png'
                   alt='CMC token logo'
-                  width={126}
-                  height={126}
+                  width={104}
+                  height={104}
                 />
               </div>
-              <h3 className='mt-4 lg:mt-6 text-2xl lg:text-3xl 2xl:text-4xl font-bold text-white'>$CMC Token</h3>
-              <p className={`${poppins.className} mt-2 mb-4 2xl:mb-6 text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>CromaChain Token</p>
+              <h3 className='mt-4 text-2xl lg:text-3xl 2xl:text-4xl font-bold text-white'>$CMC Token</h3>
+              <p className={`${poppins.className} mt-2 mb-4 text-base 2xl:text-xl font-medium text-[#E9E9E9] opacity-80`}>CromaChain Token</p>
               <GlassBox baseColor='white'> 
-                <div className='xl:px-8 py-4 2xl:py-6 rounded-[20px]'>
+                <div className='xl:px-8 py-4 rounded-[20px]'>
                   <p className='mb-2.5 text-[26px] lg:text-[32px] 2xl:text-[40px] font-bold leading-[120%] bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                     2,000,000,000
                   </p>
                   <span className={`${poppins.className} text-sm 2xl:text-base font-semibold text-[#E9E9E9] uppercase`}>Total suply</span>
                 </div>
               </GlassBox>
-              <div className={`${poppins.className} mt-4 2xl:mt-6`}>
+              <div className={`${poppins.className} mt-4`}>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-4 text-left'>
                   {dataCmcToken.map(({title, desc, icon}) => (
                     <GlassBox baseColor='primary' key={title}>
-                      <div className='p-4 2xl:p-6 flex items-start gap-2.5 rounded-[20px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
+                      <div className='p-4 flex items-start gap-2.5 rounded-[20px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
                         <Image 
                           src={icon}
                           alt={`Icon ${title}`}
