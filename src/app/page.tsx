@@ -22,10 +22,10 @@ import BuyForm from '@/components/homepage/BuyForm';
 export default function Home() {
   return (
     <>
-      <div className='relative pt-[140px] overflow-hidden pb-10 bg-[url("/header_pattern.webp")] bg-auto lg:bg-cover bg-center'>
-        <div className='-z-[9] absolute top-0 left-0 w-full h-full bg-gradient-to-br from-black to-[rgba(0,0,0,0.26)]'>
+      <div className='relative pt-[120px] 2xl:pt-[140px] overflow-hidden pb-10 bg-[url("/header_pattern.webp")] bg-auto lg:bg-cover bg-center'>
+        <div className='z-[9] absolute inset-0 top-0 left-0 w-full h-full bg-gradient-to-br from-black to-[rgba(0,0,0,0.26)]'>
         </div>
-        <div className='absolute inset-0 bg-[url("/header_stars.webp")] bg-cover bg-center -z-20'></div>
+        <div className='absolute inset-0 bg-[url("/header_stars.webp")] bg-cover bg-center z-10'></div>
         {/* <Image
           src='/header_pattern.png'
           alt='Rectangle pattern image'
@@ -38,20 +38,22 @@ export default function Home() {
           fill
           className='-z-10 object-cover'
         /> */}
-        <Navbar active='home' />
-        <div className='-z-[1] absolute -top-6 -left-[8%] 2xl:-left-[10%]'>
-          <Image 
-            src='/object_side_header.webp'
-            alt='Coin side header'
-            width={281}
-            height={447}
-            priority
-            sizes='(max-width: 768px) 150px, (max-width: 1024px) 200px, 281px'
-            className='w-[60px] h-[140px] md:w-[200px] md:h-[340px] 2xl:w-[281px] 2xl:h-[447px]'
-          />
+        <div className='w-auto h-auto relative z-10'>
+          <Navbar active='home' />
+          <div className='-z-[1] absolute -top-6 -left-[8%] 2xl:-left-[10%]'>
+            <Image 
+              src='/object_side_header.webp'
+              alt='Coin side header'
+              width={281}
+              height={447}
+              priority
+              sizes='(max-width: 768px) 150px, (max-width: 1024px) 200px, 281px'
+              className='w-[60px] h-[140px] md:w-[200px] md:h-[340px] 2xl:w-[281px] 2xl:h-[447px]'
+            />
+          </div>
+          <HeaderHomepage />
+          <div className='-z-[8] absolute -bottom-1/2 right-0 blur-[280px] size-[800px] bg-[#FC6400] rounded-full'></div>
         </div>
-        <HeaderHomepage />
-        <div className='-z-[8] absolute -bottom-1/2 right-0 blur-[280px] size-[800px] bg-[#FC6400] rounded-full'></div>
       </div>
       <PoweredBy />
       <CromaUniverse />

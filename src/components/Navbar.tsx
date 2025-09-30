@@ -24,7 +24,7 @@ export default function Navbar({active}: {active: string}) {
                     width={44}
                     height={44}
                 />
-                <span className='text-lg 2xl:text-xl uppercase bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
+                <span className='text-base 2xl:text-xl uppercase bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent'>
                   <span>CROMA</span>
                   <span className='font-medium'>-</span>
                   <span className='font-bold'>ART</span>
@@ -89,7 +89,7 @@ export default function Navbar({active}: {active: string}) {
 const DashboardLink = ({className}: {className: string}) => {
   return (
     <Link href={URLS.dashboard}
-      className={`${className} px-8 py-3.5 text-base 2xl:text-lg bg-gradient-to-r from-[#B72204] to-[#FC6400] text-white rounded-lg shadow-[0_2px_20px_rgb(252,100,0,0.5)] transition-all duration-300 hover:shadow-[0_2px_40px_rgba(252,100,0,0.7)]`}>
+      className={`${className} px-8 py-3.5 text-sm 2xl:text-lg bg-gradient-to-r from-[#B72204] to-[#FC6400] text-white rounded-lg shadow-[0_2px_20px_rgb(252,100,0,0.5)] transition-all duration-300 hover:shadow-[0_2px_40px_rgba(252,100,0,0.7)]`}>
         Dashboard
     </Link>
   )

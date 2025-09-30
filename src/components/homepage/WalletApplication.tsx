@@ -15,22 +15,24 @@ const WalletApplication = () => {
         <div className='px-3.5 py-2 w-fit rounded-full bg-[#A24101] border border-[#FC6400]'>
           <span className='text-white text-sm md:text-base'>Wallet Applications</span>
         </div>
-        <motion.div
-          initial={{ opacity: 0, filter: 'blur(6px)' }}
-          whileInView={{ opacity: 1, filter: 'blur(0px)' }}
-          transition={{ duration: 1, ease: 'easeOut' }}
-          viewport={{ once: true, amount: 0.3 }} 
-          className='blur-animate w-[150px] md:w-[240px] 2xl:w-[300px]'
-        >
-          <Image
-            src='/trix_wallet_logo_text_horizontal.png'
-            alt='Trix wallet logo horizontal text'
-            width={300}
-            height={78}
-            className='object-contain w-auto'
-          />
-        </motion.div>
-      </div>
+        <div className='w-full flex justify-center'>
+          <motion.div
+            initial={{ opacity: 0, filter: 'blur(6px)' }}
+            whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.3 }} 
+            className='blur-animate w-[150px] md:w-[240px] 2xl:w-[300px]'
+          >
+            <Image
+              src='/trix_wallet_logo_text_horizontal.png'
+              alt='Trix wallet logo horizontal text'
+              width={300}
+              height={78}
+              className='object-contain w-auto'
+            />
+          </motion.div>
+        </div>
+        </div>
       <div className='mt-6 flex flex-col gap-6 items-center'>
         <motion.div 
           initial={{ y: 60, opacity: 0 }}
