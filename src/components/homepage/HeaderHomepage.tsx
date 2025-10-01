@@ -63,7 +63,7 @@ export default function HeaderHomepage() {
                 </motion.p>
               </div>
             </div>
-            <motion.div className='mt-4 2xl:mt-8 w-full lg:w-fit order-2 lg:order-1'
+            <motion.div className='mt-4 2xl:mt-8 w-full order-2 lg:order-1'
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.8, duration: 1, ease: 'easeIn' }}
@@ -75,9 +75,12 @@ export default function HeaderHomepage() {
                       Presale Ends In
                     </p>
                   </div>
-                  <div className='grid grid-cols-4 gap-2'>
+                  <div className='grid grid-cols-4 gap-2 w-full items-center'>
                     {timer.map(({number, desc}, index) => (
-                      <div key={index} className='flex gap-2 items-start'>
+                      <div key={index} className='flex gap-2 justify-center'>
+                        {index !== 3 &&
+                          <div className="flex-1" />
+                        }
                         <div className='text-center'>
                           <p className='text-3xl lg:text-[36px] 2xl:text-[40px] font-bold leading-[120%] text-white'>
                             {number}
@@ -87,9 +90,9 @@ export default function HeaderHomepage() {
                           </p>
                         </div>
                         {index !== 3 &&
-                          <span className='font-bold text-[40px] -mt-2'> 
+                          <p className='flex-1 font-bold text-[40px] -mt-2 ml-auto text-right'> 
                             :
-                          </span>
+                          </p>
                         }
                       </div>
                     ))}
