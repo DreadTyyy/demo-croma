@@ -72,7 +72,7 @@ const Roadmap = () => {
                   </div>
               </div>
               <h2 className='text-xl 2xl:text-2xl font-semibold text-white'>
-                Airdrop Distribution
+                Airdrop Launch
               </h2>
               <p className='text-[#E9E9E9] opacity-60 text-base font-medium'>
                 Successfully launched CROMA airdrop with massive community participation. Free $CRM + $CMC tokens distributed to early supporters.
@@ -124,7 +124,7 @@ const Roadmap = () => {
                     </GlassBox>
                     <div className='text-[#E9E9E9]'>
                       <p className='text-base 2xl:text-xl font-medium'>Phase 2</p>
-                      <p className='text-sm lg:text-base opacity-50'>Soon - Q1 2025</p>
+                      <p className='text-sm lg:text-base opacity-50'>Q4 2025 - Soon</p>
                     </div>
                   </div>
                   <div className={`border border-[#FC6400] rounded-full h-full`}>
@@ -187,7 +187,7 @@ const Roadmap = () => {
                   </GlassBox>
                   <div className='text-[#E9E9E9]'>
                     <p className='text-base 2xl:text-xl font-medium'>Phase 3</p>
-                    <p className='text-sm lg:text-base opacity-50'>Q2 2025</p>
+                    <p className='text-sm lg:text-base opacity-50'>Soon - Q1 2026</p>
                   </div>
                 </div>
                 <div className={`border border-[#FC6400] rounded-full h-full`}>
@@ -251,7 +251,7 @@ const Roadmap = () => {
                   </GlassBox>
                   <div className='text-[#E9E9E9]'>
                     <p className='text-base 2xl:text-xl font-medium'>Phase 4</p>
-                    <p className='text-sm lg:text-base opacity-50'>Q3-Q4 2025</p>
+                    <p className='text-sm lg:text-base opacity-50'>Q2 2025 - Q1 2026</p>
                   </div>
                 </div>
                 <div className={`border border-[#FC6400] rounded-full h-full`}>
