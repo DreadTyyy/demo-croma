@@ -811,11 +811,11 @@ const modularArchitecture = [
 const timeline = {
   'launch': [
     {
-      'phase': 'Airdrop',
+      'phase': 'Airdrop Launch',
       'desc': 'The airdrop will be conducted first to reward early community members and establish initial distribution.'
     },
     {
-      'phase': 'Presale',
+      'phase': 'Presale Launch',
       'desc': 'The presale will follow the airdrop, estimated to occur between Q3 and Q4 2025, providing early access to CRM tokens.'
     },
     {

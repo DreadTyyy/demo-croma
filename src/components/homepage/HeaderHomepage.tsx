@@ -158,6 +158,31 @@ export default function HeaderHomepage() {
                     </motion.div>
                 </Link>
               </motion.div>
+              <motion.div
+                initial={{ y: 100, opacity: 0, width: 60 }}
+                animate={{  y: 0, opacity: 1, width: 'auto' }}
+                transition={{ 
+                  y: { delay: 0.3, duration: 0.4, ease: 'easeOut' },
+                  opacity: { delay: 0.3, duration: 0.4, ease: 'easeOut' },
+                  width: { delay: 0.7, duration: 0.8, ease: 'easeOut' },
+                 }}
+                className='inline-block'
+              >
+                <a download href='/pdf/whitepaper.pdf' target='_blank'
+                  className='group relative my_border_gradient_primary block px-4 lg:px-6 2xl:px-8 py-3 lg:py-4 2xl:py-5 text-center text-sm 2xl:text-base rounded-[10px] before:rounded-[10px] transition-all duration-300 hover:shadow-[0_2px_30px_rgba(252,100,0,0.5)] overflow-hidden'>
+                    <div className='z-0 absolute top-0 left-0 w-full h-0 bg-gradient-to-r from-[#B72204] to-[#FC6400] group-hover:h-full transition-all duration-300'></div>
+                    <motion.div
+                      initial={{ width: 0 }}
+                      animate={{ width: 'auto' }}
+                      transition={{ delay: 0.7, duration: 0.7, ease: 'easeOut' }}
+                      className='overflow-hidden relative z-10'
+                    >
+                      <span className='line-clamp-2 lg:whitespace-nowrap'>
+                        Whitepaper PDF
+                      </span>
+                    </motion.div>
+                </a>
+              </motion.div>
             </div>
             <motion.div 
               initial={{ opacity: 0 }}
@@ -167,6 +192,17 @@ export default function HeaderHomepage() {
             >
               <p className='uppercase font-semibold text-sm 2xl:text-base'>Audit by:</p>
               <div className='mt-4 flex items-start gap-4'>
+                <div className='space-y-2'>
+                  <p className='uppercase text-[10px] md:text-xs md:ml-[40px] font-bold bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent text-nowrap'>
+                    coming soon
+                  </p>
+                  <Image
+                    src='/support_logo/cromachain.svg'
+                    alt='Audit by cromachain'
+                    width={195}
+                    height={42}
+                  />
+                </div>
                 <div className='space-y-2'>
                   <p className='uppercase text-[10px] md:text-xs md:ml-[40px] font-bold bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent text-nowrap'>
                     coming soon
@@ -187,17 +223,6 @@ export default function HeaderHomepage() {
                     alt='Audit by solidproof'
                     width={152}
                     height={38}
-                  />
-                </div>
-                <div className='space-y-2'>
-                  <p className='uppercase text-[10px] md:text-xs md:ml-[40px] font-bold bg-gradient-to-r from-[#B72204] to-[#FC6400] bg-clip-text text-transparent text-nowrap'>
-                    coming soon
-                  </p>
-                  <Image
-                    src='/support_logo/cromachain.svg'
-                    alt='Audit by cromachain'
-                    width={195}
-                    height={42}
                   />
                 </div>
               </div>
