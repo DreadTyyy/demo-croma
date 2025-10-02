@@ -105,7 +105,7 @@ export default function HeaderHomepage() {
                 </div>
               </div>
             </motion.div>
-            <div className='mt-6 2xl:mt-8 flex justify-center lg:justify-start gap-2 md:gap-4 lg:gap-6 order-1 lg:order-2'>
+            <div className='mt-6 2xl:mt-8 flex justify-center lg:justify-start gap-2 md:gap-4 lg:gap-6 order-1 lg:order-2 flex-wrap'>
               <motion.div
                 initial={{ y: 100, opacity: 0, width: 60 }}
                 animate={{  y: 0, opacity: 1, width: 'auto' }}
@@ -123,7 +123,7 @@ export default function HeaderHomepage() {
                         initial={{ width: 0 }}
                         animate={{ width: 'auto' }}
                         transition={{ delay: 0.6, duration: 0.7, ease: 'easeOut' }}
-                        className='overflow-hidden'
+                        className='overflow-hidden text-nowrap'
                       >
                         <span className='line-clamp-2 lg:whitespace-nowrap'>
                           Claim Airdrop Now
@@ -146,16 +146,11 @@ export default function HeaderHomepage() {
                 <Link href={URLS.community} 
                   className='group relative my_border_gradient_primary block px-4 lg:px-6 2xl:px-8 py-3 lg:py-4 2xl:py-5 text-center text-sm 2xl:text-base rounded-[10px] before:rounded-[10px] transition-all duration-300 hover:shadow-[0_2px_30px_rgba(252,100,0,0.5)] overflow-hidden'>
                     <div className='z-0 absolute top-0 left-0 w-full h-0 bg-gradient-to-r from-[#B72204] to-[#FC6400] group-hover:h-full transition-all duration-300'></div>
-                    <motion.div
-                      initial={{ width: 0 }}
-                      animate={{ width: 'auto' }}
-                      transition={{ delay: 0.7, duration: 0.7, ease: 'easeOut' }}
-                      className='overflow-hidden relative z-10'
-                    >
+                    <div className='overflow-hidden relative z-10 text-nowrap'>
                       <span className='line-clamp-2 lg:whitespace-nowrap'>
                         Join Community
                       </span>
-                    </motion.div>
+                    </div>
                 </Link>
               </motion.div>
               <motion.div
@@ -166,21 +161,16 @@ export default function HeaderHomepage() {
                   opacity: { delay: 0.3, duration: 0.4, ease: 'easeOut' },
                   width: { delay: 0.7, duration: 0.8, ease: 'easeOut' },
                  }}
-                className='inline-block'
+                className='inline-block w-full'
               >
                 <a download href='/pdf/whitepaper.pdf' target='_blank'
                   className='group relative my_border_gradient_primary block px-4 lg:px-6 2xl:px-8 py-3 lg:py-4 2xl:py-5 text-center text-sm 2xl:text-base rounded-[10px] before:rounded-[10px] transition-all duration-300 hover:shadow-[0_2px_30px_rgba(252,100,0,0.5)] overflow-hidden'>
                     <div className='z-0 absolute top-0 left-0 w-full h-0 bg-gradient-to-r from-[#B72204] to-[#FC6400] group-hover:h-full transition-all duration-300'></div>
-                    <motion.div
-                      initial={{ width: 0 }}
-                      animate={{ width: 'auto' }}
-                      transition={{ delay: 0.7, duration: 0.7, ease: 'easeOut' }}
-                      className='overflow-hidden relative z-10'
-                    >
+                    <div className='overflow-hidden relative z-10 text-nowrap'>
                       <span className='line-clamp-2 lg:whitespace-nowrap'>
                         Whitepaper PDF
                       </span>
-                    </motion.div>
+                    </div>
                 </a>
               </motion.div>
             </div>
