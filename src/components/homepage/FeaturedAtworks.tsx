@@ -90,18 +90,21 @@ const FeaturedArtworks = () => {
         modules={[FreeMode, Pagination]}
         className='mySwiper my_artworks_gallery'
       >
-        {nftImages.map((item, i) => (
-          <SwiperSlide
-            key={i}
-            className="group relative overflow-hidden border-[#FC6400] hover:border-[2px]"
-            style={{
-              width: `304px`,
-              height: `380px`,
-            }}
-          >
-            <NftCard item={item} />
-          </SwiperSlide>
-        ))}
+        {nftImages.map((item, i) => {
+          if (item.featuredNetwork)
+          return (
+            <SwiperSlide
+              key={i}
+              className="group relative overflow-hidden border-[#FC6400] hover:border-[2px]"
+              style={{
+                width: `304px`,
+                height: `380px`,
+              }}
+            >
+              <NftCard item={item} />
+            </SwiperSlide>
+          )
+        })}
             <div className='custom-pagination'></div>
       </Swiper>
       </div>

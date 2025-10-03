@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { nftImages } from '@/utils/nftData';
 
 const NftGrid = () => {
-  const choosedNft = nftImages.filter((item) => item.choosen === true);
+  const choosedNft = nftImages.filter((item) => item.nftGallery === true);
 
   return (
     <div className='flex min-w-1/2 max-w-[600px] gap-2'>

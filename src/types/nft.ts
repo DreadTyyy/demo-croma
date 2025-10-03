@@ -1,6 +1,7 @@
 export type NFTItemType = {
   id: string;
-  choosen: boolean;
+  featuredNetwork: boolean;
+  nftGallery: boolean;
   cover: {
     image: string;
     width: number;
