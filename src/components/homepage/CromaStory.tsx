@@ -58,19 +58,6 @@ const CromaStory = () => {
                           </div>
                         </div>
                       </GlassBox>
-                      <GlassBox baseColor='primary'>
-                        <div className='p-4 lg:p-6 flex items-start gap-2.5 rounded-[20px] backdrop-blur-[5px] h-full bg-[linear-gradient(rgba(252,100,0,0.08),rgba(252,100,0,0.08)),linear-gradient(rgba(0,0,0,0.34),rgba(0,0,0,0.34))]'>
-                          <Image
-                            src='wallet.svg'
-                            alt='Icon'
-                            width={42}
-                            height={42} />
-                          <div>
-                            <p className='mb-1 2xl:mb-2.5 font-semibold text-base 2xl:text-xl text-[#E9E9E9]'>Dev Wallet</p>
-                            <p className='text-[#E9E9E9] opacity-60 text-sm lg:text-base break-all'>0x84b55D4d60cFff14b3eF40E7B5D1c6FA59023f31</p>
-                          </div>
-                        </div>
-                      </GlassBox>
                     </div>
                   </div>
                   <Link href={URLS.crmtoken} target='_blank'>

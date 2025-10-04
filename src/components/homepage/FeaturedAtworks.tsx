@@ -73,12 +73,13 @@ const FeaturedArtworks = () => {
           </div>
         </div>
       </div>
-      <div className='mt-10 px-4 hidden md:block'>
+      <div className='mt-5 lg:mt-10 px-4 block'>
         <Swiper
         slidesPerView='auto'
         spaceBetween={24}
-        // centeredSlides={true}
-        centerInsufficientSlides={true}
+        initialSlide={0}
+        centeredSlides={false}
+        centerInsufficientSlides={false}
         freeMode={true}
         pagination={{
           dynamicBullets: true,
@@ -107,9 +108,6 @@ const FeaturedArtworks = () => {
         })}
             <div className='custom-pagination'></div>
       </Swiper>
-      </div>
-      <div className='my-5 px-4 block md:hidden'>
-        <NftGrid />
       </div>
       <Link href={URLS.opensea} target='_blank' 
         className={`${padding} flex justify-center`}
